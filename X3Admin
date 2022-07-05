@@ -99,7 +99,7 @@ local admin = {
         }
     }
 }
-local dragger = loadstring(game:HttpGet('https://raw.githubusercontent.com/boop71/cappuccino/main/v3/dragger.lua'))();
+local dragger = https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/X3'))();
 admin.New = function(data)
     if typeof(data) ~= 'table' then
         data = {}
