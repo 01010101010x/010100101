@@ -226,7 +226,7 @@ It was triggered by the component %q.
 
 init()
 local Admin = loadstring(game:HttpGet("https://raw.githubusercontent.com/boop71/customizable-admin/main/module.lua"))()
-local Admin2 = Admin.load(getgenv().themes.dark, "Sins Admin", true) 
+local Admin2 = Admin.load(getgenv().themes.dark, "Sinner Server Admin", true) 
 Admin2.addCommand({name = "goto",desc = "teleports you to the target!",callback = function(v,b)
     local t = Admin2.getplayers(v)
     for i,v2 in pairs(t) do
