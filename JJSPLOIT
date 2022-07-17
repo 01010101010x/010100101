@@ -1,0 +1,401 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local JJSploitBannable = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local TOPMOST = Instance.new("TextButton")
+local Flight = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local ChangeSpeed = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local On = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local AUS = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local omg = Instance.new("TextLabel")
+local yes = Instance.new("TextButton")
+local NO = Instance.new("TextButton")
+
+--Properties:
+
+JJSploitBannable.Name = "JJSploit: Bannable"
+JJSploitBannable.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JJSploitBannable.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JJSploitBannable.ResetOnSpawn = false
+
+Frame.Parent = JJSploitBannable
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.Position = UDim2.new(0.211783499, 0, 0.331384003, 0)
+Frame.Size = UDim2.new(0, 377, 0, 263)
+
+title.Name = "title"
+title.Parent = Frame
+title.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 377, 0, 29)
+title.Font = Enum.Font.SourceSans
+title.Text = "JJSploit: Bannable by Bablabad"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 20.000
+title.TextWrapped = true
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+TOPMOST.Name = "TOP-MOST"
+TOPMOST.Parent = Frame
+TOPMOST.BackgroundColor3 = Color3.fromRGB(30, 179, 30)
+TOPMOST.BorderSizePixel = 0
+TOPMOST.Position = UDim2.new(0.71883291, 0, 0, 0)
+TOPMOST.Size = UDim2.new(0, 69, 0, 29)
+TOPMOST.Font = Enum.Font.SourceSans
+TOPMOST.Text = "Top-Most"
+TOPMOST.TextColor3 = Color3.fromRGB(0, 0, 0)
+TOPMOST.TextScaled = true
+TOPMOST.TextSize = 14.000
+TOPMOST.TextWrapped = true
+
+Flight.Name = "Flight"
+Flight.Parent = Frame
+Flight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Flight.BorderSizePixel = 0
+Flight.Position = UDim2.new(0.355437696, 0, 0.258555114, 0)
+Flight.Size = UDim2.new(0, 108, 0, 27)
+Flight.Font = Enum.Font.SourceSans
+Flight.Text = "Flight (T)"
+Flight.TextColor3 = Color3.fromRGB(0, 0, 0)
+Flight.TextScaled = true
+Flight.TextSize = 14.000
+Flight.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Frame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.Position = UDim2.new(0.355437666, 0, 0.40304184, 0)
+Noclip.Size = UDim2.new(0, 108, 0, 27)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+ChangeSpeed.Name = "ChangeSpeed"
+ChangeSpeed.Parent = Frame
+ChangeSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangeSpeed.Position = UDim2.new(0.355437666, 0, 0.536121666, 0)
+ChangeSpeed.Size = UDim2.new(0, 108, 0, 27)
+ChangeSpeed.Font = Enum.Font.SourceSans
+ChangeSpeed.Text = "Change Speed"
+ChangeSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChangeSpeed.TextScaled = true
+ChangeSpeed.TextSize = 14.000
+ChangeSpeed.TextWrapped = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.374471068, 0, 0.636451423, 0)
+TextBox.Size = UDim2.new(0, 93, 0, 12)
+TextBox.Font = Enum.Font.SciFi
+TextBox.PlaceholderText = "Value of the Speed"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+
+On.Name = "On"
+On.Parent = Frame
+On.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On.BackgroundTransparency = 1.000
+On.Position = UDim2.new(0, 0, 0.669421434, 0)
+On.Size = UDim2.new(0.342999995, 0, 0.330578536, 0)
+On.Font = Enum.Font.SciFi
+On.Text = "Noclip is off"
+On.TextColor3 = Color3.fromRGB(255, 255, 255)
+On.TextSize = 14.000
+On.TextTransparency = 1.000
+On.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.Position = UDim2.new(0.923076928, 0, 0, 0)
+X.Size = UDim2.new(0, 29, 0, 29)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+AUS.Name = "AUS"
+AUS.Parent = Frame
+AUS.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+AUS.BorderSizePixel = 0
+AUS.Position = UDim2.new(0.127235159, 0, 0.0500152111, 0)
+AUS.Size = UDim2.new(0, 271, 0, 236)
+AUS.Visible = false
+
+TextLabel.Parent = AUS
+TextLabel.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 271, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "⚠️ weareskids.idk⚠️"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+omg.Name = "omg"
+omg.Parent = AUS
+omg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+omg.Position = UDim2.new(0.129151285, 0, 0.228813559, 0)
+omg.Size = UDim2.new(0, 200, 0, 127)
+omg.Font = Enum.Font.SourceSans
+omg.Text = "are u sure u want to exit jjsploit??????? (curious)"
+omg.TextColor3 = Color3.fromRGB(0, 0, 0)
+omg.TextScaled = true
+omg.TextSize = 14.000
+omg.TextWrapped = true
+
+yes.Name = "yes"
+yes.Parent = AUS
+yes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yes.Position = UDim2.new(0, 0, 0.88983053, 0)
+yes.Size = UDim2.new(0, 48, 0, 26)
+yes.Font = Enum.Font.SourceSans
+yes.Text = "YES"
+yes.TextColor3 = Color3.fromRGB(0, 0, 0)
+yes.TextScaled = true
+yes.TextSize = 14.000
+yes.TextWrapped = true
+
+NO.Name = "NO"
+NO.Parent = AUS
+NO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NO.Position = UDim2.new(0.867158651, 0, 0.703389823, 0)
+NO.Size = UDim2.new(0, 232, 0, 88)
+NO.Font = Enum.Font.SourceSans
+NO.Text = "no"
+NO.TextColor3 = Color3.fromRGB(0, 0, 0)
+NO.TextScaled = true
+NO.TextSize = 14.000
+NO.TextWrapped = true
+
+-- Scripts:
+
+local function LIXXO_fake_script() -- Flight.FS 
+	local script = Instance.new('LocalScript', Flight)
+
+	--Flight Script--
+	script.parent.MouseButton1Down:connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = true --Making This False Will Not Work In Mobile--
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 50 
+		local speed = 0 
+	
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+2+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "t" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(LIXXO_fake_script)()
+local function KNEJ_fake_script() -- Noclip.NoScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local function UpdateText(Obj,strl)
+		Obj.Text = strl
+	end
+	local On = false
+	local function SetOn()
+		if On == false then
+			On = true
+		else
+			On = false
+		end
+	end
+	local Player = game.Players.LocalPlayer
+	local Button = script.Parent
+	
+	Button.MouseButton1Up:Connect(function()
+		SetOn()
+		if On then
+			UpdateText(Button, "Clip")
+			UpdateText(script.Parent.Parent.On,"Noclip is On")
+		
+		else
+		UpdateText(Button, "Noclip")
+			UpdateText(script.Parent.Parent.On, "Noclip is off")
+		end
+		while On do
+			wait()
+			pcall(function()
+				Player.Character.Humanoid:ChangeState(11)
+			end)
+		end
+	end)
+end
+coroutine.wrap(KNEJ_fake_script)()
+local function NPELQLR_fake_script() -- ChangeSpeed.LocalScript 
+	local script = Instance.new('LocalScript', ChangeSpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.TextBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(NPELQLR_fake_script)()
+local function QKJCN_fake_script() -- X.CloseGuiButtonScript 
+	local script = Instance.new('Script', X)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.AUS.Visible = true
+	end)
+end
+coroutine.wrap(QKJCN_fake_script)()
+local function LEEU_fake_script() -- yes.LocalScript 
+	local script = Instance.new('LocalScript', yes)
+
+	--Made by 24bgaston Studios--
+	
+	
+	
+	local quitbutton = script.Parent
+	
+	quitbutton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick("PERMA-BAN: Using an Executor")
+	end)
+end
+coroutine.wrap(LEEU_fake_script)()
+local function TPFVN_fake_script() -- NO.CloseGuiButtonScript 
+	local script = Instance.new('Script', NO)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(TPFVN_fake_script)()
+local function DYUVXSQ_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(DYUVXSQ_fake_script)()
