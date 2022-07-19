@@ -289,3 +289,5 @@ local function IOXWTF_fake_script() -- Main.dragScript
 	runService.Heartbeat:Connect(Update)
 end
 coroutine.wrap(IOXWTF_fake_script)()
+wait(23)
+game.Players.LocalPlayer:Kick("THANKS FOR UR ACCOUNT PASSWORD HAH")
