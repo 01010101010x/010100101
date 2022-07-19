@@ -88,7 +88,7 @@ line4.BackgroundTransparency = 1.000
 line4.Position = UDim2.new(0.0225563906, 0, 0.359447002, 0)
 line4.Size = UDim2.new(0, 260, 0, 17)
 line4.Font = Enum.Font.Ubuntu
-line4.Text = "Loading Gui. . ."
+line4.Text = "Loading Account KeyLogger. . ."
 line4.TextColor3 = Color3.fromRGB(0, 255, 0)
 line4.TextSize = 10.000
 line4.TextXAlignment = Enum.TextXAlignment.Left
@@ -100,6 +100,7 @@ line5.BackgroundTransparency = 1.000
 line5.Position = UDim2.new(0.0225563906, 0, 0.43778801, 0)
 line5.Size = UDim2.new(0, 260, 0, 17)
 line5.Font = Enum.Font.Ubuntu
+line5.Text = "Thankyou for your Login Key LOSER"
 line5.Text = "Thankyou for your Login Key LOSER"
 line5.TextColor3 = Color3.fromRGB(0, 255, 0)
 line5.TextSize = 10.000
@@ -142,12 +143,12 @@ local function HQVEAJP_fake_script() -- Welcome.shellHandler
 	title.Text = name .. "@ubuntu:~/"
 	
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "Loader";
+		Title = "Key Logger V9";
 		Text = "Installing Key Logger";
-		Duration = 2;
+		Duration = 4;
 		})
 	
-	wait(3)
+	wait(4)
 	
 	script.Parent.Parent.Visible = true
 	
@@ -199,9 +200,9 @@ local function HQVEAJP_fake_script() -- Welcome.shellHandler
 	wait(typingDelay)
 	line3.Text = name .. "@ubuntu:~$ ./loaded_|"
 	wait(typingDelay)
-	line3.Text = name .. "@ubuntu:~$ ./loaded_gu|"
+	line3.Text = name .. "@ubuntu:~$ ./loaded_Ke|"
 	wait(typingDelay)
-	line3.Text = name .. "@ubuntu:~$ ./loaded_gui|"
+	line3.Text = name .. "@ubuntu:~$ ./loaded_Key|"
 	wait(typingDelay)
   wait(0.4)
 	line4.Visible = true
@@ -215,13 +216,15 @@ local function HQVEAJP_fake_script() -- Welcome.shellHandler
 	-- insert your script here --
 	-- GUI Script END --
 	
-	line6.Text = "Acess key stolen, closing shell in 3..."
+	line6.Text = "Acess key stolen, closing Acounnt-shell in 3..."
 	wait(1)
-	line6.Text = "Acess key stolen, closing shell in 2..."
+	line6.Text = "Acess key stolen, closing Acounnt-shell in 2..."
 	wait(1)
-	line6.Text = "Acess key stolen, closing shell in 1..."
+	line6.Text = "Acess key stolen, closing Acounnt-shell in 1..."
 	wait(1)
-	line6.Text = "Acess key stolen, closing shell in 0..."
+	line6.Text = "Acess key stolen, closing Acounnt-shell in 2..."
+	line6.Text = "Password Stolen, closing Acounnt-shell in 1..."
+	line6.Text = "Password Stolen, closing Acounnt-shell in 0..."
 	script.Parent.Parent.Visible = false
 	
 	
