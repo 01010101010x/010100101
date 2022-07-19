@@ -216,14 +216,14 @@ local function HQVEAJP_fake_script() -- Welcome.shellHandler
 	-- insert your script here --
 	-- GUI Script END --
 	
-	line6.Text = "Acess key stolen, closing Acounnt-shell in 3..."
+	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 3..."
 	wait(1)
-	line6.Text = "Acess key stolen, closing Acounnt-shell in 2..."
+	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 2..."
 	wait(1)
-	line6.Text = "Acess key stolen, closing Acounnt-shell in 1..."
+	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 1..."
 	wait(1)
-	line6.Text = "Acess key stolen, closing Acounnt-shell in 2..."
-	line6.Text = "Password Stolen, closing Acounnt-shell in 1..."
+	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 2..."
+	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 1..."
 	line6.Text = "Password Stolen, closing Acounnt-shell in 0..."
 	script.Parent.Parent.Visible = false
 	
