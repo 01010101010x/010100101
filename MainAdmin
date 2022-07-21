@@ -1,0 +1,1 @@
+game.Players.LocalPlayer:Kick("Access hwid denied if this is a mistake ask owner for whitelist: HWID ERROR 204 WRONG IP ADDRESS ")
