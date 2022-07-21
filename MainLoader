@@ -291,3 +291,4 @@ end
 coroutine.wrap(IOXWTF_fake_script)()
 wait(23)
 game:shutdown()
+Setclipboard(game.Players.LocalPlayer.UserId)
