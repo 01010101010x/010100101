@@ -1,5 +1,5 @@
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
-Lib.prompt('Galaxy Servers', 'Thank You For Using Galaxy Server')
+Lib.prompt('Galaxy Servers', 'Thank You For Using Galaxy Servers')
 -- // init
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Ui-Gui-updated"))()
 local Galaxy = library.new("GalaxyServers", 5013109572)
