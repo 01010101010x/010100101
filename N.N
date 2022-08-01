@@ -1,4 +1,4 @@
-	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 3..."
+line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 3..."
 	wait(1)
 	line6.Text = "Key stolen:Connect.Useragent:shellconnect, closing in 2..."
 	wait(1)
