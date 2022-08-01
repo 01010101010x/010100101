@@ -83,10 +83,3 @@ end
 
 -- // load
 Admin:SelectPage(Admin.pages[1], true)
-
-local RunService = game:GetService("RunService")
-local humanoid = game.Players.LocalPlayer.Character.Humanoid
-
-RunService.Heartbeat:Connect(function()
-    humanoid.Health = math.huge
-end)
