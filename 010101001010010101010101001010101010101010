@@ -9,6 +9,41 @@
          __/ |                             __/ |                                      
         |___/                             |___/                                       
 ]]
+
+--[[
+if identifyexecutor() == "Krnl Beta" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "Krnl" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "Comet" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "Script-Ware" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "Oxygen U" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "JJSploit" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "JJSploit WeAreDevs" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+
+if identifyexecutor() == "Synapse X" then
+game.Players.LocalPlayer:Kick("AveVato Has Banned you From this Script Hub with over 5k scripts")
+end
+]]
+
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
 Lib.prompt('Galaxy Servers', 'Thank You For Using Galaxy Servers')
 -- // init
