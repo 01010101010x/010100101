@@ -1,3 +1,61 @@
+local Admin = loadstring(game:HttpGet("https://raw.githubusercontent.com/boop71/customizable-admin/main/module.lua"))()
+local Admin2 = Admin.load(getgenv().themes.dark, "Sinners Galaxy Admin", true) 
+Admin2.addCommand({name = "goto",desc = "teleports you to the target!",callback = function(v,b)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+        pcall(function()
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v2.Character.HumanoidRootPart.Position+Vector3.new(0,0,3))
+        end)
+    end
+end})
+
+local SnapLoop = false
+
+Admin2.addCommand({name = "To",desc = "Teleports you to the Player.",callback = function(v,b)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+        pcall(function()
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v2.Character.HumanoidRootPart.Position+Vector3.new(0,0,3))
+        end)
+    end
+end})
+Admin2.addCommand({name = "Snap",desc = "Kills a Player.",callback = function(v)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+    pcall(function()
+    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,math.huge)
+    end)
+    end
+end})
+Admin2.addCommand({name = "Fling",desc = "Flings Player",callback = function(v)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+            pcall(function()
+        game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,1000000000000000)
+        game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,(0/0))
+        end)
+    end
+end})
+Admin2.addCommand({name = "LoopKill",desc = "Loopkills a Player",callback = function(v)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+            SnapLoop = true
+            while SnapLoop == true do
+            wait()
+            pcall(function()
+            game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,math.huge)
+            game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,(0/0))
+            end)
+            end
+    end
+end})
+Admin2.addCommand({name = "UnLoopKill",desc = "unloopkills a Player",callback = function(v)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+    SnapLoop = false
+    end
+end})
+
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
 Lib.prompt('Galaxy Servers', 'Thank You For Using Galaxy Servers')
 -- // init
