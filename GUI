@@ -1,0 +1,94 @@
+local l__Players__1 = game:GetService("Players");
+local l__ReplicatedFirst__2 = game:GetService("ReplicatedFirst");
+local l__TweenService__3 = game:GetService("TweenService");
+local l__ContentProvider__4 = game:GetService("ContentProvider");
+local l__StarterGui__5 = game:GetService("StarterGui");
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false);
+local l__LocalPlayer__6 = l__Players__1.LocalPlayer;
+local l__PlayerGui__7 = l__LocalPlayer__6:WaitForChild("PlayerGui");
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false);
+local v8 = Instance.new("ScreenGui");
+v8.IgnoreGuiInset = true;
+local v9 = Instance.new("TextLabel");
+v9.ZIndex = 10;
+v9.Size = UDim2.new(1, 0, 1, 0);
+v9.BackgroundColor3 = Color3.fromRGB(0, 20, 40);
+v9.Font = Enum.Font.GothamSemibold;
+v9.TextColor3 = Color3.new(0.8, 0.8, 0.8);
+v9.Text = "Galaxy Servers";
+v9.TextSize = 28;
+v9.Parent = v8;
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false);
+local v10 = Instance.new("TextLabel");
+v10.ZIndex = 10;
+v10.Size = UDim2.new(1, 0, 0, 30);
+v10.Position = UDim2.new(0, 0, 0.5, 16);
+v10.BackgroundTransparency = 1;
+v10.Font = Enum.Font.Gotham;
+v10.TextColor3 = Color3.new(0.72549, 0.72549, 0.72549);
+v10.Text = "";
+v10.TextSize = 16;
+v10.Parent = v8;
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false);
+v8.Parent = l__PlayerGui__7;
+while true do
+	wait();
+	if l__PlayerGui__7:FindFirstChild("TeamList") then
+		break;
+	end;
+end;
+l__PlayerGui__7:FindFirstChild("TeamList").Enabled = false;
+while true do
+	wait();
+	if l__PlayerGui__7:FindFirstChild("TeamMenu") then
+		break;
+	end;
+end;
+l__PlayerGui__7:FindFirstChild("TeamMenu").Enabled = false;
+wait();
+wait(1);
+l__ReplicatedFirst__2:RemoveDefaultLoadingScreen();
+wait(1);
+wait();
+v10.Text = "Galaxy Servers";
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false);
+if not game:IsLoaded() then
+	game.Loaded:Wait();
+end;
+wait(1);
+v10.Text = "Galaxy Servers";
+local v11 = 0;
+while not l__LocalPlayer__6:HasAppearanceLoaded() and v11 < 30 do
+	v11 = v11 + 1;
+	wait(1);
+	if v11 >= 15 and not v8:FindFirstChildOfClass("TextButton") then
+		local v12 = Instance.new("TextButton");
+		v12.ZIndex = 10;
+		v12.Size = UDim2.new(0, 100, 0, 30);
+		v12.Position = UDim2.new(0.5, -50, 0.5, 60);
+		v12.BackgroundColor3 = Color3.fromRGB(85, 170, 127);
+		v12.Font = Enum.Font.GothamSemibold;
+		v12.TextColor3 = Color3.new(1, 1, 1);
+		v12.Text = "Galaxy Servers";
+		v12.TextSize = 16;
+		local u1 = v11;
+		v12.MouseButton1Click:Connect(function()
+			u1 = u1 + 100;
+			v12.Visible = false;
+		end);
+		v12.Parent = v8;
+	end;
+end;
+if v8:FindFirstChildOfClass("TextButton") then
+	v8:FindFirstChildOfClass("TextButton").Visible = false;
+end;
+v10.Text = "Galaxy Servers";
+wait(3);
+v10.Visible = false;
+v9.TextTransparency = 1;
+for v13 = 1, 100 do
+	v9.BackgroundTransparency = v13 / 100;
+	wait(0.02);
+end;
+v8:Destroy();
+wait(1)
