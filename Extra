@@ -83,3 +83,7 @@ end
 
 -- // load
 Admin:SelectPage(Admin.pages[1], true)
+
+while wait() do
+game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
+end
