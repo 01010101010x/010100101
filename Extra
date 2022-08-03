@@ -19,7 +19,7 @@ Admin2.addCommand({name = "To",desc = "Teleports you to the Player.",callback = 
         end)
     end
 end})
-Admin2.addCommand({name = "Snap",desc = "Kills a Player.",callback = function(v)
+Admin2.addCommand({name = "Snap",desc = "Snaps chosen player.",callback = function(v)
     local t = Admin2.getplayers(v)
     for i,v2 in pairs(t) do
     pcall(function()
@@ -27,7 +27,7 @@ Admin2.addCommand({name = "Snap",desc = "Kills a Player.",callback = function(v)
     end)
     end
 end})
-Admin2.addCommand({name = "Fling",desc = "Flings Player",callback = function(v)
+Admin2.addCommand({name = "Fling",desc = "Flings chosen Player",callback = function(v)
     local t = Admin2.getplayers(v)
     for i,v2 in pairs(t) do
             pcall(function()
@@ -36,7 +36,7 @@ Admin2.addCommand({name = "Fling",desc = "Flings Player",callback = function(v)
         end)
     end
 end})
-Admin2.addCommand({name = "LoopKill",desc = "Loopkills a Player",callback = function(v)
+Admin2.addCommand({name = "LoopKill",desc = "Loopkills chosen Player",callback = function(v)
     local t = Admin2.getplayers(v)
     for i,v2 in pairs(t) do
             SnapLoop = true
@@ -49,8 +49,14 @@ Admin2.addCommand({name = "LoopKill",desc = "Loopkills a Player",callback = func
             end
     end
 end})
-Admin2.addCommand({name = "UnLoopKill",desc = "unloopkills a Player",callback = function(v)
-    local t = Admin2.getplayers(v)
+Admin2.addCommand({name = "God",desc = "Gods you",callback = function(v)
+    while wait() do
+game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
+end
+end})
+
+Admin2.addCommand({name = "unloopkill",desc = "unloopkills player",callback = function(v,b)
+local t = Admin2.getplayers(v)
     for i,v2 in pairs(t) do
     SnapLoop = false
     end
@@ -83,7 +89,3 @@ end
 
 -- // load
 Admin:SelectPage(Admin.pages[1], true)
-
-while wait() do
-game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
-end
