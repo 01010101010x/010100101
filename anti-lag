@@ -1,0 +1,112 @@
+local Event = Instance.new("BindableEvent")
+Event.Name = "PLAYERLOADING"
+Event.Parent = game:GetService("Players").LocalPlayer
+while task.wait(2) do
+	if game:GetService("Players").LocalPlayer.PlayerScripts["IconManager/Music/Settings"].SPOOKYMODE.Value == true then
+		for i, v in ipairs(workspace:GetDescendants()) do
+			if v:IsA("ProximityPrompt") then
+				if v.Name ~= "TeleportPrompt" then
+					v.Enabled = false
+				end
+			end
+			if v:IsA("Light") or v:IsA("PointLight") or v:IsA("SpotLight") or v:IsA("SurfaceLight") then
+				local e = false
+				for t, u in ipairs(game:GetService("Players"):GetPlayers()) do
+					if u.Character == nil then
+						continue
+					end
+					if v:IsDescendantOf(u.Character) then
+						e = true
+						continue
+					end
+				end 
+				if e == false then
+					v.Enabled = false
+				end
+			end
+		end
+	end
+	if game:GetService("Players").LocalPlayer.Character ~= nil then
+		local count = 0
+		local totalcount = 0
+		local children = workspace:GetChildren()
+		for i, v in ipairs(game:GetService("ReplicatedStorage").AntiLagParts:GetChildren()) do
+			table.insert(children, v)
+		end
+		if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head") == nil then
+			continue
+		end
+		for i, v in ipairs(children) do
+			if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head") == nil then
+				continue
+			end
+			if v:IsA("BasePart") == false and v:IsA("Model") == false and v:IsA("MeshPart") == false and v:IsA("UnionOperation") == false then
+				continue
+			end
+			if v:IsA("Terrain") then
+				continue
+			end
+			if v:IsA("Camera") then
+				continue
+			end
+			if v:FindFirstChild("NoAntiLag") then
+				continue
+			end
+			if count == 500 then
+				script.ShowText:Fire(totalcount, true)
+				task.wait(1)
+				count = 0
+			end
+			if v:IsA("Model") then
+				if game:GetService("Players"):FindFirstChild(v.Name) then
+					continue
+				end
+				local Part = nil
+				for t, h in ipairs(v:GetDescendants()) do
+					if h:IsA("BasePart") == false and h:IsA("MeshPart") == false and h:IsA("UnionOperation") == false then
+						continue
+					end
+					Part = h
+				end
+				if Part == nil then
+					continue
+				end
+				if (Part.Position - game:GetService("Players").LocalPlayer.Character.Head.Position).Magnitude > 500 then
+					if v.Parent == game:GetService("ReplicatedStorage").AntiLagParts then
+						continue
+					end
+					v.Parent = game:GetService("ReplicatedStorage").AntiLagParts
+					count = count + 1
+					totalcount = totalcount + 1
+				else
+					if v.Parent == workspace then
+						continue
+					end
+					v.Parent = workspace
+					count = count + 1
+					totalcount = totalcount + 1
+				end
+			else
+				if (v.Position - game:GetService("Players").LocalPlayer.Character.Head.Position).Magnitude > 500 then
+					if v.Parent == game:GetService("ReplicatedStorage").AntiLagParts then
+						continue
+					end
+					v.Parent = game:GetService("ReplicatedStorage").AntiLagParts
+					count = count + 1
+					totalcount = totalcount + 1
+				else
+					if v.Parent == workspace then
+						continue
+					end
+					v.Parent = workspace
+					count = count + 1
+					totalcount = totalcount + 1
+				end
+			end
+		end
+		Event:Fire()
+		if totalcount > 0 then
+			script.ShowText:Fire(totalcount)
+		end
+	end
+end
