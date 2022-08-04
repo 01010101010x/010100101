@@ -76,7 +76,7 @@ gadmin.load = function(thm,title,btcmds)
         thm = getgenv().themes.dark
     end
     if not title then
-        title = 'Customizable admin by Sinner | FUCKINGYOBXTH
+        title = 'Customizable admin by Sinner | FUCKINGYOBXTH'
     end
     if not btcmds then 
         btcmds = true
