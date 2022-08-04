@@ -403,7 +403,7 @@ gadmin.load = function(thm,title,btcmds)
         Font = thm.suggestionTextFont,
         TextSize = thm.suggestionTextTSize,
         TextXAlignment = Enum.TextXAlignment.Left,
-        Text = 'Suggestions.UI MADE BY SINNER'
+        Text = 'Suggestions-UI Made by Ave'
     })
     local scrollframe = instance('ImageLabel',suggestions,{
         Image = c,
