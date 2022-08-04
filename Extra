@@ -228,7 +228,7 @@ end})
 Admin2.addCommand({name = "Chat-Spy",desc = "Lets You See Private Chats",callback = function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/CHAT_SPY"))();
 end})
-Admin2.addCommand({name = "Rejoin",desc = "Makes You Rejoin Current Server",callback = function(v)
+Admin2.addCommand({name = "Rejoin",desc = "Makes you Rejoin Current Server",callback = function(v)
 local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
 
