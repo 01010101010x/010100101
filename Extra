@@ -3,15 +3,27 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
                        Color = Color3.fromRGB(0, 0, 0);
                    })
 
-local Admin = loadstring(game:HttpGet("https://raw.githubusercontent.com/boop71/customizable-admin/main/module.lua"))()
+local Admin = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Module-lua"))()
 local Admin2 = Admin.load(getgenv().themes.dark, "Sinners Exclusive Admin", true) 
-Admin2.addCommand({name = "goto",desc = "teleports you to the target!",callback = function(v,b)
-    local t = Admin2.getplayers(v)
-    for i,v2 in pairs(t) do
-        pcall(function()
-            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v2.Character.HumanoidRootPart.Position+Vector3.new(0,0,3))
-        end)
-    end
+Admin2.addCommand({name = "Hitbox",desc = "Makes Players Hit Box bigger for ez Kill",callback = function(v,b)
+    _G.HeadSize = 50
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
 end})
 
 local SnapLoop = false
@@ -115,6 +127,21 @@ game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 end})
 Admin2.addCommand({name = "Snow",desc = "Spawns In Snow",callback = function(v,b)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Snow"))();
+end})
+Admin2.addCommand({name = "Anti-lag",desc = "Makes ur game less laggy",callback = function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/anti-lag"))();
+end})
+Admin2.addCommand({name = "Chat-Spy",desc = "Lets You See Private Chats",callback = function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/CHAT_SPY"))();
+end})
+Admin2.addCommand({name = "Rejoin",desc = "Makes You Rejoin Current Server",callback = function(v)
+local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(game.PlaceId, plr)
+end})
+Admin2.addCommand({name = "Esp",desc = "Traces Players",callback = function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/esp"))();
 end})
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
 Lib.prompt('Sinners Exclusive Admin', 'Thank You For Using Sinners Admin')
