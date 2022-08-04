@@ -237,7 +237,7 @@ end})
 Admin2.addCommand({name = "Esp",desc = "Traces Players",callback = function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/esp"))();
 end})
-Admin2.addCommand({name = "kill",desc = "kills chosen play even if they have anti fling/god",callback = function(v)
+Admin2.addCommand({name = "kill",desc = "kills Chosen player with god/antifling",callback = function(v)
     local t = Admin2.getplayers(v)
     for i,v2 in pairs(t) do
             pcall(function()
