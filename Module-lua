@@ -631,3 +631,6 @@ gadmin.load = function(thm,title,btcmds)
             admin.setPrefix(n)
         end})
     end
+    return admin
+end
+return gadmin
