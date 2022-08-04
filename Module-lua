@@ -76,7 +76,7 @@ gadmin.load = function(thm,title,btcmds)
         thm = getgenv().themes.dark
     end
     if not title then
-        title = 'Customizable admin by someoneyoudislike#4194 | discord.gg/fKT4xh8'
+        title = 'Customizable admin by Sinner | FUCKINGYOBXTH
     end
     if not btcmds then 
         btcmds = true
@@ -403,7 +403,7 @@ gadmin.load = function(thm,title,btcmds)
         Font = thm.suggestionTextFont,
         TextSize = thm.suggestionTextTSize,
         TextXAlignment = Enum.TextXAlignment.Left,
-        Text = 'Suggestions'
+        Text = 'Suggestions.UI MADE BY SINNER'
     })
     local scrollframe = instance('ImageLabel',suggestions,{
         Image = c,
