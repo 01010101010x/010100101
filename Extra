@@ -69,5 +69,8 @@ end})
 Admin2.addCommand({name = "unbreakable",desc = "Makes Your Suit Unbreakable",callback = function(v,b)
 game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 end})
+Admin2.addCommand({name = "Snow",desc = "Spawns In Snow",callback = function(v,b)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Snow"))();
+end})
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
 Lib.prompt('Sinners Exclusive Admin', 'Thank You For Using Sinners Admin')
