@@ -219,8 +219,11 @@ end})
 Admin2.addCommand({name = "unbreakable",desc = "Makes Your Suit Unbreakable",callback = function(v,b)
 game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 end})
-Admin2.addCommand({name = "Snow",desc = "Spawns In Snow",callback = function(v,b)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Snow"))();
+Admin2.addCommand({name = "Anti-Confuse",desc = "Immune to Confuse",callback = function(v,b)
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
 end})
 Admin2.addCommand({name = "Lk",desc = "Loopkillv2 for exploiters",callback = function(v)
     local t = Admin2.getplayers(v)
@@ -279,14 +282,13 @@ Admin2.addCommand({name = "Lk",desc = "Loopkillv2 for exploiters",callback = fun
             end
     end
 end})
-Admin2.addCommand({name = "Chat-Spy",desc = "Lets You See Private Chats",callback = function(v)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/CHAT_SPY"))();
+Admin2.addCommand({name = "Inf",desc = "Infinite Power",callback = function(v,b)
+game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
+game.Players.LocalPlayer.Character.Suit.Status.Charge.Value = math.huge
+game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
 end})
-Admin2.addCommand({name = "Rejoin",desc = "Rejoins Current",callback = function(v)
-local tpservice= game:GetService("TeleportService")
-local plr = game.Players.LocalPlayer
-
-tpservice:Teleport(game.PlaceId, plr)
+Admin2.addCommand({name = "loopgod",desc = "loopgods you",callback = function(v)
+game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
 end})
 Admin2.addCommand({name = "Esp",desc = "Traces Players",callback = function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/esp"))();
