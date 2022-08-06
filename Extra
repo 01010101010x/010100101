@@ -12,7 +12,7 @@ NewTitle.Position = UDim2.new(0, 30, 0, 470)
 NewTitle.Size = UDim2.new(0, 370,0, 50)
 NewTitle.Font = Enum.Font.SciFi
 NewTitle.Text = "Push R"
-NewTitle.TextColor3 = Color3.fromRGB(8, 255, 86)
+NewTitle.TextColor3 = Color3.fromRGB(230, 230, 230)
 NewTitle.TextSize = 14.000
 NewTitle.TextScaled = true
 
