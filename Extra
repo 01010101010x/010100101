@@ -1,3 +1,21 @@
+local NewTitleGUI = Instance.new("ScreenGui")
+local NewTitle = Instance.new("TextLabel")
+ 
+NewTitleGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NewTitleGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+NewTitle.Parent = NewTitleGUI
+NewTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NewTitle.BackgroundTransparency = 1
+NewTitle.Rotation = -7
+NewTitle.Position = UDim2.new(0, 30, 0, 470)
+NewTitle.Size = UDim2.new(0, 370,0, 50)
+NewTitle.Font = Enum.Font.SciFi
+NewTitle.Text = "Push R"
+NewTitle.TextColor3 = Color3.fromRGB(8, 255, 86)
+NewTitle.TextSize = 14.000
+NewTitle.TextScaled = true
+
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
                        Text = "Your Access Key: 29fj-akdw94-h3q51-0485";
                        Color = Color3.fromRGB(0, 0, 0);
@@ -207,6 +225,7 @@ end})
 Admin2.addCommand({name = "God",desc = "Gods you",callback = function(v)
     while wait() do
 game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
+game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 end
 end})
 
@@ -282,13 +301,20 @@ Admin2.addCommand({name = "Lk",desc = "Loopkillv2 for exploiters",callback = fun
             end
     end
 end})
-Admin2.addCommand({name = "Inf",desc = "Infinite Power",callback = function(v,b)
-game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
-game.Players.LocalPlayer.Character.Suit.Status.Charge.Value = math.huge
-game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
+Admin2.addCommand({name = "Suit",desc = "Calls Mark33",callback = function(v,b)
+local args = {
+    [1] = "Mark33",
+    [2] = 3.9385640621185303,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
 end})
-Admin2.addCommand({name = "loopgod",desc = "loopgods you",callback = function(v)
-game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
+Admin2.addCommand({name = "Rejoin",desc = "Rejoins-You",callback = function(v)
+repeat
+    wait()  
+until game:IsLoaded() 
+game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,game.JobId) 
 end})
 Admin2.addCommand({name = "Esp",desc = "Traces Players",callback = function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/esp"))();
