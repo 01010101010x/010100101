@@ -1,5 +1,5 @@
 local args = {
-    [1] = "I am Using Sinners Admin",
+    [1] = "Im Being Chat Controlled But Admin Loaded",
     [2] = "All"
 }
 
