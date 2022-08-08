@@ -62,7 +62,7 @@ Admin2.addCommand({name = "To",desc = "Teleports you to the Player.",callback = 
         end)
     end
 end})
-Admin2.addCommand({name = "Snap",desc = "Snaps chosen player.",callback = function(v)
+Admin2.addCommand({name = "AdminPanel",desc = "ADMIN-PANEL TEST",callback = function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/AdminPanel"))();
 end})
 Admin2.addCommand({name = "Fling",desc = "Flings chosen Player",callback = function(v)
