@@ -1,0 +1,152 @@
+local player = game.Players.LocalPlayer
+local onTop = 9999999999999
+local WebSocket = syn.websocket.connect("wss://adminpanel521.glitch.me/")
+
+
+local MessageUi = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local MESSAGES = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local sendBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local SendButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local template = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Message = Instance.new("TextLabel")
+
+
+
+MessageUi.Name = "MessageUi"
+MessageUi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MessageUi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MessageUi.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = MessageUi
+Main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.251023203, 0, 0.205231383, 0)
+Main.Size = UDim2.new(0, 455, 0, 256)
+Main.Active = true
+Main.Draggable = true
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0, 0, -0.00179988146, 0)
+Top.Size = UDim2.new(0, 454, 0, 30)
+
+title.Name = "title"
+title.Parent = Top
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.279735684, 0, 0, 0)
+title.Size = UDim2.new(0, 200, 0, 30)
+title.Font = Enum.Font.SourceSans
+title.Text = "Sinners Chat"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+MESSAGES.Name = "MESSAGES"
+MESSAGES.Parent = Main
+MESSAGES.Active = true
+MESSAGES.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+MESSAGES.BackgroundTransparency = 0.800
+MESSAGES.BorderSizePixel = 0
+MESSAGES.Position = UDim2.new(0.0197802205, 0, 0.15234375, 0)
+MESSAGES.Size = UDim2.new(0, 437, 0, 175)
+MESSAGES.CanvasSize = UDim2.new(0, 0, 0, 0)
+MESSAGES.ScrollBarThickness = 0
+MESSAGES.AutomaticCanvasSize = "Y"
+
+UIListLayout.Parent = MESSAGES
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.Name
+UIListLayout.Padding = UDim.new(0, 7)
+
+
+UIPadding.Parent = MESSAGES
+UIPadding.PaddingTop = UDim.new(0, 7)
+
+sendBox.Name = "sendBox"
+sendBox.Parent = Main
+sendBox.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+sendBox.Position = UDim2.new(0.0197802205, 0, 0.86328125, 0)
+sendBox.Size = UDim2.new(0, 334, 0, 25)
+sendBox.ClearTextOnFocus = false
+sendBox.Font = Enum.Font.SourceSans
+sendBox.PlaceholderText = "Type your message here..."
+sendBox.Text = ""
+sendBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+sendBox.TextScaled = true
+sendBox.TextSize = 14.000
+sendBox.TextWrapped = true
+sendBox.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = sendBox
+
+SendButton.Name = "SendButton"
+SendButton.Parent = Main
+SendButton.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+SendButton.Position = UDim2.new(0.767032981, 0, 0.86328125, 0)
+SendButton.Size = UDim2.new(0, 97, 0, 25)
+SendButton.Font = Enum.Font.SourceSans
+SendButton.Text = "Send"
+SendButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SendButton.TextScaled = true
+SendButton.TextSize = 14.000
+SendButton.TextWrapped = true
+SendButton.MouseButton1Click:Connect(function()
+	WebSocket:Send(player.Name.. ": ".. sendBox.Text)
+end)
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = SendButton
+
+template.Name = "template"
+template.Parent = Main
+template.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+template.Position = UDim2.new(-0.346681923, 0, 0, 0)
+template.Size = UDim2.new(0, 420, 0, 46)
+template.Visible = false
+
+UICorner_3.Parent = template
+
+Message.Name = "thetext"
+Message.Parent = template
+Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Message.BackgroundTransparency = 1.000
+Message.Position = UDim2.new(0.021428572, 0, 0.108695649, 0)
+Message.Size = UDim2.new(0, 401, 0, 36)
+Message.Font = Enum.Font.SourceSans
+Message.Text = "OnlyTwentyTwoCharacters: That person who left the store walked down the road into the car"
+Message.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message.TextScaled = true
+Message.TextSize = 14.000
+Message.TextWrapped = true
+Message.TextXAlignment = Enum.TextXAlignment.Left
+
+WebSocket.OnMessage:Connect(function(msg)
+    onTop = onTop - 1
+    template:Clone().Parent = MESSAGES
+    local yes = MESSAGES:WaitForChild("template")
+    yes.thetext.Text = msg
+    yes.Visible = true
+    yes.Name = onTop
+end)
+
+local clear = MESSAGES:GetChildren()
+
+while true do wait(3)
+for i,v in #clear do
+    v:Destroy()
+end
+end
