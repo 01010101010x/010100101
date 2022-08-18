@@ -1622,7 +1622,7 @@ local function OVVPNM_fake_script() -- Activation_13.Script
 
 		script.Parent.MouseButton1Click:Connect(function()
 			
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.5, 145, 0.6)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-48,2,-27)
 			
 		end)
 end
