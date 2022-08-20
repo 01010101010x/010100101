@@ -1,0 +1,114 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("(SA)                                Add Ave: X3Florencia64stlocos#0376", "DarkTheme")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("scripts (All Made By AveVato) ")
+
+-- Button 
+MainSection:NewButton("Admin Commands", "simple admin commands", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Exclusive_Admin_Script"))();
+end)
+MainSection:NewButton("My Old Hub", "Admin Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Sinnerx3"))();
+end)
+
+MainSection:NewButton("Inf Power", "Inf Power", function()
+    game:service('RunService').Stepped:connect(function(s)
+pcall(function()
+--> Infinite Power
+game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
+game.Players.LocalPlayer.Character.Suit.Status.Charge.Value = math.huge
+game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
+--> Auto Suit
+if game.Players.LocalPlayer.Character:FindFirstChild("ForceField") then
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer("Mark33",1659385527.1053739,0)
+end
+--> Anti Confuse
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+--> Auto Unbreakable
+if game.Players.LocalPlayer.Character.Suit.RightHand.Equipped.Value == true then
+game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
+end
+--> LoopGodMode
+game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
+end)
+end)
+end)
+
+--local player
+local player = Window:NewTab("Player")
+local PlayerSection = player:NewSection("Player")
+
+PlayerSection:NewSlider("speedwalk", "make u fast :D ", 100, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("Higher jump", "make u jump higher :D ", 300, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset", "it is all this do", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+--others
+local Other = Window:NewTab("other Stuff")
+local OtherSection = Other:NewSection("Stuff")
+
+OtherSection:NewButton("ctrl+click tp", "when holding ctrl u can teleport where u click", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/3SEQ0qp0'),true))()
+end)
+OtherSection:NewButton("Link Bypass", "Bypasser", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Link"))();
+end)
+OtherSection:NewButton("Sinners Universal Chat", "Chat With Other Users", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Channel"))();
+end)
+OtherSection:NewButton("War Machine", "If for some reason you want it for free", function()
+local args = {
+    [1] = "WarMachine1",
+    [2] = 2.2665560245513916,
+    [3] = 4564666
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+
+local Other = Window:NewTab("Teleports")
+local OtherSection = Other:NewSection("TP")
+
+OtherSection:NewButton("Advengers Base", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-285,796,-1894))
+end)
+OtherSection:NewButton("Gas Station", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-1042,681,-1273))
+end)
+OtherSection:NewButton("Hide Out", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-1112,658,-414))
+end)
+OtherSection:NewButton("BasePlate", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(48,2,42))
+end)
+OtherSection:NewButton("BasketBall Courts", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(426,812,-1651))
+end)
+OtherSection:NewButton("WarHouse", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(1066.46826171875, 831.2929077148438, -957.609619140625))
+end)
+OtherSection:NewButton("WaterBase", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(229.5120391845703, 535.9260864257812, -376.949951171875))
+end)
+OtherSection:NewButton("Afk Zone", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-73.41136169433594, 658.4260864257812, -1135.9161376953125))
+end)
+OtherSection:NewButton("Buildings", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(151.2570037841797, 692.0745239257812, -2290.6162109375))
+end)
+OtherSection:NewButton("Death Zone", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-69744230400, -69744222208, -69744230400))
+end)
