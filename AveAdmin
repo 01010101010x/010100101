@@ -78,7 +78,6 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
 end)
-
 local Other = Window:NewTab("Teleports")
 local OtherSection = Other:NewSection("TP")
 
@@ -111,4 +110,185 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.
 end)
 OtherSection:NewButton("Death Zone", "Teleport here", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-69744230400, -69744222208, -69744230400))
+end)
+OtherSection:NewButton("Building Zone", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-400.08770751953125, 659.2203369140625, -108.00664520263672))
+end)
+OtherSection:NewButton("Top Of House", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-850.0216064453125, 820.2799072265625, -956.5927734375))
+end)
+OtherSection:NewButton("Top Of Tower", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-1194.153076171875, 844.0799560546875, -1832.52783203125))
+end)
+OtherSection:NewButton("Grasses", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-296.27581787109375, 691.9725952148438, -2434.422119140625))
+end)
+OtherSection:NewButton("Curve", "Teleport here", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-670.1025390625, 692.1724853515625, -2205.663330078125))
+end)
+
+local Other = Window:NewTab("Suits")
+local OtherSection = Other:NewSection("Suit Options")
+
+OtherSection:NewButton("Mark 19", "Calls Suit", function()
+local args = {
+    [1] = "Mark19",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 4", "Calls Suit", function()
+local args = {
+    [1] = "Mark4",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 12", "Calls Suit", function()
+local args = {
+    [1] = "Mark12",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 28", "Calls Suit", function()
+local args = {
+    [1] = "Mark28",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 40", "Calls Suit", function()
+local args = {
+    [1] = "Mark40",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 6", "Calls Suit", function()
+local args = {
+    [1] = "Mark6",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 13", "Calls Suit", function()
+local args = {
+    [1] = "Mark13",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 33", "Calls Suit", function()
+local args = {
+    [1] = "Mark33",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 21", "Calls Suit", function()
+local args = {
+    [1] = "Mark21",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 14", "Calls Suit", function()
+local args = {
+    [1] = "Mark14",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 9", "Calls Suit", function()
+local args = {
+    [1] = "Mark9",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("WarMachine", "Calls Suit", function()
+local args = {
+    [1] = "WarMachine1",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 31", "Calls Suit", function()
+local args = {
+    [1] = "Mark31",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 30", "Calls Suit", function()
+local args = {
+    [1] = "Mark30",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 27", "Calls Suit", function()
+local args = {
+    [1] = "Mark27",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 3", "Calls Suit", function()
+local args = {
+    [1] = "Mark3",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 23", "Calls Suit", function()
+local args = {
+    [1] = "Mark23",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
+end)
+OtherSection:NewButton("Mark 2", "Calls Suit", function()
+local args = {
+    [1] = "Mark2",
+    [2] = 1.5533347129821777,
+    [3] = 0
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
 end)
