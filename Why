@@ -11,6 +11,6 @@ window:Slider('Slider', {
 }, function(value)
      print(value)
 end)
-window:Toggle('toggle', function(enabled)
-     print(enabled)
+window:Toggle('Crewmates! 🚀 (Among Us)', function(enabled)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yaki-0/Roblox/main/scripts/AmongUs.lua"))()
 end)
