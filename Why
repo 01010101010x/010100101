@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/MainTest'))()
-local window = lib:Window('Galaxy Servers')
+local window = lib:Window('Extra Games Supported')
 
 window:Toggle('Red Light Green Light', function(enabled)
  loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Red%20Light%20Green%20Light/RV2.lua"))()
