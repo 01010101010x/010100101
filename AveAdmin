@@ -17,6 +17,10 @@ MainSection:NewButton("ChatLogs", "Logs Chat", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Chatlog", true))()
 end)
 
+MainSection:NewButton("GodModev2", "Gods You", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Chatlog", true))()
+end)
+
 MainSection:NewButton("Inf Power", "Inf Power", function()
     game:service('RunService').Stepped:connect(function(s)
 pcall(function()
