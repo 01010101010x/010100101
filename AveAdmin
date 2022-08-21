@@ -344,6 +344,9 @@ end)
 OtherSection:NewButton("Extra Supported Games", "More Supported Games", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Why"))();
 end)
+OtherSection:NewButton("Leave Game", "Leaves Game", function()
+game:shutdown()
+end)
 
 local Other = Window:NewTab("Spawn")
 local OtherSection = Other:NewSection("Module Spawns")
