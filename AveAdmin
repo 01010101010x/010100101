@@ -14,7 +14,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sin
 end)
 
 MainSection:NewButton("ChatLogs", "Logs Chat", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Chatlog", true))()
 end)
 
 MainSection:NewButton("Inf Power", "Inf Power", function()
