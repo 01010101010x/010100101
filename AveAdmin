@@ -344,7 +344,7 @@ end)
 local Other = Window:NewTab("Spawn")
 local OtherSection = Other:NewSection("Module Spawns")
 
-OtherSection:NewButton("Club", "Chill Vibe Club", function()
+OtherSection:NewButton("Load Club", "Chill Vibe Club", function()
  loadstring(game:GetObjects("rbxassetid://1281063730")[1].Source)()
  loadstring(game:GetObjects("rbxassetid://01237814204")[1].Source)()
 end)
