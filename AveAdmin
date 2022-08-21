@@ -317,3 +317,37 @@ mouse.KeyUp:connect(function(key)
  
 end)
 end)
+
+OtherSection:NewButton("Anti Fling", "Anti Fling Duh", function()
+game:service('RunService').Stepped:connect(function()
+pcall(function()
+for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
+    if v:IsA("BodyAngularVelocity") then
+        v.MaxTorque = Vector3.new(0, 0, 0)
+        v:Destroy()
+    else
+    game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+    game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    end
+    if v:IsA("BodyPosition") then
+        v.MaxForce = Vector3.new(0, 0, 0)
+        v:Destroy()
+    else
+    game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+    game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    end
+end
+end)
+end)
+end)
+
+local Other = Window:NewTab("Spawn")
+local OtherSection = Other:NewSection("Module Spawns")
+
+OtherSection:NewButton("Club", "Chill Vibe Club", function()
+ loadstring(game:GetObjects("rbxassetid://1281063730")[1].Source)()
+ loadstring(game:GetObjects("rbxassetid://01237814204")[1].Source)()
+end)
+OtherSection:NewButton("Teleport To Club", "Teleport To Club", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(72.2576904296875, -161.01004028320312, 251.1748046875))
+end)
