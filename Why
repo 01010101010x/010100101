@@ -1,0 +1,16 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/MainTest'))()
+local window = lib:Window('Galaxy Servers')
+
+window:Toggle('Red Light Green Light', function(enabled)
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Red%20Light%20Green%20Light/RV2.lua"))()
+end)
+
+window:Slider('Slider', {
+     max = 80,
+     def = 20
+}, function(value)
+     print(value)
+end)
+window:Toggle('toggle', function(enabled)
+     print(enabled)
+end)
