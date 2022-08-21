@@ -292,3 +292,28 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
 end)
+
+local Other = Window:NewTab("Extra")
+local OtherSection = Other:NewSection("Fun/useful")
+
+OtherSection:NewButton("Snow", "Makes It Snow", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Snow"))();
+end)
+OtherSection:NewButton("AntiLag", "Makes It Less Laggy", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/anti-lag"))();
+end)
+OtherSection:NewButton("JJSPLOIT", "Awesome;)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/JJSPLOIT"))();
+end)
+OtherSection:NewButton("Push R", "Health 0", function()
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local charX = player.character
+local A = charX:WaitForChild("Humanoid")
+mouse.KeyUp:connect(function(key)
+	if key == "r"  then
+		A.Health = 0
+	end
+ 
+end)
+end)
