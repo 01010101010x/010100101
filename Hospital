@@ -11080,4 +11080,3 @@ game:GetService("Lighting").TimeOfDay = "00:00:00"
 game:GetService("Lighting").FogColor = Color3.new(0, 0, 0)
 game:GetService("Lighting").FogEnd = 150
 game:GetService("Lighting").FogStart = 0
-end)
