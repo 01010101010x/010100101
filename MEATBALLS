@@ -1,4 +1,4 @@
-ocal part = Instance.new("Part")
+local part = Instance.new("Part")
 local Explosion = Instance.new("Explosion", Workspace)
 local morph = Instance.new("SpecialMesh")
 local fire = Instance.new('Fire')
