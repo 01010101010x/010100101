@@ -24,4 +24,4 @@ function specials(Webhook, Message, Botname)
     return Data or nil;
 end
 
-specials(webhook, msg, botname
+specials(webhook, msg, botname)
