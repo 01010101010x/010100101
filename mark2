@@ -1,0 +1,7 @@
+local args = {
+    [1] = "Mark2",
+    [2] = 2.2665560245513916,
+    [3] = 4564666
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer(unpack(args))
