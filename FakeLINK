@@ -1,0 +1,20 @@
+game:service('RunService').Stepped:connect(function()
+pcall(function()
+for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
+    if v:IsA("BodyAngularVelocity") then
+        v.MaxTorque = Vector3.new(0, 0, 0)
+        v:Destroy()
+    else
+    game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+    game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    end
+    if v:IsA("BodyPosition") then
+        v.MaxForce = Vector3.new(0, 0, 0)
+        v:Destroy()
+    else
+    game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+    game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    end
+end
+end)
+end)
