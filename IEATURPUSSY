@@ -1,0 +1,23 @@
+game:service('RunService').Stepped:connect(function(s)
+pcall(function()
+--> Infinite Power
+game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
+game.Players.LocalPlayer.Character.Suit.Status.Charge.Value = math.huge
+game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
+--> Auto Suit
+if game.Players.LocalPlayer.Character:FindFirstChild("ForceField") then
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer("Mark33",1659385527.1053739,0)
+end
+--> Anti Confuse
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+--> Auto Unbreakable
+if game.Players.LocalPlayer.Character.Suit.RightHand.Equipped.Value == true then
+game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
+end
+--> LoopGodMode
+game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart,-math.huge)
+end)
+end)
