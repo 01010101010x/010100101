@@ -12,11 +12,11 @@ commandPrefix = _G.commandPrefix
 local spawnPoint = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 
 
--- Intro thing to let the user know the script executed (it's very nice if you don't claim the script to be yours)
+-- Intro
 pcall(function()
     local StarterGui = game:GetService("StarterGui")
     StarterGui:SetCore("SendNotification", {
-            Title = "Search Script by X3Florencia64stlocos#0376";
+            Title = "Search Script by Ave";
             Text = "Press "..searchButton.." to use. Type "..commandPrefix.." in bar to use commands.";
             
         })
@@ -175,7 +175,7 @@ buttonNames = {"Infinite Yield",
 -- The actual script to all names
 buttonScripts = {"https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
                 "https://raw.githubusercontent.com/alvin677/blueBerry-X/main/source",
-                "https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua",
+                "https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Sinnerx3",
                 "https://raw.githubusercontent.com/shlexware/DomainX/main/source",
                 "https://pastebin.com/raw/YVE4njap",
                 "https://raw.githubusercontent.com/alvin677/search/main/Jon.lua",
@@ -413,7 +413,7 @@ suggestion.Size = UDim2.new(0, 290, 0, 27)
 suggestion.ClearTextOnFocus = false
 suggestion.Font = Enum.Font.SourceSans
 suggestion.ShowNativeInput = false
-suggestion.Text = "search here you noob"
+suggestion.Text = "search here"
 suggestion.Text = ""
 suggestion.TextColor3 = Color3.fromRGB(91, 91, 91)
 suggestion.TextSize = 20.000
@@ -469,7 +469,7 @@ function notify(message, notifyTime, color)
     Notification.Visible = false
 end
 
--- The actual search thing, I used a youtube video for this part so it's kinda skidded but I did some modifications.
+-- Sus.
 function updateSearch()
     while wait(0.2) do
         canvSize = 0
@@ -504,8 +504,7 @@ function timeTrack()
     end
 end
 
--- I did write my own thing like this but then decided to use this one instead for some reason, it automatically fetches the whole username by only using the few first characters.
-function gplr(String)
+-- Ez
 	local Found = {}
 	local strl = String:lower()
 	if strl == "all" then
