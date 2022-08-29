@@ -1,0 +1,426 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Tsunami Game", 5013109572)
+
+-- themes
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+-- first page
+local page = venyx:addPage("Main", 5012544693)
+local section1 = page:addSection("Game")
+local section2 = page:addSection("Misc")
+
+section1:addToggle("AutoFarm", nil, function(value)
+-- print("Toggled", value)
+if(value == true) then
+_G.AutoFarm = true;
+end
+if(value == false) then
+    _G.AutoFarm = false;
+    end
+while _G.AutoFarm == true do
+
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-38, 120, 473)
+    wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4, 120, -769)
+    wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5, 43, -987)
+    wait(0.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9, 45, -1040)
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-102, 122, 946)
+     wait(12)
+    end
+
+
+end)
+section1:addButton("Anti-Ragdoll", function()
+game.Players.LocalPlayer.Character.SwimSystemScript:destroy()
+game.Players.LocalPlayer.Character.TouchAnythingLocal:destroy()
+end)
+
+section1:addButton("Remove tsunami", function()
+game:GetService("Workspace").ActiveTsunamis:destroy()
+end)
+
+section1:addButton("Forcefield / Godmode", function()
+i = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7, 40, -1002)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(i)
+end)
+
+section1:addButton("Get all badges", function()
+for i,v in pairs(game:GetService("Workspace").ScriptImportance.PlayAreaRocks:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
+firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, v.Parent, 1)
+end
+end
+wait(1)
+firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").ScriptImportance.UnderGrate, 0)
+firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").ScriptImportance.UnderGrate, 1)
+wait(1)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ScriptImportance.Reservoir.WaterLevel.CFrame
+wait(1)
+getgenv().PlayerHasBadge = false
+
+local BadgeService = game:GetService("BadgeService")
+
+game.RunService.Stepped:Connect(function()
+if not getgenv().PlayerHasBadge then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8, 231, -1039)
+end
+end)
+
+if not BadgeService:UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2124902279) then
+getgenv().PlayerHasBadge = false
+repeat task.wait(1)
+until BadgeService:UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2124902279)
+getgenv().PlayerHasBadge = true
+end
+wait(1)
+firetouchinterest(Variables.Instances.getLocalPlayer.Character.HumanoidRootPart, Variables.Instances.getScriptImportance.FoundAlien, 0)
+firetouchinterest(Variables.Instances.getLocalPlayer.Character.HumanoidRootPart, Variables.Instances.getScriptImportance.FoundAlien, 1)
+end)
+
+
+section1:addButton("Bypass Lag", function()
+game.StarterGui:SetCore("SendNotification", {
+Title = "Bypass Lag";
+Text = "Credits too CjStyles123";
+Duration = 5;
+})
+
+local OldNameCall
+OldNameCall = hookmetamethod(game, "__namecall", function(...)
+  local Self,Args=...
+  local Args = {Args}
+if getnamecallmethod() == "FireServer" and tostring(Self) == "MySongsKnowWhatYouDidInTheDark" then
+  return
+end
+  return OldNameCall(...)
+end)
+end)
+
+
+section1:addButton("Bypass Anti-Fly", function()
+game.StarterGui:SetCore("SendNotification", {
+Title = "Bypass Anti-fly";
+Text = "Credits too CjStyles123";
+Duration = 5;
+})
+
+pcall(function()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Momentum:Destroy()
+end)
+
+game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+char:WaitForChild("HumanoidRootPart"):WaitForChild("Momentum"):Destroy()
+end)
+end)
+
+
+
+section2:addSlider("Walkspeed", 16, 16, 1000, function(value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+section2:addSlider("Jumppower", 0, 0, 1000, function(value)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+section2:addButton("Reset", function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+section2:addButton("Refresh", function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+i = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(i)
+
+    end)
+
+section2:addButton("Rejoin", function()
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+ts:Teleport(game.PlaceId, p) 
+end)
+
+section2:addButton("Destroy GUI", function()
+   game:GetService("CoreGui")["Tsunami Game"]:destroy()
+    end)
+
+-- second page
+local buy = venyx:addPage("Buy", 5012544693)
+local item = buy:addSection("Items")
+local trollitem = buy:addSection("Troll Items")
+
+item:addButton("JumpPotion - 40p", function()
+local args = {
+    [1] = "JumpPotion"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("SpeedPotion - 30p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "SpeedPotion"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+item:addButton("HealthPotion - 25p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "HealthPotion"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("DivingSuit - 100p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "DivingSuit"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+
+item:addButton("Binoculars - 25p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Binoculars"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("PaddleBoard - 80", function()
+local args = {
+    [1] = "Paddleboard"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("Canoe - 175p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Canoe"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("Trampoline - 60p", function()
+-- Script generated by SimpleSpy - credits to exx#93
+local args = {
+    [1] = "Trampoline"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("Trident - 200p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Trident"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+item:addButton("TreeHouse - 500p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "TreeHouse"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+item:addButton("LifeBoat - 250p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Lifeboat"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+item:addButton("Anchor - 50p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Anchor"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+item:addButton("LifeRing - 10p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "LifeRing"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+item:addButton("Barrel - 42p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Barrel"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+trollitem:addButton("Sponge - 270p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Sponge"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+trollitem:addButton("Shield - 65p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Shield"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+trollitem:addButton("BlowDryer - 120p", function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "BlowDryer"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+
+
+end)
+
+
+
+
+-- third page
+local teli = venyx:addPage("Teleports", 5012544693)
+local tels = teli:addSection("Locations")
+local caves = teli:addSection("Caves")
+
+tels:addButton("Spawn", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11, 123, 936)
+end)
+
+tels:addButton("Gamepass spawn", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(109, 122, 954)
+end)
+
+tels:addButton("Shop", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-112, 122, 957)
+end)
+
+tels:addButton("Waterfall", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(15, 120, -965)
+end)
+
+tels:addButton("Winner", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7, 40, -1002)
+end)
+
+
+
+
+
+caves:addButton("Cave 1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150, 121, 477)
+end)
+
+caves:addButton("Cave 2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148, 121, -23)
+end)
+
+caves:addButton("Cave 3", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(151, 121, -523)
+end)
+
+
+-- 4 page
+local theme = venyx:addPage("Theme", 5012544693)
+local colors = theme:addSection("Colors")
+
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+
+-- load
+venyx:SelectPage(venyx.pages[1], true)
