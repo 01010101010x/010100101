@@ -1,5 +1,5 @@
-local whitelist = {1832582987} --default whitelist (userId)
-local staff = {1832582987}
+local whitelist = {7506184} --default whitelist (7506184)
+local staff = {7506184}
 local prefix = ";"
 
 --Services
