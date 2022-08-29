@@ -1,0 +1,330 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Timer/CountDown", 5013109572)
+
+-- themes
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+-- first page
+local page = venyx:addPage("Timer", 5012544693)
+local section1 = page:addSection("Timer")
+local section2 = page:addSection("Timer settings")
+local AudioID = "http://www.roblox.com/asset/?id=9069248241"
+_G.Counter = true;
+_G.Silentmode = false;
+local countnum = 1;
+local timerlimit = 5;
+local AlarmSoundHold = 10;
+
+
+section1:addButton("Start Timer", function()
+_G.Counter = true;
+    if(timerlimit < countnum) then
+            _G.Counter = false;
+            game.StarterGui:SetCore("SendNotification", {
+Title = "Error";
+Text = "Timer limit < Timer start number";
+Duration = 5;
+})
+print("Error: Timer limit < Timer start number")
+        end
+    local timeInfo2 = os.date("*t")
+       local sound = Instance.new("Sound")
+   sound.Name = "AlarmSound"
+   sound.SoundId = AudioID
+   sound.Volume = 2
+   sound.Looped = true
+   sound.archivable = false
+   sound.Parent = game.Workspace
+   
+    while _G.Counter == true do
+    wait(1)
+local TimeSet = timeInfo2.hour .. ":" .. timeInfo2.min;
+    
+if (_G.Silentmode == true) then
+		venyx:Notify(countnum)
+				print("Timer:"..countnum)
+    end
+
+if(_G.Silentmode == false) then
+		venyx:Notify(countnum)
+				print("Timer:"..countnum)
+        end
+    
+    countnum = countnum + 1
+    if(countnum > timerlimit) then
+    _G.Counter = false;
+    
+    
+    if(_G.Silentmode == false) then
+    sound:Play()
+    end
+countnum = countnum - 1;
+game.StarterGui:SetCore("SendNotification", {
+Title = "Timer";
+Text = "Timer hit: "..countnum..". Created Log at workspace/TimerLog.txt";
+Duration = 5;
+})
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Timer limit";
+Text = "Limit hit: "..timerlimit;
+Duration = 5;
+})
+local timeInfo = os.date("*t")
+writefile("TimerLog.txt",
+    "Timer hit: "..countnum..
+    ", Timer Limit: "..timerlimit..
+    ", Timer started at: "..TimeSet..
+    ", Timer ended at: "..
+    timeInfo.hour .. ":" .. timeInfo.min
+    )
+end
+end
+
+if(_G.Counter == false) then
+countnum = 0;
+print("Reset, Counter = "..countnum)
+print("Created log at workspace/TimerLog.txt")
+if(_G.Silentmode == false) then
+wait(AlarmSoundHold)
+game:GetService("Workspace").AlarmSound:destroy()
+end
+end
+end)
+
+section1:addButton("Stop", function()
+_G.Counter = false;
+game:GetService("Workspace").AlarmSound:destroy()
+    game.StarterGui:SetCore("SendNotification", {
+Title = "Timer Stopped";
+Text = "";
+Duration = 5;
+})
+
+end)
+
+
+
+
+
+section2:addSlider("Timer start number", 1, 1, 1000, function(value2)
+   countnum = value2
+end)
+
+section2:addSlider("Timer limit", 5, 1, 1000, function(value3)
+   timerlimit = value3
+end)
+
+section2:addSlider("Alarm Sound Wait (How long it will beep) ", 10, 1, 100, function(value4) --How long the alarm will beep
+   AlarmSoundHold = value4
+end)
+
+
+section2:addTextbox("Audio ID", "Default", function(value, focusLost)
+	print("Input", value)
+
+	if focusLost then
+		venyx:Notify("Audio ID", value)
+AudioID = "http://www.roblox.com/asset/?id="..value
+	end
+end)
+
+section2:addToggle("Silent mode", nil, function(value)
+
+if(value == true) then
+_G.Silentmode = true;
+end
+
+if(value == false) then
+    _G.Silentmode = false;
+end
+end)
+
+---------------------
+
+
+---------------------
+section2:addButton("Rejoin", function()
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+ts:Teleport(game.PlaceId, p) 
+end)
+
+section2:addButton("Destroy GUI", function()
+   game:GetService("CoreGui")["Timer"]:destroy()
+    end)
+
+-- second page
+local page2 = venyx:addPage("CountDown", 5012544693)
+local section3 = page2:addSection("Countdown")
+local section4 = page2:addSection("Countdown settings")
+
+local AudioID = "http://www.roblox.com/asset/?id=9069248241"
+_G.Counter = true;
+_G.Silentmode = false;
+local countnum = 10;
+local timerlimit = 1;
+local AlarmSoundHold = 10;
+
+
+section3:addButton("Start Countdown", function()
+_G.Counter = true;
+    if(timerlimit > countnum) then
+            _G.Counter = false;
+            game.StarterGui:SetCore("SendNotification", {
+Title = "Error";
+Text = "Countdown limit < CountDown start number";
+Duration = 5;
+})
+print("Error: Timer limit < Timer start number")
+        end
+    local timeInfo2 = os.date("*t")
+       local sound = Instance.new("Sound")
+   sound.Name = "AlarmSound2"
+   sound.SoundId = AudioID
+   sound.Volume = 2
+   sound.Looped = true
+   sound.archivable = false
+   sound.Parent = game.Workspace
+   
+    while _G.Counter == true do
+    wait(1)
+local TimeSet = timeInfo2.hour .. ":" .. timeInfo2.min;
+    countnum = countnum - 1;
+if (_G.Silentmode == true) then
+		venyx:Notify(countnum) 
+				print("CountDown:"..countnum)
+    end
+
+if(_G.Silentmode == false) then
+		venyx:Notify(countnum)
+		print("CountDown:"..countnum)
+        end
+
+if(countnum < 0 or countnum == null) then
+_G.Counter = false;
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Error";
+Text = "Countdown < 0";
+Duration = 5;
+})
+print("Error: Countdown < 0")
+end
+    if(countnum == timerlimit) then
+    _G.Counter = false;
+    
+    if(_G.Silentmode == false) then
+    sound:Play()
+    end
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "CountDown";
+Text = "CountDown hit: "..countnum..". Created Log at workspace/CountDownLog.txt";
+Duration = 5;
+})
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "CountDownlimit";
+Text = "Limit hit: "..timerlimit;
+Duration = 5;
+})
+local timeInfo = os.date("*t")
+writefile("CountDownLog.txt",
+    "CountDown: "..countnum..
+    ", CountDown End: "..timerlimit..
+    ", CountDown started at: "..TimeSet..
+    ", CountDown ended at: "..
+    timeInfo.hour .. ":" .. timeInfo.min
+    )
+end
+end
+
+if(_G.Counter == false) then
+countnum = 0;
+print("Reset, Counter = "..countnum)
+print("Created log at workspace/Timer2Log.txt")
+if(_G.Silentmode == false) then
+wait(AlarmSoundHold)
+game:GetService("Workspace").AlarmSound2:destroy()
+end
+end
+end)
+
+section3:addButton("Stop", function()
+_G.Counter = false;
+game:GetService("Workspace").AlarmSound2:destroy()
+    game.StarterGui:SetCore("SendNotification", {
+Title = "CountDown Stopped";
+Text = "";
+Duration = 5;
+})
+
+end)
+
+
+
+
+
+section4:addSlider("CountDown start number", 10, 1, 1000, function(value2)
+   countnum = value2
+end)
+
+section4:addSlider("CountDown End", 1, 1, 1000, function(value3)
+   timerlimit = value3
+end)
+
+section4:addSlider("Alarm Sound 2 Wait (How long it will beep) ", 10, 1, 100, function(value4) --How long the alarm will beep
+   AlarmSoundHold = value4
+end)
+
+
+section4:addTextbox("Audio ID 2", "Default", function(value, focusLost)
+	print("Input", value)
+
+	if focusLost then
+		venyx:Notify("Audio ID 2", value)
+AudioID = "http://www.roblox.com/asset/?id="..value
+	end
+end)
+
+section4:addToggle("Silent mode", nil, function(value)
+
+if(value == true) then
+_G.Silentmode = true;
+end
+
+if(value == false) then
+    _G.Silentmode = false;
+end
+end)
+
+section4:addButton("Rejoin", function()
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+ts:Teleport(game.PlaceId, p) 
+end)
+
+section4:addButton("Destroy GUI", function()
+   game:GetService("CoreGui")["Timer"]:destroy()
+    end)
+
+-------third page
+local theme = venyx:addPage("Theme", 5012544693)
+local colors = theme:addSection("Colors")
+
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+
+-- load
+venyx:SelectPage(venyx.pages[1], true)
