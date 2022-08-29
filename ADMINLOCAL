@@ -29,7 +29,7 @@ v10.Position = UDim2.new(0, 0, 0.5, 16);
 v10.BackgroundTransparency = 1;
 v10.Font = Enum.Font.Gotham;
 v10.TextColor3 = Color3.new(0.72549, 0.72549, 0.72549);
-v10.Text = "(OWNER ALERT: OWNER HAS JOINED PLEASE RESET)";
+v10.Text = "(OWNER ALERT: OWNER HAS JOINED)";
 v10.TextSize = 16;
 v10.Parent = v8;
 game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false);
