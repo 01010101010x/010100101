@@ -60,10 +60,10 @@ end
 
 for _,player in pairs(Players:GetChildren()) do
 	if table.find(staff, player.userId) then
-		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA) Has joined",Text = "OWNER IS HERE"})
-		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA) Has joined",Text = "OWNER IS HERE"})
-		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA) Has joined",Text = "OWNER IS HERE"})
-		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA) Has joined",Text = "OWNER IS HERE"})
+		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA)",Text = "OWNER IS HERE"})
+		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA)",Text = "OWNER IS HERE"})
+		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA)",Text = "OWNER IS HERE"})
+		StarterGui:SetCore("SendNotification", {Title = "Owner Of (SA)",Text = "OWNER IS HERE"})
 		wait(3)
 		local x = {}
 		for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
