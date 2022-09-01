@@ -1,0 +1,4241 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local scriptware = Instance.new("TextLabel")
+local box = Instance.new("TextLabel")
+local Ware = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Mini = Instance.new("TextButton")
+local Tab = Instance.new("Frame")
+local home = Instance.new("ImageButton")
+local scripthub = Instance.new("ImageButton")
+local executor = Instance.new("ImageButton")
+local friendlist = Instance.new("ImageButton")
+local Console = Instance.new("ImageButton")
+local settings = Instance.new("ImageButton")
+local Homeframe = Instance.new("Frame")
+local real = Instance.new("TextLabel")
+local Line = Instance.new("TextLabel")
+local credits = Instance.new("TextLabel")
+local amog = Instance.new("TextLabel")
+local executorframe = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local buttons = Instance.new("Frame")
+local exe = Instance.new("TextButton")
+local clear = Instance.new("TextButton")
+local openfile = Instance.new("TextButton")
+local savefile = Instance.new("TextButton")
+local closeroblox = Instance.new("TextButton")
+local friendlistframe = Instance.new("Frame")
+local Line_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local box_2 = Instance.new("Frame")
+local group = Instance.new("ImageButton")
+local username = Instance.new("TextLabel")
+local crewmate = Instance.new("TextLabel")
+local Imposter = Instance.new("TextLabel")
+local consoleframe = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Close_3 = Instance.new("TextButton")
+local settingframe = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local crash = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Line_3 = Instance.new("Frame")
+local right = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local hidden = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local Line_4 = Instance.new("Frame")
+local rejoin = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local Line_5 = Instance.new("Frame")
+local right_2 = Instance.new("ImageButton")
+local scripthubframe = Instance.new("ScrollingFrame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local Yba = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Bowserhub = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local admin = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local dragonballrage = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local UICorner_8 = Instance.new("UICorner")
+local yeild = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local fates = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local UICorner_12 = Instance.new("UICorner")
+local ImageLabel_8 = Instance.new("ImageLabel")
+local UICorner_13 = Instance.new("UICorner")
+local solarishub = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local ImageLabel_9 = Instance.new("ImageLabel")
+local UICorner_15 = Instance.new("UICorner")
+local Bruhub = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local ImageLabel_10 = Instance.new("ImageLabel")
+local UICorner_17 = Instance.new("UICorner")
+local owlhub = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local ImageLabel_11 = Instance.new("ImageLabel")
+local UICorner_19 = Instance.new("UICorner")
+local Ciazware = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local ImageLabel_12 = Instance.new("ImageLabel")
+local UICorner_21 = Instance.new("UICorner")
+local domainx = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local darkhub = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local ImageLabel_13 = Instance.new("ImageLabel")
+local UICorner_24 = Instance.new("UICorner")
+local ImageLabel_14 = Instance.new("ImageLabel")
+local UICorner_25 = Instance.new("UICorner")
+local funkyFriday = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.30501619, 0, 0.19198665, 0)
+Main.Size = UDim2.new(0, 624, 0, 368)
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, -0.00271739135, 0)
+Frame.Size = UDim2.new(0, 624, 0, 31)
+
+scriptware.Name = "scriptware"
+scriptware.Parent = Frame
+scriptware.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+scriptware.BorderSizePixel = 0
+scriptware.Position = UDim2.new(0, 0, 0.322580636, 0)
+scriptware.Size = UDim2.new(0, 61, 0, 10)
+scriptware.Font = Enum.Font.SourceSansBold
+scriptware.Text = "Script"
+scriptware.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptware.TextSize = 20.000
+scriptware.TextWrapped = true
+
+box.Name = "box"
+box.Parent = Frame
+box.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+box.BorderSizePixel = 0
+box.Position = UDim2.new(0.919871807, 0, 0.225806445, 0)
+box.Size = UDim2.new(0, 27, 0, 15)
+box.Font = Enum.Font.SourceSans
+box.Text = "M"
+box.TextColor3 = Color3.fromRGB(154, 154, 154)
+box.TextSize = 20.000
+
+Ware.Name = "Ware"
+Ware.Parent = Frame
+Ware.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Ware.BorderSizePixel = 0
+Ware.Position = UDim2.new(0.0833333358, 0, 0.322580636, 0)
+Ware.Size = UDim2.new(0, 46, 0, 10)
+Ware.Font = Enum.Font.SourceSansBold
+Ware.Text = "Ware"
+Ware.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ware.TextSize = 20.000
+Ware.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.950320542, 0, 0.021739129, 0)
+Close.Size = UDim2.new(0, 31, 0, 10)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(154, 154, 154)
+Close.TextSize = 20.000
+Close.TextWrapped = true
+
+Mini.Name = "Mini"
+Mini.Parent = Main
+Mini.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Mini.BorderSizePixel = 0
+Mini.Position = UDim2.new(0.889423192, 0, 0.0190217402, 0)
+Mini.Size = UDim2.new(0, 26, 0, 11)
+Mini.Font = Enum.Font.SourceSans
+Mini.Text = "_"
+Mini.TextColor3 = Color3.fromRGB(154, 154, 154)
+Mini.TextSize = 20.000
+Mini.TextWrapped = true
+
+Tab.Name = "Tab"
+Tab.Parent = Main
+Tab.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0, 0, 0.081521742, 0)
+Tab.Size = UDim2.new(0, 57, 0, 337)
+
+home.Name = "home"
+home.Parent = Main
+home.BackgroundTransparency = 1.000
+home.Position = UDim2.new(-0.000593526755, 0, 0.0868216828, 0)
+home.Selectable = false
+home.Size = UDim2.new(0, 57, 0, 31)
+home.ZIndex = 2
+home.Image = "rbxassetid://3926305904"
+home.ImageRectOffset = Vector2.new(964, 204)
+home.ImageRectSize = Vector2.new(36, 36)
+home.ScaleType = Enum.ScaleType.Fit
+
+scripthub.Name = "scripthub"
+scripthub.Parent = Main
+scripthub.BackgroundTransparency = 1.000
+scripthub.LayoutOrder = 3
+scripthub.Position = UDim2.new(0.0160256419, 0, 0.190217376, 0)
+scripthub.Size = UDim2.new(0, 35, 0, 29)
+scripthub.ZIndex = 2
+scripthub.Image = "rbxassetid://3926307971"
+scripthub.ImageRectOffset = Vector2.new(404, 44)
+scripthub.ImageRectSize = Vector2.new(36, 36)
+
+executor.Name = "executor"
+executor.Parent = Main
+executor.BackgroundTransparency = 1.000
+executor.LayoutOrder = 4
+executor.Position = UDim2.new(0.0160256419, 0, 0.301630408, 0)
+executor.Size = UDim2.new(0, 35, 0, 25)
+executor.ZIndex = 2
+executor.Image = "rbxassetid://3926305904"
+executor.ImageRectOffset = Vector2.new(404, 844)
+executor.ImageRectSize = Vector2.new(36, 36)
+
+friendlist.Name = "friendlist"
+friendlist.Parent = Main
+friendlist.BackgroundTransparency = 1.000
+friendlist.Position = UDim2.new(0.011217949, 0, 0.722826064, 0)
+friendlist.Size = UDim2.new(0, 38, 0, 26)
+friendlist.ZIndex = 2
+friendlist.Image = "rbxassetid://3926305904"
+friendlist.ImageRectOffset = Vector2.new(4, 844)
+friendlist.ImageRectSize = Vector2.new(36, 36)
+
+Console.Name = "Console"
+Console.Parent = Main
+Console.BackgroundTransparency = 1.000
+Console.Position = UDim2.new(0.0208333433, 0, 0.809782624, 0)
+Console.Size = UDim2.new(0, 25, 0, 25)
+Console.ZIndex = 2
+Console.Image = "rbxassetid://3926307971"
+Console.ImageRectOffset = Vector2.new(884, 84)
+Console.ImageRectSize = Vector2.new(36, 36)
+
+settings.Name = "settings"
+settings.Parent = Main
+settings.BackgroundTransparency = 1.000
+settings.LayoutOrder = 1
+settings.Position = UDim2.new(0.0208333433, 0, 0.907608688, 0)
+settings.Size = UDim2.new(0, 25, 0, 25)
+settings.ZIndex = 2
+settings.Image = "rbxassetid://3926307971"
+settings.ImageRectOffset = Vector2.new(324, 124)
+settings.ImageRectSize = Vector2.new(36, 36)
+
+Homeframe.Name = "Homeframe"
+Homeframe.Parent = Main
+Homeframe.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Homeframe.BorderSizePixel = 0
+Homeframe.Position = UDim2.new(0.0913461521, 0, 0.081521742, 0)
+Homeframe.Size = UDim2.new(0, 567, 0, 337)
+Homeframe.Visible = false
+
+real.Name = "real"
+real.Parent = Homeframe
+real.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+real.BorderSizePixel = 0
+real.Position = UDim2.new(0.294532627, 0, 0.0919881314, 0)
+real.Size = UDim2.new(0, 200, 0, 50)
+real.Font = Enum.Font.SourceSansBold
+real.Text = "(SA)"
+real.TextColor3 = Color3.fromRGB(255, 255, 255)
+real.TextSize = 30.000
+
+Line.Name = "Line"
+Line.Parent = Homeframe
+Line.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.294532627, 0, 0.204747781, 0)
+Line.Size = UDim2.new(0, 200, 0, 0)
+Line.Font = Enum.Font.SourceSansBold
+Line.Text = "__________________"
+Line.TextColor3 = Color3.fromRGB(255, 255, 255)
+Line.TextSize = 30.000
+
+credits.Name = "credits"
+credits.Parent = Homeframe
+credits.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.294532627, 0, 0.270029664, 0)
+credits.Size = UDim2.new(0, 200, 0, 50)
+credits.Font = Enum.Font.SourceSansBold
+credits.Text = "Made By Ave.LENX"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextSize = 30.000
+
+amog.Name = "amog"
+amog.Parent = Homeframe
+amog.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+amog.BorderSizePixel = 0
+amog.Position = UDim2.new(0.305114627, 0, 0.424332321, 0)
+amog.Size = UDim2.new(0, 200, 0, 50)
+amog.Font = Enum.Font.SourceSansBold
+amog.Text = "Script-Ware"
+amog.TextColor3 = Color3.fromRGB(255, 255, 255)
+amog.TextSize = 30.000
+
+executorframe.Name = "executorframe"
+executorframe.Parent = Main
+executorframe.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+executorframe.BorderSizePixel = 0
+executorframe.Position = UDim2.new(0.090752624, 0, 0.081521742, 0)
+executorframe.Size = UDim2.new(0, 567, 0, 337)
+
+TextBox.Parent = executorframe
+TextBox.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.000653194555, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 567, 0, 337)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 16.000
+TextBox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+buttons.Name = "buttons"
+buttons.Parent = executorframe
+buttons.BackgroundColor3 = Color3.fromRGB(54, 50, 50)
+buttons.BorderSizePixel = 0
+buttons.Position = UDim2.new(0, 0, 0.928783357, 0)
+buttons.Size = UDim2.new(0, 566, 0, 24)
+
+exe.Name = "exe"
+exe.Parent = buttons
+exe.BackgroundColor3 = Color3.fromRGB(54, 50, 50)
+exe.BorderSizePixel = 0
+exe.Position = UDim2.new(0.0511463843, 0, 0.25, 0)
+exe.Size = UDim2.new(0, 12, 0, 8)
+exe.Font = Enum.Font.SourceSansBold
+exe.Text = "Execute"
+exe.TextColor3 = Color3.fromRGB(255, 255, 255)
+exe.TextSize = 14.000
+
+clear.Name = "clear"
+clear.Parent = buttons
+clear.BackgroundColor3 = Color3.fromRGB(54, 50, 50)
+clear.BorderSizePixel = 0
+clear.Position = UDim2.new(0.134038806, 0, 0.125, 0)
+clear.Size = UDim2.new(0, 12, 0, 14)
+clear.Font = Enum.Font.SourceSansBold
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+clear.TextSize = 14.000
+
+openfile.Name = "openfile"
+openfile.Parent = buttons
+openfile.BackgroundColor3 = Color3.fromRGB(54, 50, 50)
+openfile.BorderSizePixel = 0
+openfile.Position = UDim2.new(0.225749567, 0, 0.125, 0)
+openfile.Size = UDim2.new(0, 12, 0, 14)
+openfile.Font = Enum.Font.SourceSansBold
+openfile.Text = "Openfile"
+openfile.TextColor3 = Color3.fromRGB(255, 255, 255)
+openfile.TextSize = 14.000
+
+savefile.Name = "savefile"
+savefile.Parent = buttons
+savefile.BackgroundColor3 = Color3.fromRGB(54, 50, 50)
+savefile.BorderSizePixel = 0
+savefile.Position = UDim2.new(0.328042328, 0, 0.125, 0)
+savefile.Size = UDim2.new(0, 12, 0, 14)
+savefile.Font = Enum.Font.SourceSansBold
+savefile.Text = "Savefile"
+savefile.TextColor3 = Color3.fromRGB(255, 255, 255)
+savefile.TextSize = 14.000
+
+closeroblox.Name = "closeroblox"
+closeroblox.Parent = buttons
+closeroblox.BackgroundColor3 = Color3.fromRGB(54, 50, 50)
+closeroblox.BorderSizePixel = 0
+closeroblox.Position = UDim2.new(0.437389791, 0, 0.125, 0)
+closeroblox.Size = UDim2.new(0, 3, 0, 14)
+closeroblox.Font = Enum.Font.SourceSansBold
+closeroblox.Text = "Closeroblox"
+closeroblox.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeroblox.TextSize = 14.000
+
+friendlistframe.Name = "friendlistframe"
+friendlistframe.Parent = Main
+friendlistframe.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+friendlistframe.BorderSizePixel = 0
+friendlistframe.Position = UDim2.new(1.0096153, 0, -2.98023224e-08, 0)
+friendlistframe.Size = UDim2.new(0, 172, 0, 372)
+
+Line_2.Name = "Line"
+Line_2.Parent = friendlistframe
+Line_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Line_2.BorderSizePixel = 0
+Line_2.Size = UDim2.new(0, 172, 0, 28)
+
+TextLabel.Parent = Line_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.178571433, 0)
+TextLabel.Size = UDim2.new(0, 53, 0, 18)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Script"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+TextLabel_2.Parent = Line_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.308139533, 0, 0.285714269, 0)
+TextLabel_2.Size = UDim2.new(0, 35, 0, 11)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Ware"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+
+Close_2.Name = "Close"
+Close_2.Parent = friendlistframe
+Close_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.924418628, 0, 0, 0)
+Close_2.Size = UDim2.new(0, 13, 0, 12)
+Close_2.Font = Enum.Font.SourceSansBold
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(63, 63, 63)
+Close_2.TextSize = 16.000
+
+box_2.Name = "box"
+box_2.Parent = friendlistframe
+box_2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+box_2.BorderSizePixel = 0
+box_2.Position = UDim2.new(0.00581395347, 0, 0.0752688199, 0)
+box_2.Size = UDim2.new(0, 171, 0, 52)
+
+group.Name = "group"
+group.Parent = box_2
+group.BackgroundTransparency = 1.000
+group.Position = UDim2.new(0.0813953504, 0, 0.0940860212, 0)
+group.Size = UDim2.new(0, 39, 0, 37)
+group.ZIndex = 2
+group.Image = "rbxassetid://3926305904"
+group.ImageRectOffset = Vector2.new(4, 844)
+group.ImageRectSize = Vector2.new(36, 36)
+
+username.Name = "username"
+username.Parent = box_2
+username.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+username.BorderSizePixel = 0
+username.Position = UDim2.new(0.308139533, 0, 0.0940860212, 0)
+username.Size = UDim2.new(0, 69, 0, 25)
+username.Font = Enum.Font.SourceSansBold
+username.Text = "Imposter"
+username.TextColor3 = Color3.fromRGB(255, 255, 255)
+username.TextSize = 14.000
+username.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+crewmate.Name = "crewmate"
+crewmate.Parent = box_2
+crewmate.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+crewmate.BorderSizePixel = 0
+crewmate.Position = UDim2.new(0.374269009, 0, 0.574855208, 0)
+crewmate.Size = UDim2.new(0, 42, 0, 10)
+crewmate.Font = Enum.Font.SourceSans
+crewmate.Text = "Crewmate"
+crewmate.TextColor3 = Color3.fromRGB(75, 255, 20)
+crewmate.TextSize = 14.000
+
+Imposter.Name = "Imposter"
+Imposter.Parent = box_2
+Imposter.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Imposter.BorderSizePixel = 0
+Imposter.Position = UDim2.new(0.374000013, 0, 0.574999988, 0)
+Imposter.Size = UDim2.new(0, 42, 0, 10)
+Imposter.Visible = false
+Imposter.Font = Enum.Font.SourceSans
+Imposter.Text = "Imposter"
+Imposter.TextColor3 = Color3.fromRGB(255, 0, 4)
+Imposter.TextSize = 14.000
+
+consoleframe.Name = "consoleframe"
+consoleframe.Parent = Main
+consoleframe.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+consoleframe.BorderSizePixel = 0
+consoleframe.Position = UDim2.new(-0.536859035, 0, -0.105978251, 0)
+consoleframe.Size = UDim2.new(0, 404, 0, 235)
+consoleframe.Visible = false
+
+Frame_2.Parent = consoleframe
+Frame_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 404, 0, 23)
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0.304347813, 0)
+TextLabel_3.Size = UDim2.new(0, 55, 0, 9)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Script"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+
+TextLabel_4.Parent = Frame_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.136138618, 0, 0.304347813, 0)
+TextLabel_4.Size = UDim2.new(0, 36, 0, 9)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Ware"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+
+TextLabel_5.Parent = consoleframe
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0198019799, 0, 0.0978723392, 0)
+TextLabel_5.Size = UDim2.new(0, 122, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Console says u are sus."
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 16.000
+
+Close_3.Name = "Close"
+Close_3.Parent = consoleframe
+Close_3.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Close_3.BorderSizePixel = 0
+Close_3.Position = UDim2.new(0.95792079, 0, 0, 0)
+Close_3.Size = UDim2.new(0, 17, 0, 10)
+Close_3.Font = Enum.Font.SourceSans
+Close_3.Text = "X"
+Close_3.TextColor3 = Color3.fromRGB(85, 85, 85)
+Close_3.TextSize = 16.000
+
+settingframe.Name = "settingframe"
+settingframe.Parent = Main
+settingframe.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+settingframe.BorderSizePixel = 0
+settingframe.Position = UDim2.new(0.0897435918, 0, 0.0842391327, 0)
+settingframe.Size = UDim2.new(0, 568, 0, 337)
+settingframe.Visible = false
+
+ImageLabel.Parent = settingframe
+ImageLabel.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0733034611, 0, 0.0504451022, 0)
+ImageLabel.Size = UDim2.new(0, 70, 0, 52)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7074019216"
+
+crash.Name = "crash"
+crash.Parent = settingframe
+crash.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+crash.BorderSizePixel = 0
+crash.Position = UDim2.new(0.487762243, 0, 0.0682492554, 0)
+crash.Size = UDim2.new(0, 200, 0, 50)
+crash.Font = Enum.Font.SourceSansBold
+crash.Text = "While true do end "
+crash.TextColor3 = Color3.fromRGB(255, 255, 255)
+crash.TextSize = 18.000
+
+TextLabel_6.Parent = crash
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.150000006, 0, 0.920000017, 0)
+TextLabel_6.Size = UDim2.new(0, 132, 0, 12)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Do a funni"
+TextLabel_6.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_6.TextSize = 18.000
+
+Line_3.Name = "Line"
+Line_3.Parent = settingframe
+Line_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_3.BorderColor3 = Color3.fromRGB(249, 230, 255)
+Line_3.Position = UDim2.new(0.297202796, 0, 0.311572701, 0)
+Line_3.Size = UDim2.new(0, 367, 0, 0)
+
+right.Name = "right"
+right.Parent = settingframe
+right.BackgroundTransparency = 1.000
+right.Position = UDim2.new(0.861888111, 0, 0.140949547, 0)
+right.Size = UDim2.new(0, 25, 0, 25)
+right.ZIndex = 2
+right.Image = "rbxassetid://6764432408"
+right.ImageRectOffset = Vector2.new(100, 150)
+right.ImageRectSize = Vector2.new(50, 50)
+
+TextLabel_7.Parent = settingframe
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0387323946, 0, 0.270029664, 0)
+TextLabel_7.Size = UDim2.new(0, 109, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "troll setting"
+TextLabel_7.TextColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_7.TextSize = 14.000
+
+hidden.Name = "hidden"
+hidden.Parent = settingframe
+hidden.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+hidden.BorderSizePixel = 0
+hidden.Position = UDim2.new(0.466635495, 0, 0.356083095, 0)
+hidden.Size = UDim2.new(0, 200, 0, 50)
+hidden.Font = Enum.Font.SourceSansBold
+hidden.Text = "Hidden button"
+hidden.TextColor3 = Color3.fromRGB(255, 255, 255)
+hidden.TextSize = 18.000
+
+TextLabel_8.Parent = hidden
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.150000006, 0, 0.920000017, 0)
+TextLabel_8.Size = UDim2.new(0, 132, 0, 12)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "go to friendlist and press a icon."
+TextLabel_8.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_8.TextSize = 18.000
+
+Line_4.Name = "Line"
+Line_4.Parent = settingframe
+Line_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_4.BorderColor3 = Color3.fromRGB(249, 230, 255)
+Line_4.Position = UDim2.new(0.298963368, 0, 0.593471825, 0)
+Line_4.Size = UDim2.new(0, 367, 0, 0)
+
+rejoin.Name = "rejoin"
+rejoin.Parent = settingframe
+rejoin.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+rejoin.BorderSizePixel = 0
+rejoin.Position = UDim2.new(0.480720013, 0, 0.626112759, 0)
+rejoin.Size = UDim2.new(0, 200, 0, 50)
+rejoin.Font = Enum.Font.SourceSansBold
+rejoin.Text = "Rejoin"
+rejoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+rejoin.TextSize = 18.000
+
+TextLabel_9.Parent = rejoin
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.150000006, 0, 0.920000017, 0)
+TextLabel_9.Size = UDim2.new(0, 132, 0, 12)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Rejoins your roblox placeid"
+TextLabel_9.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_9.TextSize = 18.000
+
+Line_5.Name = "Line"
+Line_5.Parent = settingframe
+Line_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_5.BorderColor3 = Color3.fromRGB(249, 230, 255)
+Line_5.Position = UDim2.new(0.298963368, 0, 0.89910984, 0)
+Line_5.Size = UDim2.new(0, 367, 0, 0)
+
+right_2.Name = "right"
+right_2.Parent = settingframe
+right_2.BackgroundTransparency = 1.000
+right_2.Position = UDim2.new(0.867169797, 0, 0.698813021, 0)
+right_2.Size = UDim2.new(0, 25, 0, 25)
+right_2.ZIndex = 2
+right_2.Image = "rbxassetid://6764432408"
+right_2.ImageRectOffset = Vector2.new(100, 150)
+right_2.ImageRectSize = Vector2.new(50, 50)
+
+scripthubframe.Name = "scripthubframe"
+scripthubframe.Parent = Main
+scripthubframe.Active = true
+scripthubframe.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+scripthubframe.BorderSizePixel = 0
+scripthubframe.Position = UDim2.new(0.0913461521, 0, 0.0788043439, 0)
+scripthubframe.Size = UDim2.new(0, 567, 0, 339)
+scripthubframe.Visible = false
+scripthubframe.CanvasPosition = Vector2.new(0, 525)
+scripthubframe.CanvasSize = UDim2.new(0, 0, 10, 0)
+
+ImageLabel_2.Parent = scripthubframe
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0739436597, 0, 0.00951086916, 0)
+ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6535407256"
+
+UICorner.Parent = ImageLabel_2
+
+Yba.Name = "Yba"
+Yba.Parent = scripthubframe
+Yba.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Yba.BorderSizePixel = 0
+Yba.Position = UDim2.new(0.0316901393, 0, 0.0417841151, 0)
+Yba.Size = UDim2.new(0, 174, 0, 32)
+Yba.Font = Enum.Font.SourceSansBold
+Yba.Text = "Yba"
+Yba.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yba.TextSize = 14.000
+
+UICorner_2.Parent = Yba
+
+ImageLabel_3.Parent = scripthubframe
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.422553807, 0, 0.00923912972, 0)
+ImageLabel_3.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=5501255797"
+
+UICorner_3.Parent = ImageLabel_3
+
+Bowserhub.Name = "Bowserhub"
+Bowserhub.Parent = scripthubframe
+Bowserhub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Bowserhub.BorderSizePixel = 0
+Bowserhub.Position = UDim2.new(0.357394367, 0, 0.0417841151, 0)
+Bowserhub.Size = UDim2.new(0, 174, 0, 32)
+Bowserhub.Font = Enum.Font.SourceSansBold
+Bowserhub.Text = "Bowserhub"
+Bowserhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bowserhub.TextSize = 14.000
+
+UICorner_4.Parent = Bowserhub
+
+admin.Name = "admin"
+admin.Parent = scripthubframe
+admin.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+admin.BorderSizePixel = 0
+admin.Position = UDim2.new(0.683098614, 0, 0.0420558527, 0)
+admin.Size = UDim2.new(0, 174, 0, 32)
+admin.Font = Enum.Font.SourceSansBold
+admin.Text = "Bowser admin"
+admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+admin.TextSize = 14.000
+
+UICorner_5.Parent = admin
+
+ImageLabel_4.Parent = scripthubframe
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.748239398, 0, 0.00951086916, 0)
+ImageLabel_4.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=7028640976"
+
+UICorner_6.Parent = ImageLabel_4
+
+dragonballrage.Name = "dragonballrage"
+dragonballrage.Parent = scripthubframe
+dragonballrage.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+dragonballrage.BorderSizePixel = 0
+dragonballrage.Position = UDim2.new(0.0316901803, 0, 0.0855340883, 0)
+dragonballrage.Size = UDim2.new(0, 174, 0, 32)
+dragonballrage.Font = Enum.Font.SourceSansBold
+dragonballrage.Text = "Dragonballrage"
+dragonballrage.TextColor3 = Color3.fromRGB(255, 255, 255)
+dragonballrage.TextSize = 14.000
+
+UICorner_7.Parent = dragonballrage
+
+ImageLabel_5.Parent = scripthubframe
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.0845070407, 0, 0.0546195693, 0)
+ImageLabel_5.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id=5231160"
+
+UICorner_8.Parent = ImageLabel_5
+
+yeild.Name = "yeild"
+yeild.Parent = scripthubframe
+yeild.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+yeild.BorderSizePixel = 0
+yeild.Position = UDim2.new(0.357394427, 0, 0.085262388, 0)
+yeild.Size = UDim2.new(0, 174, 0, 32)
+yeild.Font = Enum.Font.SourceSansBold
+yeild.Text = "infinite yield"
+yeild.TextColor3 = Color3.fromRGB(255, 255, 255)
+yeild.TextSize = 14.000
+
+UICorner_9.Parent = yeild
+
+ImageLabel_6.Parent = scripthubframe
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_6.BorderSizePixel = 0
+ImageLabel_6.Position = UDim2.new(0.422535151, 0, 0.0543478355, 0)
+ImageLabel_6.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_6.Image = "http://www.roblox.com/asset/?id=7272072030"
+
+UICorner_10.Parent = ImageLabel_6
+
+fates.Name = "fates"
+fates.Parent = scripthubframe
+fates.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+fates.BorderSizePixel = 0
+fates.Position = UDim2.new(0.683098614, 0, 0.0849906206, 0)
+fates.Size = UDim2.new(0, 174, 0, 32)
+fates.Font = Enum.Font.SourceSansBold
+fates.Text = "Fates admin"
+fates.TextColor3 = Color3.fromRGB(255, 255, 255)
+fates.TextSize = 14.000
+
+UICorner_11.Parent = fates
+
+ImageLabel_7.Parent = scripthubframe
+ImageLabel_7.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_7.BorderSizePixel = 0
+ImageLabel_7.Position = UDim2.new(0.748239398, 0, 0.0559782572, 0)
+ImageLabel_7.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_7.Image = "http://www.roblox.com/asset/?id=7272087580"
+
+UICorner_12.Parent = ImageLabel_7
+
+ImageLabel_8.Parent = scripthubframe
+ImageLabel_8.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_8.BorderSizePixel = 0
+ImageLabel_8.Position = UDim2.new(0.0968713313, 0, 0.0986413062, 0)
+ImageLabel_8.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_8.Image = "http://www.roblox.com/asset/?id=3132768230"
+
+UICorner_13.Parent = ImageLabel_8
+
+solarishub.Name = "solarishub"
+solarishub.Parent = scripthubframe
+solarishub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+solarishub.BorderSizePixel = 0
+solarishub.Position = UDim2.new(0.0493672043, 0, 0.130371049, 0)
+solarishub.Size = UDim2.new(0, 174, 0, 32)
+solarishub.Font = Enum.Font.SourceSansBold
+solarishub.Text = "solarishub"
+solarishub.TextColor3 = Color3.fromRGB(255, 255, 255)
+solarishub.TextSize = 14.000
+
+UICorner_14.Parent = solarishub
+
+ImageLabel_9.Parent = scripthubframe
+ImageLabel_9.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_9.BorderSizePixel = 0
+ImageLabel_9.Position = UDim2.new(0.422535211, 0, 0.0989130065, 0)
+ImageLabel_9.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_9.Image = "http://www.roblox.com/asset/?id=6684209577"
+
+UICorner_15.Parent = ImageLabel_9
+
+Bruhub.Name = "Bruhub"
+Bruhub.Parent = scripthubframe
+Bruhub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Bruhub.BorderSizePixel = 0
+Bruhub.Position = UDim2.new(0.373301566, 0, 0.130371064, 0)
+Bruhub.Size = UDim2.new(0, 174, 0, 32)
+Bruhub.Font = Enum.Font.SourceSansBold
+Bruhub.Text = "Bruh Hub"
+Bruhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bruhub.TextSize = 14.000
+
+UICorner_16.Parent = Bruhub
+
+ImageLabel_10.Parent = scripthubframe
+ImageLabel_10.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_10.BorderSizePixel = 0
+ImageLabel_10.Position = UDim2.new(0.748239398, 0, 0.0986412764, 0)
+ImageLabel_10.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_10.Image = "http://www.roblox.com/asset/?id=914094392"
+
+UICorner_17.Parent = ImageLabel_10
+
+owlhub.Name = "owlhub"
+owlhub.Parent = scripthubframe
+owlhub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+owlhub.BorderSizePixel = 0
+owlhub.Position = UDim2.new(0.691951096, 0, 0.130099326, 0)
+owlhub.Size = UDim2.new(0, 174, 0, 32)
+owlhub.Font = Enum.Font.SourceSansBold
+owlhub.Text = "Owlhub"
+owlhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+owlhub.TextSize = 14.000
+
+UICorner_18.Parent = owlhub
+
+ImageLabel_11.Parent = scripthubframe
+ImageLabel_11.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_11.BorderSizePixel = 0
+ImageLabel_11.Position = UDim2.new(0.114508018, 0, 0.141847819, 0)
+ImageLabel_11.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_11.Image = "http://www.roblox.com/asset/?id=1107129085"
+
+UICorner_19.Parent = ImageLabel_11
+
+Ciazware.Name = "Ciazware"
+Ciazware.Parent = scripthubframe
+Ciazware.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Ciazware.BorderSizePixel = 0
+Ciazware.Position = UDim2.new(0.0493268333, 0, 0.171947122, 0)
+Ciazware.Size = UDim2.new(0, 174, 0, 32)
+Ciazware.Font = Enum.Font.SourceSansBold
+Ciazware.Text = "Ciazware"
+Ciazware.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ciazware.TextSize = 14.000
+
+UICorner_20.Parent = Ciazware
+
+ImageLabel_12.Parent = scripthubframe
+ImageLabel_12.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_12.BorderSizePixel = 0
+ImageLabel_12.Position = UDim2.new(0.422569364, 0, 0.141032636, 0)
+ImageLabel_12.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_12.Image = "http://www.roblox.com/asset/?id=4482692"
+
+UICorner_21.Parent = ImageLabel_12
+
+domainx.Name = "domainx"
+domainx.Parent = scripthubframe
+domainx.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+domainx.BorderSizePixel = 0
+domainx.Position = UDim2.new(0.373267412, 0, 0.171947137, 0)
+domainx.Size = UDim2.new(0, 174, 0, 32)
+domainx.Font = Enum.Font.SourceSansBold
+domainx.Text = "domainX"
+domainx.TextColor3 = Color3.fromRGB(255, 255, 255)
+domainx.TextSize = 14.000
+
+UICorner_22.Parent = domainx
+
+darkhub.Name = "darkhub"
+darkhub.Parent = scripthubframe
+darkhub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+darkhub.BorderSizePixel = 0
+darkhub.Position = UDim2.new(0.690727711, 0, 0.171947137, 0)
+darkhub.Size = UDim2.new(0, 174, 0, 32)
+darkhub.Font = Enum.Font.SourceSansBold
+darkhub.Text = "darkhub"
+darkhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+darkhub.TextSize = 14.000
+
+UICorner_23.Parent = darkhub
+
+ImageLabel_13.Parent = scripthubframe
+ImageLabel_13.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_13.BorderSizePixel = 0
+ImageLabel_13.Position = UDim2.new(0.757057726, 0, 0.141576082, 0)
+ImageLabel_13.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_13.Image = "http://www.roblox.com/asset/?id=167262276"
+
+UICorner_24.Parent = ImageLabel_13
+
+ImageLabel_14.Parent = scripthubframe
+ImageLabel_14.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ImageLabel_14.BorderSizePixel = 0
+ImageLabel_14.Position = UDim2.new(0.114508018, 0, 0.182336956, 0)
+ImageLabel_14.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_14.Image = "http://www.roblox.com/asset/?id=7260235920"
+
+UICorner_25.Parent = ImageLabel_14
+
+funkyFriday.Name = "funkyFriday"
+funkyFriday.Parent = scripthubframe
+funkyFriday.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+funkyFriday.BorderSizePixel = 0
+funkyFriday.Position = UDim2.new(0.0475631654, 0, 0.213794947, 0)
+funkyFriday.Size = UDim2.new(0, 174, 0, 32)
+funkyFriday.Font = Enum.Font.SourceSansBold
+funkyFriday.Text = "FunkyFriday"
+funkyFriday.TextColor3 = Color3.fromRGB(255, 255, 255)
+funkyFriday.TextSize = 14.000
+
+UICorner_26.Parent = funkyFriday
+
+-- Scripts:
+
+local function BBVU_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(BBVU_fake_script)()
+local function BHOA_fake_script() -- Mini.LocalScript 
+	local script = Instance.new('LocalScript', Mini)
+
+	local frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		frame:TweenPosition(UDim2.new(0.346, 0,0.967, 0), 'Out', 'Linear', '0.5')
+	end)
+	
+	--start size is {0.346, 0},{0.294, 0}
+end
+coroutine.wrap(BHOA_fake_script)()
+local function LYUHI_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.09
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(dragSpeed), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(LYUHI_fake_script)()
+local function ZIUQX_fake_script() -- home.LocalScript 
+	local script = Instance.new('LocalScript', home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Homeframe.Visible = true
+		script.Parent.Parent.consoleframe.Visible = false
+		script.Parent.Parent.scripthubframe.Visible = false
+		script.Parent.Parent.executorframe.Visible = false
+		script.Parent.Parent.settingframe.Visible = false
+	end)
+end
+coroutine.wrap(ZIUQX_fake_script)()
+local function DSSQRW_fake_script() -- scripthub.LocalScript 
+	local script = Instance.new('LocalScript', scripthub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.scripthubframe.Visible = true
+		script.Parent.Parent.consoleframe.Visible = false
+		script.Parent.Parent.Homeframe.Visible = false
+		script.Parent.Parent.executorframe.Visible = false
+		script.Parent.Parent.settingframe.Visible = false
+	end)
+	
+end
+coroutine.wrap(DSSQRW_fake_script)()
+local function JWEM_fake_script() -- executor.LocalScript 
+	local script = Instance.new('LocalScript', executor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.executorframe.Visible = true
+		script.Parent.Parent.Homeframe.Visible = false
+		script.Parent.Parent.scripthubframe.Visible = false
+		script.Parent.Parent.Homeframe.Visible = false
+		script.Parent.Parent.settingframe.Visible = false
+	end)
+end
+coroutine.wrap(JWEM_fake_script)()
+local function ZMWTVS_fake_script() -- friendlist.LocalScript 
+	local script = Instance.new('LocalScript', friendlist)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.friendlistframe.Visible = true
+	end)
+end
+coroutine.wrap(ZMWTVS_fake_script)()
+local function NYLEOA_fake_script() -- Console.LocalScript 
+	local script = Instance.new('LocalScript', Console)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.consoleframe.Visible = true
+		script.Parent.Parent.Homeframe.Visible = false
+		script.Parent.Parent.executorframe.Visible = false
+		script.Parent.Parent.scripthubframe.Visible = false
+		script.Parent.Parent.settingframe.Visible = false
+	end)
+end
+coroutine.wrap(NYLEOA_fake_script)()
+local function YVFEHGI_fake_script() -- settings.LocalScript 
+	local script = Instance.new('LocalScript', settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.settingframe.Visible = true
+		script.Parent.Parent.consoleframe.Visible = false
+		script.Parent.Parent.Homeframe.Visible = false
+		script.Parent.Parent.executorframe.Visible = false
+		script.Parent.Parent.scripthubframe.Visible = false
+	end)
+end
+coroutine.wrap(YVFEHGI_fake_script)()
+local function LHGW_fake_script() -- closeroblox.LocalScript 
+	local script = Instance.new('LocalScript', closeroblox)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do end
+	end)
+end
+coroutine.wrap(LHGW_fake_script)()
+local function UILEMSW_fake_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(UILEMSW_fake_script)()
+local function LYNRJ_fake_script() -- group.LocalScript 
+	local script = Instance.new('LocalScript', group)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		wait(1)
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Notification";
+			Text = "Congrats u have clicked the hidden button im watching you...";
+			Icon = "";
+			Duration = 9;
+		})
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+		script.Parent.Parent.Imposter.Visible = true
+		wait(0.5)
+		script.Parent.Parent.Imposter.Visible = false
+		script.Parent.Parent.crewmate.Visible = true
+		wait(0.5)
+		script.Parent.Parent.crewmate.Visible = false
+	end)
+end
+coroutine.wrap(LYNRJ_fake_script)()
+local function KCYRJBQ_fake_script() -- username.LocalScript 
+	local script = Instance.new('LocalScript', username)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(KCYRJBQ_fake_script)()
+local function MLRKXF_fake_script() -- Close_3.LocalScript 
+	local script = Instance.new('LocalScript', Close_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(MLRKXF_fake_script)()
+local function SGLWGLF_fake_script() -- right.LocalScript 
+	local script = Instance.new('LocalScript', right)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do end
+	end)
+end
+coroutine.wrap(SGLWGLF_fake_script)()
+local function JAFE_fake_script() -- Yba.LocalScript 
+	local script = Instance.new('LocalScript', Yba)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
+	end)
+end
+coroutine.wrap(JAFE_fake_script)()
+local function OVKD_fake_script() -- Bowserhub.LocalScript 
+	local script = Instance.new('LocalScript', Bowserhub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/chriszrk/Bowser-Hub/main/BowserHubCool", true))()
+	end)
+end
+coroutine.wrap(OVKD_fake_script)()
+local function QYQWZMH_fake_script() -- admin.LocalScript 
+	local script = Instance.new('LocalScript', admin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Bowser admin Made by Bowser#6969 Zumqz
+		-- Version: 1.0
+	
+		-- Instances:
+	
+		local ScreenGui = Instance.new("ScreenGui")
+		local Main = Instance.new("Frame")
+		local Line1 = Instance.new("Frame")
+		local TextLabel = Instance.new("TextLabel")
+		local Close = Instance.new("TextButton")
+		local UICorner = Instance.new("UICorner")
+		local Mini = Instance.new("TextButton")
+		local UICorner_2 = Instance.new("UICorner")
+		local Good = Instance.new("TextButton")
+		local UICorner_3 = Instance.new("UICorner")
+		local Tab = Instance.new("Frame")
+		local DashBoard = Instance.new("TextButton")
+		local dashboard = Instance.new("ImageButton")
+		local DashBoardframe = Instance.new("Frame")
+		local Pattern = Instance.new("ImageLabel")
+		local Welcome = Instance.new("TextLabel")
+		local TextLabel_2 = Instance.new("TextLabel")
+		local ImageLabel = Instance.new("ImageLabel")
+		local UICorner_4 = Instance.new("UICorner")
+		local Beta = Instance.new("TextLabel")
+		local Usrname = Instance.new("TextLabel")
+		local Extra = Instance.new("TextButton")
+		local build = Instance.new("ImageButton")
+		local Admin = Instance.new("TextButton")
+		local group = Instance.new("ImageButton")
+		local Adminframe = Instance.new("ScrollingFrame")
+		local Fly = Instance.new("TextButton")
+		local UICorner_5 = Instance.new("UICorner")
+		local pointer = Instance.new("ImageButton")
+		local Noclip = Instance.new("TextButton")
+		local UICorner_6 = Instance.new("UICorner")
+		local pointer_2 = Instance.new("ImageButton")
+		local James = Instance.new("TextButton")
+		local UICorner_7 = Instance.new("UICorner")
+		local pointer_3 = Instance.new("ImageButton")
+		local Fling = Instance.new("TextButton")
+		local UICorner_8 = Instance.new("UICorner")
+		local pointer_4 = Instance.new("ImageButton")
+		local Nullware = Instance.new("TextButton")
+		local UICorner_9 = Instance.new("UICorner")
+		local pointer_5 = Instance.new("ImageButton")
+		local Speed = Instance.new("TextButton")
+		local UICorner_10 = Instance.new("UICorner")
+		local pointer_6 = Instance.new("ImageButton")
+		local yield = Instance.new("TextButton")
+		local UICorner_11 = Instance.new("UICorner")
+		local pointer_7 = Instance.new("ImageButton")
+		local Btools = Instance.new("TextButton")
+		local UICorner_12 = Instance.new("UICorner")
+		local pointer_8 = Instance.new("ImageButton")
+		local Credits = Instance.new("TextButton")
+		local accessibility = Instance.new("ImageButton")
+		local Creditsframe = Instance.new("Frame")
+		local TextLabel_3 = Instance.new("TextLabel")
+		local TextLabel_4 = Instance.new("TextLabel")
+		local Extraframe = Instance.new("ScrollingFrame")
+		local Antiafk = Instance.new("TextButton")
+		local UICorner_13 = Instance.new("UICorner")
+		local right = Instance.new("ImageButton")
+		local TextLabel_5 = Instance.new("TextLabel")
+		local Rejoin = Instance.new("TextButton")
+		local UICorner_14 = Instance.new("UICorner")
+		local right_2 = Instance.new("ImageButton")
+		local TextLabel_6 = Instance.new("TextLabel")
+		local ChatSpy = Instance.new("TextButton")
+		local UICorner_15 = Instance.new("UICorner")
+		local right_3 = Instance.new("ImageButton")
+		local TextLabel_7 = Instance.new("TextLabel")
+		local Crash = Instance.new("TextButton")
+		local UICorner_16 = Instance.new("UICorner")
+		local right_4 = Instance.new("ImageButton")
+		local TextLabel_8 = Instance.new("TextLabel")
+		local Reset = Instance.new("TextButton")
+		local UICorner_17 = Instance.new("UICorner")
+		local right_5 = Instance.new("ImageButton")
+		local TextLabel_9 = Instance.new("TextLabel")
+		local Screenshot = Instance.new("TextButton")
+		local UICorner_18 = Instance.new("UICorner")
+		local right_6 = Instance.new("ImageButton")
+		local TextLabel_10 = Instance.new("TextLabel")
+		local Themes = Instance.new("TextButton")
+		local tab = Instance.new("ImageButton")
+		local Themeframe = Instance.new("Frame")
+		local Red = Instance.new("TextButton")
+		local UICorner_19 = Instance.new("UICorner")
+		local TextLabel_11 = Instance.new("TextLabel")
+		local Linered = Instance.new("Frame")
+		local TextLabel_12 = Instance.new("TextLabel")
+		local Minired = Instance.new("TextButton")
+		local UICorner_20 = Instance.new("UICorner")
+		local goodred = Instance.new("TextButton")
+		local UICorner_21 = Instance.new("UICorner")
+		local Closered = Instance.new("TextButton")
+		local UICorner_22 = Instance.new("UICorner")
+		local Normal = Instance.new("TextButton")
+		local UICorner_23 = Instance.new("UICorner")
+		local TextLabel_13 = Instance.new("TextLabel")
+		local Blue = Instance.new("TextButton")
+		local UICorner_24 = Instance.new("UICorner")
+		local TextLabel_14 = Instance.new("TextLabel")
+		local Lineblue = Instance.new("Frame")
+		local TextLabel_15 = Instance.new("TextLabel")
+		local Closeblue = Instance.new("TextButton")
+		local UICorner_25 = Instance.new("UICorner")
+		local miniblue = Instance.new("TextButton")
+		local UICorner_26 = Instance.new("UICorner")
+		local goodblue = Instance.new("TextButton")
+		local UICorner_27 = Instance.new("UICorner")
+		local Jameslol = Instance.new("Frame")
+		local ImageLabel_2 = Instance.new("ImageLabel")
+	
+		--Properties:
+	
+		ScreenGui.Parent = game.CoreGui
+	
+		Main.Name = "Main"
+		Main.Parent = ScreenGui
+		Main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Main.BorderSizePixel = 0
+		Main.Position = UDim2.new(0.405820549, 0, 0.29048413, 0)
+		Main.Size = UDim2.new(0, 381, 0, 250)
+	
+		Line1.Name = "Line1"
+		Line1.Parent = Main
+		Line1.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+		Line1.BorderSizePixel = 0
+		Line1.Size = UDim2.new(0, 381, 0, 29)
+	
+		TextLabel.Parent = Line1
+		TextLabel.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+		TextLabel.BorderSizePixel = 0
+		TextLabel.Position = UDim2.new(0.467914462, 0, 0.103448272, 0)
+		TextLabel.Size = UDim2.new(0, 23, 0, 23)
+		TextLabel.Font = Enum.Font.SourceSansBold
+		TextLabel.Text = "Bowser Dumb admin"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextSize = 14.000
+	
+		Close.Name = "Close"
+		Close.Parent = Main
+		Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		Close.Position = UDim2.new(0.136826798, 0, 0.0203265324, 0)
+		Close.Size = UDim2.new(0, 18, 0, 17)
+		Close.Font = Enum.Font.SourceSans
+		Close.Text = ""
+		Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Close.TextSize = 14.000
+	
+		UICorner.Parent = Close
+	
+		Mini.Name = "Mini"
+		Mini.Parent = Main
+		Mini.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+		Mini.Position = UDim2.new(0.083084181, 0, 0.0203265324, 0)
+		Mini.Size = UDim2.new(0, 18, 0, 17)
+		Mini.Font = Enum.Font.SourceSans
+		Mini.Text = ""
+		Mini.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Mini.TextSize = 14.000
+	
+		UICorner_2.Parent = Mini
+	
+		Good.Name = "Good"
+		Good.Parent = Main
+		Good.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		Good.Position = UDim2.new(0.0109196864, 0, 0.0203265399, 0)
+		Good.Size = UDim2.new(0, 18, 0, 17)
+		Good.Font = Enum.Font.SourceSans
+		Good.Text = ""
+		Good.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Good.TextSize = 14.000
+	
+		UICorner_3.Parent = Good
+	
+		Tab.Name = "Tab"
+		Tab.Parent = Main
+		Tab.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+		Tab.BorderSizePixel = 0
+		Tab.Position = UDim2.new(0, 0, 0.118367434, 0)
+		Tab.Size = UDim2.new(0, 89, 0, 220)
+	
+		DashBoard.Name = "DashBoard"
+		DashBoard.Parent = Main
+		DashBoard.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+		DashBoard.BorderColor3 = Color3.fromRGB(255, 0, 4)
+		DashBoard.BorderSizePixel = 0
+		DashBoard.Position = UDim2.new(0, 0, 0.183755115, 0)
+		DashBoard.Size = UDim2.new(0, 89, 0, 15)
+		DashBoard.Font = Enum.Font.SourceSansBold
+		DashBoard.Text = "DashBoard"
+		DashBoard.TextColor3 = Color3.fromRGB(255, 255, 255)
+		DashBoard.TextSize = 14.000
+	
+		dashboard.Name = "dashboard"
+		dashboard.Parent = DashBoard
+		dashboard.BackgroundTransparency = 1.000
+		dashboard.Position = UDim2.new(-0.00112613128, 0, -0.224489808, 0)
+		dashboard.Size = UDim2.new(0, 14, 0, 18)
+		dashboard.ZIndex = 2
+		dashboard.Image = "rbxassetid://3926305904"
+		dashboard.ImageRectOffset = Vector2.new(44, 644)
+		dashboard.ImageRectSize = Vector2.new(36, 36)
+	
+		DashBoardframe.Name = "DashBoardframe"
+		DashBoardframe.Parent = Main
+		DashBoardframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		DashBoardframe.BorderSizePixel = 0
+		DashBoardframe.Position = UDim2.new(0.233595803, 0, 0.115999997, 0)
+		DashBoardframe.Size = UDim2.new(0, 292, 0, 221)
+	
+		Pattern.Name = "Pattern"
+		Pattern.Parent = DashBoardframe
+		Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Pattern.BackgroundTransparency = 1.000
+		Pattern.Position = UDim2.new(0.0116899051, 0, -0.00373888668, 0)
+		Pattern.Size = UDim2.new(0, 288, 0, 219)
+		Pattern.ZIndex = 9
+		Pattern.Image = "rbxassetid://2151782136"
+		Pattern.ImageTransparency = 0.600
+		Pattern.ScaleType = Enum.ScaleType.Tile
+		Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
+		Pattern.TileSize = UDim2.new(0, 30, 0, 50)
+	
+		Welcome.Name = "Welcome"
+		Welcome.Parent = DashBoardframe
+		Welcome.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Welcome.BorderSizePixel = 0
+		Welcome.Position = UDim2.new(0.44520548, 0, 0.00267809001, 0)
+		Welcome.Size = UDim2.new(0, 52, 0, 31)
+		Welcome.Font = Enum.Font.SourceSansBold
+		Welcome.Text = "Welcome"
+		Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Welcome.TextSize = 14.000
+	
+		TextLabel_2.Parent = Welcome
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		TextLabel_2.BorderSizePixel = 0
+		TextLabel_2.Position = UDim2.new(-0.173076868, 0, 1.66666651, 0)
+		TextLabel_2.Size = UDim2.new(0, 52, 0, 9)
+		TextLabel_2.Font = Enum.Font.SourceSansBold
+		TextLabel_2.Text = "Bowser Admin!"
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextSize = 14.000
+	
+		ImageLabel.Parent = DashBoardframe
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel.Position = UDim2.new(0.328767121, 0, 0.339366525, 0)
+		ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+		ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+	
+		UICorner_4.Parent = ImageLabel
+	
+		Beta.Name = "Beta"
+		Beta.Parent = DashBoardframe
+		Beta.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Beta.BorderSizePixel = 0
+		Beta.Position = UDim2.new(0.284246594, 0, 0.832579195, 0)
+		Beta.Size = UDim2.new(0, 126, 0, 36)
+		Beta.Font = Enum.Font.SourceSansBold
+		Beta.Text = "IN BETA"
+		Beta.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Beta.TextSize = 14.000
+	
+		Usrname.Name = "Usrname"
+		Usrname.Parent = DashBoardframe
+		Usrname.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Usrname.BorderSizePixel = 0
+		Usrname.Position = UDim2.new(0.400684923, 0, 0.144796386, 0)
+		Usrname.Size = UDim2.new(0, 79, 0, 13)
+		Usrname.Font = Enum.Font.SourceSansBold
+		Usrname.Text = "User"
+		Usrname.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Usrname.TextSize = 14.000
+	
+		Extra.Name = "Extra"
+		Extra.Parent = Main
+		Extra.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+		Extra.BorderSizePixel = 0
+		Extra.Position = UDim2.new(0.0209973752, 0, 0.30400002, 0)
+		Extra.Size = UDim2.new(0, 68, 0, 15)
+		Extra.Font = Enum.Font.SourceSansBold
+		Extra.Text = "Extra"
+		Extra.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Extra.TextSize = 14.000
+	
+		build.Name = "build"
+		build.Parent = Extra
+		build.BackgroundTransparency = 1.000
+		build.LayoutOrder = 5
+		build.Position = UDim2.new(-0.145168543, 0, -0.346855849, 0)
+		build.Size = UDim2.new(0, 25, 0, 25)
+		build.ZIndex = 2
+		build.Image = "rbxassetid://3926307971"
+		build.ImageRectOffset = Vector2.new(964, 4)
+		build.ImageRectSize = Vector2.new(36, 36)
+	
+		Admin.Name = "Admin"
+		Admin.Parent = Main
+		Admin.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+		Admin.BorderSizePixel = 0
+		Admin.Position = UDim2.new(0.0213411581, 0, 0.419999987, 0)
+		Admin.Size = UDim2.new(0, 72, 0, 15)
+		Admin.Font = Enum.Font.SourceSansBold
+		Admin.Text = "Admin"
+		Admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Admin.TextSize = 14.000
+	
+		group.Name = "group"
+		group.Parent = Admin
+		group.BackgroundTransparency = 1.000
+		group.LayoutOrder = 5
+		group.Position = UDim2.new(-0.145395994, 0, -0.388369501, 0)
+		group.Size = UDim2.new(0, 25, 0, 25)
+		group.ZIndex = 2
+		group.Image = "rbxassetid://3926305904"
+		group.ImageRectOffset = Vector2.new(4, 844)
+		group.ImageRectSize = Vector2.new(36, 36)
+	
+		Adminframe.Name = "Adminframe"
+		Adminframe.Parent = Main
+		Adminframe.Active = true
+		Adminframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Adminframe.BorderSizePixel = 0
+		Adminframe.Position = UDim2.new(0.233595803, 0, 0.128000006, 0)
+		Adminframe.Size = UDim2.new(0, 292, 0, 217)
+		Adminframe.Visible = false
+	
+		Fly.Name = "Fly"
+		Fly.Parent = Adminframe
+		Fly.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		Fly.Position = UDim2.new(0.214041099, 0, 0.00907834433, 0)
+		Fly.Size = UDim2.new(0, 143, 0, 35)
+		Fly.Font = Enum.Font.SourceSansBold
+		Fly.Text = "Fly"
+		Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Fly.TextSize = 14.000
+		Fly.MouseButton1Click:connect(function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Fly script is on Press e to turn on and e to turn off!";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_5.Parent = Fly
+	
+		pointer.Name = "pointer"
+		pointer.Parent = Fly
+		pointer.BackgroundTransparency = 1.000
+		pointer.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer.Size = UDim2.new(0, 25, 0, 25)
+		pointer.ZIndex = 2
+		pointer.Image = "rbxassetid://6764432293"
+		pointer.ImageRectOffset = Vector2.new(100, 400)
+		pointer.ImageRectSize = Vector2.new(100, 100)
+	
+		Noclip.Name = "Noclip"
+		Noclip.Parent = Adminframe
+		Noclip.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		Noclip.Position = UDim2.new(0.214041099, 0, 0.0910783485, 0)
+		Noclip.Size = UDim2.new(0, 143, 0, 35)
+		Noclip.Font = Enum.Font.SourceSansBold
+		Noclip.Text = "Noclip"
+		Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Noclip.TextSize = 14.000
+		Noclip.MouseButton1Click:connect(function()
+			noclip = false
+			game:GetService('RunService').Stepped:connect(function()
+				if noclip then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+			plr = game.Players.LocalPlayer
+			mouse = plr:GetMouse()
+			mouse.KeyDown:connect(function(key)
+	
+				if key == "n" then
+					noclip = not noclip
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Noclip script is on Press N to turn on and turn off!";
+				Icon = "";
+				Duration = 7;
+			})
+		end)
+	
+		UICorner_6.Parent = Noclip
+	
+		pointer_2.Name = "pointer"
+		pointer_2.Parent = Noclip
+		pointer_2.BackgroundTransparency = 1.000
+		pointer_2.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_2.Size = UDim2.new(0, 25, 0, 25)
+		pointer_2.ZIndex = 2
+		pointer_2.Image = "rbxassetid://6764432293"
+		pointer_2.ImageRectOffset = Vector2.new(100, 400)
+		pointer_2.ImageRectSize = Vector2.new(100, 100)
+	
+		James.Name = "James"
+		James.Parent = Adminframe
+		James.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		James.Position = UDim2.new(0.21061644, 0, 0.169078335, 0)
+		James.Size = UDim2.new(0, 143, 0, 35)
+		James.Font = Enum.Font.SourceSansBold
+		James.Text = "Jamescharles"
+		James.TextColor3 = Color3.fromRGB(255, 255, 255)
+		James.TextSize = 14.000
+		James.MouseButton1Click:connect(function()
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "im watching you..";
+				Icon = "";
+				Duration = 7;
+			})
+	
+		end)
+	
+		UICorner_7.Parent = James
+	
+		pointer_3.Name = "pointer"
+		pointer_3.Parent = James
+		pointer_3.BackgroundTransparency = 1.000
+		pointer_3.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_3.Size = UDim2.new(0, 25, 0, 25)
+		pointer_3.ZIndex = 2
+		pointer_3.Image = "rbxassetid://6764432293"
+		pointer_3.ImageRectOffset = Vector2.new(100, 400)
+		pointer_3.ImageRectSize = Vector2.new(100, 100)
+	
+		Fling.Name = "Fling"
+		Fling.Parent = Adminframe
+		Fling.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		Fling.Position = UDim2.new(0.214041099, 0, 0.334101319, 0)
+		Fling.Size = UDim2.new(0, 143, 0, 35)
+		Fling.Font = Enum.Font.SourceSansBold
+		Fling.Text = "Fling"
+		Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Fling.TextSize = 14.000
+		Fling.MouseButton1Click:connect(function()
+			power = 700 -- change this to make it more or less powerful
+	
+			game:GetService('RunService').Stepped:connect(function()
+				game.Players.LocalPlayer.Character.Head.CanCollide = false
+				game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+				game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+			end)
+			wait(.1)
+			local bambam = Instance.new("BodyThrust")
+			bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+			bambam.Force = Vector3.new(power,0,power)
+			bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Fling script is on Reset to turn off!";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_8.Parent = Fling
+	
+		pointer_4.Name = "pointer"
+		pointer_4.Parent = Fling
+		pointer_4.BackgroundTransparency = 1.000
+		pointer_4.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_4.Size = UDim2.new(0, 25, 0, 25)
+		pointer_4.ZIndex = 2
+		pointer_4.Image = "rbxassetid://6764432293"
+		pointer_4.ImageRectOffset = Vector2.new(100, 400)
+		pointer_4.ImageRectSize = Vector2.new(100, 100)
+	
+		Nullware.Name = "Nullware"
+		Nullware.Parent = Adminframe
+		Nullware.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		Nullware.Position = UDim2.new(0.214041114, 0, 0.251204431, 0)
+		Nullware.Size = UDim2.new(0, 143, 0, 34)
+		Nullware.Font = Enum.Font.SourceSansBold
+		Nullware.Text = "Nullware"
+		Nullware.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Nullware.TextSize = 14.000
+		Nullware.MouseButton1Click:connect(function()
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/37eef2120d509b37b31fa73944ab2361/raw/kT2fVEFnzDfCRXAP"))()
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Nullware script is on!";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_9.Parent = Nullware
+	
+		pointer_5.Name = "pointer"
+		pointer_5.Parent = Nullware
+		pointer_5.BackgroundTransparency = 1.000
+		pointer_5.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_5.Size = UDim2.new(0, 25, 0, 25)
+		pointer_5.ZIndex = 2
+		pointer_5.Image = "rbxassetid://6764432293"
+		pointer_5.ImageRectOffset = Vector2.new(100, 400)
+		pointer_5.ImageRectSize = Vector2.new(100, 100)
+	
+		Speed.Name = "Speed"
+		Speed.Parent = Adminframe
+		Speed.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		Speed.Position = UDim2.new(0.21061644, 0, 0.416101336, 0)
+		Speed.Size = UDim2.new(0, 143, 0, 35)
+		Speed.Font = Enum.Font.SourceSansBold
+		Speed.Text = "WalkSpeed"
+		Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Speed.TextSize = 14.000
+		Speed.MouseButton1Click:connect(function()
+			_G.HackedWalkSpeed = 100
+	
+			local Plrs = game:GetService("Players")
+	
+			local MyPlr = Plrs.LocalPlayer
+			local MyChar = MyPlr.Character
+	
+			if MyChar then
+				local Hum = MyChar.Humanoid
+				Hum.Changed:connect(function()
+					Hum.WalkSpeed = _G.HackedWalkSpeed
+				end)
+				Hum.WalkSpeed = _G.HackedWalkSpeed
+			end
+	
+	
+			MyPlr.CharacterAdded:connect(function(Char)
+				MyChar = Char
+				repeat wait() until Char:FindFirstChild("Humanoid")
+				local Hum = Char.Humanoid
+				Hum.Changed:connect(function()
+					Hum.WalkSpeed = _G.HackedWalkSpeed
+				end)
+				Hum.WalkSpeed = _G.HackedWalkSpeed
+			end)
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "WalkSpeed is now set too 100..";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_10.Parent = Speed
+	
+		pointer_6.Name = "pointer"
+		pointer_6.Parent = Speed
+		pointer_6.BackgroundTransparency = 1.000
+		pointer_6.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_6.Size = UDim2.new(0, 25, 0, 25)
+		pointer_6.ZIndex = 2
+		pointer_6.Image = "rbxassetid://6764432293"
+		pointer_6.ImageRectOffset = Vector2.new(100, 400)
+		pointer_6.ImageRectSize = Vector2.new(100, 100)
+	
+		yield.Name = "yield"
+		yield.Parent = Adminframe
+		yield.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		yield.Position = UDim2.new(0.20719178, 0, 0.49610132, 0)
+		yield.Size = UDim2.new(0, 143, 0, 35)
+		yield.Font = Enum.Font.SourceSansBold
+		yield.Text = "infinteyield"
+		yield.TextColor3 = Color3.fromRGB(255, 255, 255)
+		yield.TextSize = 14.000
+		yield.MouseButton1Click:connect(function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Enjoy!";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_11.Parent = yield
+	
+		pointer_7.Name = "pointer"
+		pointer_7.Parent = yield
+		pointer_7.BackgroundTransparency = 1.000
+		pointer_7.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_7.Size = UDim2.new(0, 25, 0, 25)
+		pointer_7.ZIndex = 2
+		pointer_7.Image = "rbxassetid://6764432293"
+		pointer_7.ImageRectOffset = Vector2.new(100, 400)
+		pointer_7.ImageRectSize = Vector2.new(100, 100)
+	
+		Btools.Name = "Btools"
+		Btools.Parent = Adminframe
+		Btools.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+		Btools.Position = UDim2.new(0.203767121, 0, 0.582101345, 0)
+		Btools.Size = UDim2.new(0, 143, 0, 35)
+		Btools.Font = Enum.Font.SourceSansBold
+		Btools.Text = "Btools"
+		Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Btools.TextSize = 14.000
+		Btools.MouseButton1Click:connect(function()
+			local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+			local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+			local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+			local tool4 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+			local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+			tool1.BinType = "Clone"
+			tool2.BinType = "GameTool"
+			tool3.BinType = "Hammer"
+			tool4.BinType = "Script"
+			tool5.BinType = "Grab"
+	
+			game.StarterGui:SetCoreGuiEnabled(2, true)
+		end)
+	
+		UICorner_12.Parent = Btools
+	
+		pointer_8.Name = "pointer"
+		pointer_8.Parent = Btools
+		pointer_8.BackgroundTransparency = 1.000
+		pointer_8.Position = UDim2.new(-0.00317426771, 0, 0.114309564, 0)
+		pointer_8.Size = UDim2.new(0, 25, 0, 25)
+		pointer_8.ZIndex = 2
+		pointer_8.Image = "rbxassetid://6764432293"
+		pointer_8.ImageRectOffset = Vector2.new(100, 400)
+		pointer_8.ImageRectSize = Vector2.new(100, 100)
+	
+		Credits.Name = "Credits"
+		Credits.Parent = Main
+		Credits.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+		Credits.BorderSizePixel = 0
+		Credits.Position = UDim2.new(0.0187164862, 0, 0.528000057, 0)
+		Credits.Size = UDim2.new(0, 72, 0, 15)
+		Credits.Font = Enum.Font.SourceSansBold
+		Credits.Text = "Credits"
+		Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Credits.TextSize = 14.000
+	
+		accessibility.Name = "accessibility"
+		accessibility.Parent = Credits
+		accessibility.BackgroundTransparency = 1.000
+		accessibility.Position = UDim2.new(-0.152564466, 0, -0.399944365, 0)
+		accessibility.Size = UDim2.new(0, 25, 0, 25)
+		accessibility.ZIndex = 2
+		accessibility.Image = "rbxassetid://3926307971"
+		accessibility.ImageRectOffset = Vector2.new(164, 124)
+		accessibility.ImageRectSize = Vector2.new(36, 36)
+	
+		Creditsframe.Name = "Creditsframe"
+		Creditsframe.Parent = Main
+		Creditsframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Creditsframe.BorderSizePixel = 0
+		Creditsframe.Position = UDim2.new(0.233595803, 0, 0.104000002, 0)
+		Creditsframe.Size = UDim2.new(0, 292, 0, 224)
+		Creditsframe.Visible = false
+	
+		TextLabel_3.Parent = Creditsframe
+		TextLabel_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		TextLabel_3.BorderSizePixel = 0
+		TextLabel_3.Position = UDim2.new(0.157534242, 0, 0.0758928582, 0)
+		TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel_3.Font = Enum.Font.SourceSans
+		TextLabel_3.Text = "Made by Bowser#6969 Zumqz"
+		TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.TextSize = 14.000
+	
+		TextLabel_4.Parent = TextLabel_3
+		TextLabel_4.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		TextLabel_4.BorderSizePixel = 0
+		TextLabel_4.Position = UDim2.new(0, 0, 1.17999995, 0)
+		TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel_4.Font = Enum.Font.SourceSans
+		TextLabel_4.Text = "1.0"
+		TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.TextSize = 14.000
+	
+		Extraframe.Name = "Extraframe"
+		Extraframe.Parent = Main
+		Extraframe.Active = true
+		Extraframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Extraframe.BorderSizePixel = 0
+		Extraframe.Position = UDim2.new(0.233595803, 0, 0.115999997, 0)
+		Extraframe.Size = UDim2.new(0, 292, 0, 220)
+		Extraframe.Visible = false
+	
+		Antiafk.Name = "Antiafk"
+		Antiafk.Parent = Extraframe
+		Antiafk.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		Antiafk.Position = UDim2.new(0.0821917802, 0, 0.0202338286, 0)
+		Antiafk.Size = UDim2.new(0, 223, 0, 58)
+		Antiafk.Font = Enum.Font.SourceSansBold
+		Antiafk.Text = "AntiAfk"
+		Antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Antiafk.TextSize = 14.000
+		Antiafk.TextXAlignment = Enum.TextXAlignment.Left
+		Antiafk.MouseButton1Click:connect(function()
+			AntiAfk.MouseButton1Click:connect(function()
+				wait(0.5)local ba=Instance.new("ScreenGui")
+				local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+				local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+				ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+				ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+				ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,304,0,52)
+				ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk Kick Script"ca.TextColor3=Color3.new(0,1,1)
+				ca.TextSize=22;da.Parent=ca
+				da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+				da.Size=UDim2.new(0,304,0,107)_b.Parent=da
+				_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+				_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by XxSwordmaster_2xX"
+				_b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
+				ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
+				ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Script Started"
+				ab.TextColor3=Color3.new(1,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+				game:service'Players'.LocalPlayer.Idled:connect(function()
+					bb:CaptureController()bb:ClickButton2(Vector2.new())
+					ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
+				game.StarterGui:SetCore("SendNotification",  {
+					Title = "Notification";
+					Text = "AntiAfk script is on";
+					Icon = "";
+					Duration = 5;
+				})
+			end)
+	
+		end)
+	
+		UICorner_13.Parent = Antiafk
+	
+		right.Name = "right"
+		right.Parent = Antiafk
+		right.BackgroundTransparency = 1.000
+		right.Position = UDim2.new(0.0695067346, 0, 0.568965495, 0)
+		right.Size = UDim2.new(0, 25, 0, 25)
+		right.ZIndex = 2
+		right.Image = "rbxassetid://6764432408"
+		right.ImageRectOffset = Vector2.new(100, 150)
+		right.ImageRectSize = Vector2.new(50, 50)
+	
+		TextLabel_5.Parent = Antiafk
+		TextLabel_5.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		TextLabel_5.BorderSizePixel = 0
+		TextLabel_5.Position = UDim2.new(0.291479796, 0, 0.586206913, 0)
+		TextLabel_5.Size = UDim2.new(0, 67, 0, 22)
+		TextLabel_5.Font = Enum.Font.SourceSansBold
+		TextLabel_5.Text = "Script not made by me"
+		TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_5.TextSize = 14.000
+	
+		Rejoin.Name = "Rejoin"
+		Rejoin.Parent = Extraframe
+		Rejoin.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		Rejoin.Position = UDim2.new(0.0821917802, 0, 0.146233827, 0)
+		Rejoin.Size = UDim2.new(0, 223, 0, 58)
+		Rejoin.Font = Enum.Font.SourceSansBold
+		Rejoin.Text = "Rejoin"
+		Rejoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Rejoin.TextSize = 14.000
+		Rejoin.TextXAlignment = Enum.TextXAlignment.Left
+		Rejoin.MouseButton1Click:connect(function()
+			game:GetService("TeleportService"):Teleport(game.PlaceId)
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Rejoin script is now on!";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+	
+		UICorner_14.Parent = Rejoin
+	
+		right_2.Name = "right"
+		right_2.Parent = Rejoin
+		right_2.BackgroundTransparency = 1.000
+		right_2.Position = UDim2.new(0.0695067346, 0, 0.568965495, 0)
+		right_2.Size = UDim2.new(0, 25, 0, 25)
+		right_2.ZIndex = 2
+		right_2.Image = "rbxassetid://6764432408"
+		right_2.ImageRectOffset = Vector2.new(100, 150)
+		right_2.ImageRectSize = Vector2.new(50, 50)
+	
+		TextLabel_6.Parent = Rejoin
+		TextLabel_6.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		TextLabel_6.BorderSizePixel = 0
+		TextLabel_6.Position = UDim2.new(0.291479796, 0, 0.586206913, 0)
+		TextLabel_6.Size = UDim2.new(0, 67, 0, 22)
+		TextLabel_6.Font = Enum.Font.SourceSansBold
+		TextLabel_6.Text = "Script made by me"
+		TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_6.TextSize = 14.000
+	
+		ChatSpy.Name = "ChatSpy"
+		ChatSpy.Parent = Extraframe
+		ChatSpy.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		ChatSpy.Position = UDim2.new(0.0821917802, 0, 0.272233844, 0)
+		ChatSpy.Size = UDim2.new(0, 223, 0, 58)
+		ChatSpy.Font = Enum.Font.SourceSansBold
+		ChatSpy.Text = "ChatSpy"
+		ChatSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+		ChatSpy.TextSize = 14.000
+		ChatSpy.TextXAlignment = Enum.TextXAlignment.Left
+		ChatSpy.MouseButton1Click:connect(function()
+			enabled = true --chat "/spy" to toggle!
+			spyOnMyself = true --if true will check your messages too
+			public = false --if true will chat the logs publicly (fun, risky)
+			publicItalics = true --if true will use /me to stand out
+			privateProperties = { --customize private logs
+				Color = Color3.fromRGB(0,255,255); 
+				Font = Enum.Font.SourceSansBold;
+				TextSize = 18;
+			}
+	
+	
+			local StarterGui = game:GetService("StarterGui")
+			local Players = game:GetService("Players")
+			local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+			local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+			local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+			local instance = (_G.chatSpyInstance or 0) + 1
+			_G.chatSpyInstance = instance
+	
+			local function onChatted(p,msg)
+				if _G.chatSpyInstance == instance then
+					if p==player and msg:lower():sub(1,4)=="/spy" then
+						enabled = not enabled
+						wait(0.3)
+						privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+						StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+					elseif enabled and (spyOnMyself==true or p~=player) then
+						msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+						local hidden = true
+						local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+							if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+								hidden = false
+							end
+						end)
+						wait(1)
+						conn:Disconnect()
+						if hidden and enabled then
+							if public then
+								saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+							else
+								privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+								StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+							end
+						end
+					end
+				end
+			end
+	
+			for _,p in ipairs(Players:GetPlayers()) do
+				p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+			end
+			Players.PlayerAdded:Connect(function(p)
+				p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+			end)
+			privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+			StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+			if not player.PlayerGui:FindFirstChild("Chat") then wait(3) end
+			local chatFrame = player.PlayerGui.Chat.Frame
+			chatFrame.ChatChannelParentFrame.Visible = true
+			chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Chatspy is on say /Spy too turn off!";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_15.Parent = ChatSpy
+	
+		right_3.Name = "right"
+		right_3.Parent = ChatSpy
+		right_3.BackgroundTransparency = 1.000
+		right_3.Position = UDim2.new(0.0695067346, 0, 0.568965495, 0)
+		right_3.Size = UDim2.new(0, 25, 0, 25)
+		right_3.ZIndex = 2
+		right_3.Image = "rbxassetid://6764432408"
+		right_3.ImageRectOffset = Vector2.new(100, 150)
+		right_3.ImageRectSize = Vector2.new(50, 50)
+	
+		TextLabel_7.Parent = ChatSpy
+		TextLabel_7.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		TextLabel_7.BorderSizePixel = 0
+		TextLabel_7.Position = UDim2.new(0.349775761, 0, 0.586206913, 0)
+		TextLabel_7.Size = UDim2.new(0, 67, 0, 22)
+		TextLabel_7.Font = Enum.Font.SourceSansBold
+		TextLabel_7.Text = "Script not made by me"
+		TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_7.TextSize = 14.000
+	
+		Crash.Name = "Crash"
+		Crash.Parent = Extraframe
+		Crash.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		Crash.Position = UDim2.new(0.0821917802, 0, 0.398233831, 0)
+		Crash.Size = UDim2.new(0, 223, 0, 58)
+		Crash.Font = Enum.Font.SourceSansBold
+		Crash.Text = "Crash"
+		Crash.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Crash.TextSize = 14.000
+		Crash.TextXAlignment = Enum.TextXAlignment.Left
+		Crash.MouseButton1Click:connect(function()
+			while true do end
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "crashed...";
+				Icon = "";
+				Duration = 5;
+			})
+		end)
+	
+		UICorner_16.Parent = Crash
+	
+		right_4.Name = "right"
+		right_4.Parent = Crash
+		right_4.BackgroundTransparency = 1.000
+		right_4.Position = UDim2.new(0.0695067346, 0, 0.568965495, 0)
+		right_4.Size = UDim2.new(0, 25, 0, 25)
+		right_4.ZIndex = 2
+		right_4.Image = "rbxassetid://6764432408"
+		right_4.ImageRectOffset = Vector2.new(100, 150)
+		right_4.ImageRectSize = Vector2.new(50, 50)
+	
+		TextLabel_8.Parent = Crash
+		TextLabel_8.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		TextLabel_8.BorderSizePixel = 0
+		TextLabel_8.Position = UDim2.new(0.349775761, 0, 0.586206913, 0)
+		TextLabel_8.Size = UDim2.new(0, 67, 0, 22)
+		TextLabel_8.Font = Enum.Font.SourceSansBold
+		TextLabel_8.Text = "Script made by me"
+		TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_8.TextSize = 14.000
+	
+		Reset.Name = "Reset"
+		Reset.Parent = Extraframe
+		Reset.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		Reset.Position = UDim2.new(0.0821917802, 0, 0.53023386, 0)
+		Reset.Size = UDim2.new(0, 223, 0, 58)
+		Reset.Font = Enum.Font.SourceSansBold
+		Reset.Text = "Reset"
+		Reset.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Reset.TextSize = 14.000
+		Reset.TextXAlignment = Enum.TextXAlignment.Left
+		Reset.MouseButton1Click:connect(function()
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Notification";
+				Text = "Reset script is on press q to do!";
+				Icon = "";
+				Duration = 5;
+			})
+			local Player = game:GetService("Players").LocalPlayer
+			local Mouse = Player:GetMouse()
+	
+			Mouse.KeyDown:Connect(function(key)
+				if key == "q" then
+	
+					local plr = game.Players.LocalPlayer --tells the script what plr is
+					local humanoid = plr.Character.Humanoid
+					local position = plr.Character.HumanoidRootPart.CFrame
+					wait(0.1)
+					humanoid:Destroy()
+					plr:ClearAllChildren() --clears all of the plr instance aka the local player
+					wait(5.25)
+					plr.Character.HumanoidRootPart.CFrame = position
+				end
+			end)
+	
+	
+			local Player = game:GetService("Players").LocalPlayer
+			local Mouse = Player:GetMouse()
+	
+			Mouse.KeyDown:Connect(function(key)
+				if key == "q" then
+	
+					local plr = game.Players.LocalPlayer --tells the script what plr is
+					local humanoid = plr.Character.Humanoid
+					local position = plr.Character.HumanoidRootPart.CFrame
+					wait(0.1)
+					humanoid:Destroy()
+					plr:ClearAllChildren() --clears all of the plr instance aka the local player
+					wait(5.25)
+					plr.Character.HumanoidRootPart.CFrame = position
+				end
+			end)
+		end)
+	
+		UICorner_17.Parent = Reset
+	
+		right_5.Name = "right"
+		right_5.Parent = Reset
+		right_5.BackgroundTransparency = 1.000
+		right_5.Position = UDim2.new(0.0695067346, 0, 0.568965495, 0)
+		right_5.Size = UDim2.new(0, 25, 0, 25)
+		right_5.ZIndex = 2
+		right_5.Image = "rbxassetid://6764432408"
+		right_5.ImageRectOffset = Vector2.new(100, 150)
+		right_5.ImageRectSize = Vector2.new(50, 50)
+	
+		TextLabel_9.Parent = Reset
+		TextLabel_9.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		TextLabel_9.BorderSizePixel = 0
+		TextLabel_9.Position = UDim2.new(0.349775761, 0, 0.586206913, 0)
+		TextLabel_9.Size = UDim2.new(0, 67, 0, 22)
+		TextLabel_9.Font = Enum.Font.SourceSansBold
+		TextLabel_9.Text = "Script made by Ave"
+		TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.TextSize = 14.000
+	
+		Screenshot.Name = "Screenshot"
+		Screenshot.Parent = Extraframe
+		Screenshot.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		Screenshot.Position = UDim2.new(0.0821917802, 0, 0.652233839, 0)
+		Screenshot.Size = UDim2.new(0, 223, 0, 58)
+		Screenshot.Font = Enum.Font.SourceSansBold
+		Screenshot.Text = "ScreenShot"
+		Screenshot.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Screenshot.TextSize = 14.000
+		Screenshot.TextXAlignment = Enum.TextXAlignment.Left
+		Screenshot.MouseButton1Click:connect(function()
+			return game:GetService("CoreGui"):TakeScreenshot()
+		end)
+	
+		UICorner_18.Parent = Screenshot
+	
+		right_6.Name = "right"
+		right_6.Parent = Screenshot
+		right_6.BackgroundTransparency = 1.000
+		right_6.Position = UDim2.new(0.0695067346, 0, 0.568965495, 0)
+		right_6.Size = UDim2.new(0, 25, 0, 25)
+		right_6.ZIndex = 2
+		right_6.Image = "rbxassetid://6764432408"
+		right_6.ImageRectOffset = Vector2.new(100, 150)
+		right_6.ImageRectSize = Vector2.new(50, 50)
+	
+		TextLabel_10.Parent = Screenshot
+		TextLabel_10.BackgroundColor3 = Color3.fromRGB(93, 78, 129)
+		TextLabel_10.BorderSizePixel = 0
+		TextLabel_10.Position = UDim2.new(0.349775761, 0, 0.586206913, 0)
+		TextLabel_10.Size = UDim2.new(0, 67, 0, 22)
+		TextLabel_10.Font = Enum.Font.SourceSansBold
+		TextLabel_10.Text = "Script made by me"
+		TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.TextSize = 14.000
+	
+		Themes.Name = "Themes"
+		Themes.Parent = Main
+		Themes.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+		Themes.BorderSizePixel = 0
+		Themes.Position = UDim2.new(0.0134671424, 0, 0.664000034, 0)
+		Themes.Size = UDim2.new(0, 72, 0, 15)
+		Themes.Font = Enum.Font.SourceSansBold
+		Themes.Text = "  Themes"
+		Themes.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Themes.TextSize = 14.000
+	
+		tab.Name = "tab"
+		tab.Parent = Themes
+		tab.BackgroundTransparency = 1.000
+		tab.LayoutOrder = 2
+		tab.Position = UDim2.new(-0.0946601927, 0, -0.214858115, 0)
+		tab.Size = UDim2.new(0, 25, 0, 25)
+		tab.ZIndex = 2
+		tab.Image = "rbxassetid://3926305904"
+		tab.ImageRectOffset = Vector2.new(484, 484)
+		tab.ImageRectSize = Vector2.new(36, 36)
+	
+		Themeframe.Name = "Themeframe"
+		Themeframe.Parent = Main
+		Themeframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Themeframe.BorderSizePixel = 0
+		Themeframe.Position = UDim2.new(0.212598428, 0, 0.115999997, 0)
+		Themeframe.Size = UDim2.new(0, 300, 0, 220)
+		Themeframe.Visible = false
+	
+		Red.Name = "Red"
+		Red.Parent = Main
+		Red.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		Red.BorderSizePixel = 0
+		Red.Position = UDim2.new(0.358267725, 0, 0.143999994, 0)
+		Red.Size = UDim2.new(0, 170, 0, 47)
+		Red.Visible = false
+		Red.ZIndex = 2
+		Red.Font = Enum.Font.GothamSemibold
+		Red.Text = ""
+		Red.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Red.TextScaled = true
+		Red.TextSize = 14.000
+		Red.TextWrapped = true
+	
+		UICorner_19.CornerRadius = UDim.new(0, 4)
+		UICorner_19.Parent = Red
+	
+		TextLabel_11.Parent = Red
+		TextLabel_11.AnchorPoint = Vector2.new(0.5, 0.5)
+		TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_11.BackgroundTransparency = 1.000
+		TextLabel_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		TextLabel_11.BorderSizePixel = 0
+		TextLabel_11.Position = UDim2.new(0.530555546, 0, 0.46598646, 0)
+		TextLabel_11.Size = UDim2.new(0.949999988, -20, 0.931972921, -20)
+		TextLabel_11.ZIndex = 2
+		TextLabel_11.Font = Enum.Font.GothamSemibold
+		TextLabel_11.Text = "Red"
+		TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_11.TextScaled = true
+		TextLabel_11.TextSize = 14.000
+		TextLabel_11.TextWrapped = true
+	
+		Linered.Name = "Linered"
+		Linered.Parent = Main
+		Linered.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		Linered.BorderSizePixel = 0
+		Linered.Size = UDim2.new(0, 381, 0, 29)
+		Linered.Visible = false
+	
+		TextLabel_12.Parent = Linered
+		TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		TextLabel_12.BorderSizePixel = 0
+		TextLabel_12.Position = UDim2.new(0.467914462, 0, 0.103448272, 0)
+		TextLabel_12.Size = UDim2.new(0, 23, 0, 23)
+		TextLabel_12.Font = Enum.Font.SourceSansBold
+		TextLabel_12.Text = "Bowser Dumb admin"
+		TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_12.TextSize = 14.000
+	
+		Minired.Name = "Minired"
+		Minired.Parent = Main
+		Minired.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+		Minired.Position = UDim2.new(0.0830842257, 0, 0.00832653791, 0)
+		Minired.Size = UDim2.new(0, 18, 0, 17)
+		Minired.Visible = false
+		Minired.Font = Enum.Font.SourceSans
+		Minired.Text = ""
+		Minired.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Minired.TextSize = 14.000
+	
+		UICorner_20.Parent = Minired
+	
+		goodred.Name = "goodred"
+		goodred.Parent = Main
+		goodred.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		goodred.Position = UDim2.new(0.147402704, 0, 0.00832651556, 0)
+		goodred.Size = UDim2.new(0, 18, 0, 17)
+		goodred.Visible = false
+		goodred.Font = Enum.Font.SourceSans
+		goodred.Text = ""
+		goodred.TextColor3 = Color3.fromRGB(0, 0, 0)
+		goodred.TextSize = 14.000
+	
+		UICorner_21.Parent = goodred
+	
+		Closered.Name = "Closered"
+		Closered.Parent = Main
+		Closered.BackgroundColor3 = Color3.fromRGB(79, 0, 0)
+		Closered.Position = UDim2.new(0.0213412456, 0, 0.00832653046, 0)
+		Closered.Size = UDim2.new(0, 18, 0, 17)
+		Closered.Visible = false
+		Closered.Font = Enum.Font.SourceSans
+		Closered.Text = ""
+		Closered.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Closered.TextSize = 14.000
+	
+		UICorner_22.Parent = Closered
+	
+		Normal.Name = "Normal"
+		Normal.Parent = Main
+		Normal.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+		Normal.BorderSizePixel = 0
+		Normal.Position = UDim2.new(0.358267725, 0, 0.351999998, 0)
+		Normal.Size = UDim2.new(0, 170, 0, 47)
+		Normal.Visible = false
+		Normal.ZIndex = 2
+		Normal.Font = Enum.Font.GothamSemibold
+		Normal.Text = ""
+		Normal.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Normal.TextScaled = true
+		Normal.TextSize = 14.000
+		Normal.TextWrapped = true
+	
+		UICorner_23.CornerRadius = UDim.new(0, 4)
+		UICorner_23.Parent = Normal
+	
+		TextLabel_13.Parent = Normal
+		TextLabel_13.AnchorPoint = Vector2.new(0.5, 0.5)
+		TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.BackgroundTransparency = 1.000
+		TextLabel_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		TextLabel_13.BorderSizePixel = 0
+		TextLabel_13.Position = UDim2.new(0.495261431, 0, 0.444709867, 0)
+		TextLabel_13.Size = UDim2.new(0.949999988, -20, 0.931972921, -20)
+		TextLabel_13.ZIndex = 2
+		TextLabel_13.Font = Enum.Font.GothamSemibold
+		TextLabel_13.Text = "Normal"
+		TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.TextScaled = true
+		TextLabel_13.TextSize = 14.000
+		TextLabel_13.TextWrapped = true
+	
+		Blue.Name = "Blue"
+		Blue.Parent = Main
+		Blue.BackgroundColor3 = Color3.fromRGB(12, 6, 202)
+		Blue.BorderSizePixel = 0
+		Blue.Position = UDim2.new(0.355643064, 0, 0.560000002, 0)
+		Blue.Size = UDim2.new(0, 170, 0, 47)
+		Blue.Visible = false
+		Blue.ZIndex = 2
+		Blue.Font = Enum.Font.GothamSemibold
+		Blue.Text = ""
+		Blue.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Blue.TextScaled = true
+		Blue.TextSize = 14.000
+		Blue.TextWrapped = true
+	
+		UICorner_24.CornerRadius = UDim.new(0, 4)
+		UICorner_24.Parent = Blue
+	
+		TextLabel_14.Parent = Blue
+		TextLabel_14.AnchorPoint = Vector2.new(0.5, 0.5)
+		TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.BackgroundTransparency = 1.000
+		TextLabel_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		TextLabel_14.BorderSizePixel = 0
+		TextLabel_14.Position = UDim2.new(0.495261431, 0, 0.487263054, 0)
+		TextLabel_14.Size = UDim2.new(0.949999988, -20, 0.931972921, -20)
+		TextLabel_14.ZIndex = 2
+		TextLabel_14.Font = Enum.Font.GothamSemibold
+		TextLabel_14.Text = "Blue"
+		TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.TextScaled = true
+		TextLabel_14.TextSize = 14.000
+		TextLabel_14.TextWrapped = true
+	
+		Lineblue.Name = "Lineblue"
+		Lineblue.Parent = Main
+		Lineblue.BackgroundColor3 = Color3.fromRGB(23, 7, 255)
+		Lineblue.BorderSizePixel = 0
+		Lineblue.Size = UDim2.new(0, 381, 0, 29)
+		Lineblue.Visible = false
+	
+		TextLabel_15.Parent = Lineblue
+		TextLabel_15.BackgroundColor3 = Color3.fromRGB(23, 7, 255)
+		TextLabel_15.BorderSizePixel = 0
+		TextLabel_15.Position = UDim2.new(0.467914462, 0, 0.103448272, 0)
+		TextLabel_15.Size = UDim2.new(0, 23, 0, 23)
+		TextLabel_15.Font = Enum.Font.SourceSansBold
+		TextLabel_15.Text = "Bowser Dumb admin"
+		TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.TextSize = 14.000
+	
+		Closeblue.Name = "Closeblue"
+		Closeblue.Parent = Main
+		Closeblue.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		Closeblue.Position = UDim2.new(0.152231023, 0, 0.023999989, 0)
+		Closeblue.Size = UDim2.new(0, 18, 0, 17)
+		Closeblue.Visible = false
+		Closeblue.Font = Enum.Font.SourceSans
+		Closeblue.Text = ""
+		Closeblue.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Closeblue.TextSize = 14.000
+	
+		UICorner_25.Parent = Closeblue
+	
+		miniblue.Name = "miniblue"
+		miniblue.Parent = Main
+		miniblue.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+		miniblue.Position = UDim2.new(0.0839895606, 0, 0.023999989, 0)
+		miniblue.Size = UDim2.new(0, 18, 0, 17)
+		miniblue.Visible = false
+		miniblue.Font = Enum.Font.SourceSans
+		miniblue.Text = ""
+		miniblue.TextColor3 = Color3.fromRGB(0, 0, 0)
+		miniblue.TextSize = 14.000
+	
+		UICorner_26.Parent = miniblue
+	
+		goodblue.Name = "goodblue"
+		goodblue.Parent = Main
+		goodblue.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		goodblue.Position = UDim2.new(0.0131234191, 0, 0.0240000188, 0)
+		goodblue.Size = UDim2.new(0, 18, 0, 17)
+		goodblue.Visible = false
+		goodblue.Font = Enum.Font.SourceSans
+		goodblue.Text = ""
+		goodblue.TextColor3 = Color3.fromRGB(0, 0, 0)
+		goodblue.TextSize = 14.000
+	
+		UICorner_27.Parent = goodblue
+	
+		Jameslol.Name = "Jameslol"
+		Jameslol.Parent = ScreenGui
+		Jameslol.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Jameslol.Size = UDim2.new(0, 1237, 0, 599)
+		Jameslol.Visible = false
+	
+		ImageLabel_2.Parent = Jameslol
+		ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel_2.Position = UDim2.new(0.202910259, 0, 0.0684474111, 0)
+		ImageLabel_2.Size = UDim2.new(0, 785, 0, 513)
+		ImageLabel_2.Image = "http://www.roblox.com/asset/?id=4909992804"
+	
+		-- Scripts:
+	
+		local function EQPU_fake_script() -- TextLabel.LocalScript 
+			local script = Instance.new('LocalScript', TextLabel)
+	
+			while wait() do
+				script.Parent.TextColor3 = Color3.new(1,0,0)
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+				end
+			end
+		end
+		coroutine.wrap(EQPU_fake_script)()
+		local function IRELQP_fake_script() -- Close.LocalScript 
+			local script = Instance.new('LocalScript', Close)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.35, 0, -1, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.064, 0},{0.12, 0}
+			--end size is {0, 524},{0, 317}
+		end
+		coroutine.wrap(IRELQP_fake_script)()
+		local function HSPHAE_fake_script() -- Mini.LocalScript 
+			local script = Instance.new('LocalScript', Mini)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.346, 0,0.967, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.346, 0},{0.294, 0}
+		end
+		coroutine.wrap(HSPHAE_fake_script)()
+		local function DMNXC_fake_script() -- Good.LocalScript 
+			local script = Instance.new('LocalScript', Good)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.346, 0,0.294, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.346, 0},{0.294, 0}
+		end
+		coroutine.wrap(DMNXC_fake_script)()
+		local function OIDTIQS_fake_script() -- Main.LocalScript 
+			local script = Instance.new('LocalScript', Main)
+	
+			local UIS = game:GetService("UserInputService")
+			function dragify(Frame)
+				dragToggle = nil
+				local dragSpeed = 0.09
+				dragInput = nil
+				dragStart = nil
+				local dragPos = nil
+				function updateInput(input)
+					local Delta = input.Position - dragStart
+					local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+					game:GetService("TweenService"):Create(Frame, TweenInfo.new(dragSpeed), {Position = Position}):Play()
+				end
+				Frame.InputBegan:Connect(function(input)
+					if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+						dragToggle = true
+						dragStart = input.Position
+						startPos = Frame.Position
+						input.Changed:Connect(function()
+							if input.UserInputState == Enum.UserInputState.End then
+								dragToggle = false
+							end
+						end)
+					end
+				end)
+				Frame.InputChanged:Connect(function(input)
+					if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+						dragInput = input
+					end
+				end)
+				game:GetService("UserInputService").InputChanged:Connect(function(input)
+					if input == dragInput and dragToggle then
+						updateInput(input)
+					end
+				end)
+			end
+	
+			dragify(script.Parent)
+		end
+		coroutine.wrap(OIDTIQS_fake_script)()
+		local function EJQTB_fake_script() -- DashBoard.LocalScript 
+			local script = Instance.new('LocalScript', DashBoard)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.DashBoardframe.Visible = true
+				script.Parent.Parent.Extraframe.Visible = false
+				script.Parent.Parent.Adminframe.Visible = false
+				script.Parent.Parent.Creditsframe.Visible = false
+				script.Parent.Parent.Themeframe.Visible = false
+				script.Parent.Parent.Red.Visible = false
+				script.Parent.Parent.Normal.Visible = false
+				script.parent.parent.Blue.Visible = false
+			end)
+		end
+		coroutine.wrap(EJQTB_fake_script)()
+		local function ERJRZ_fake_script() -- Pattern.LocalScript 
+			local script = Instance.new('LocalScript', Pattern)
+	
+			wait(3)
+			script.Parent.Parent.Pattern.Visible = false
+		end
+		coroutine.wrap(ERJRZ_fake_script)()
+		local function IQPCSH_fake_script() -- TextLabel_2.LocalScript 
+			local script = Instance.new('LocalScript', TextLabel_2)
+	
+	
+			script.Parent.TextTransparency = 1
+	
+			wait(2)
+			script.Parent.TextTransparency = 0.9
+			wait(0.1)
+			script.Parent.TextTransparency = 0.8
+			wait(0.1)
+			script.Parent.TextTransparency = 0.7
+			wait(0.1)
+			script.Parent.TextTransparency = 0.6
+			wait(0.1)
+			script.Parent.TextTransparency = 0.5
+			wait(0.1)
+			script.Parent.TextTransparency = 0.4
+			wait(0.1)
+			script.Parent.TextTransparency = 0.3
+			wait(0.1)
+			script.Parent.TextTransparency = 0.2
+			wait(0.1)
+			script.Parent.TextTransparency = 0.1
+			wait(0.1)
+			script.Parent.TextTransparency = 0
+			wait(0.1)
+	
+		end
+		coroutine.wrap(IQPCSH_fake_script)()
+		local function OWNPB_fake_script() -- Welcome.LocalScript 
+			local script = Instance.new('LocalScript', Welcome)
+	
+	
+			script.Parent.TextTransparency = 1
+	
+			wait(1)
+			script.Parent.TextTransparency = 0.9
+			wait(0.1)
+			script.Parent.TextTransparency = 0.8
+			wait(0.1)
+			script.Parent.TextTransparency = 0.7
+			wait(0.1)
+			script.Parent.TextTransparency = 0.6
+			wait(0.1)
+			script.Parent.TextTransparency = 0.5
+			wait(0.1)
+			script.Parent.TextTransparency = 0.4
+			wait(0.1)
+			script.Parent.TextTransparency = 0.3
+			wait(0.1)
+			script.Parent.TextTransparency = 0.2
+			wait(0.1)
+			script.Parent.TextTransparency = 0.1
+			wait(0.1)
+			script.Parent.TextTransparency = 0
+			wait(0.1)
+	
+		end
+		coroutine.wrap(OWNPB_fake_script)()
+		local function HSEVJQ_fake_script() -- ImageLabel.LocalScript 
+			local script = Instance.new('LocalScript', ImageLabel)
+	
+			script.Parent.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
+		end
+		coroutine.wrap(HSEVJQ_fake_script)()
+		local function ZVORLAD_fake_script() -- Usrname.LocalScript 
+			local script = Instance.new('LocalScript', Usrname)
+	
+			script.Parent.Text = game.Players.LocalPlayer.Name
+		end
+		coroutine.wrap(ZVORLAD_fake_script)()
+		local function LZSE_fake_script() -- Extra.LocalScript 
+			local script = Instance.new('LocalScript', Extra)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Extraframe.Visible = true
+				script.Parent.Parent.DashBoardframe.Visible = false
+				script.Parent.Parent.Adminframe.Visible = false
+				script.Parent.Parent.Creditsframe.Visible = false
+				script.Parent.Parent.Themeframe.Visible = false
+				script.Parent.Parent.Red.Visible = false
+				script.Parent.Parent.Normal.Visible = false
+				script.parent.parent.Blue.Visible = false
+			end)
+		end
+		coroutine.wrap(LZSE_fake_script)()
+		local function NWCJNY_fake_script() -- Admin.LocalScript 
+			local script = Instance.new('LocalScript', Admin)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Adminframe.Visible = true
+				script.Parent.Parent.DashBoardframe.Visible = false
+				script.Parent.Parent.Extraframe.Visible = false
+				script.Parent.Parent.Creditsframe.Visible = false
+				script.Parent.Parent.Themeframe.Visible = false
+				script.Parent.Parent.Red.Visible = false
+				script.Parent.Parent.Normal.Visible = false
+				script.parent.parent.Blue.Visible = false
+			end)
+	
+		end
+		coroutine.wrap(NWCJNY_fake_script)()
+		local function USGAGLX_fake_script() -- Credits.LocalScript 
+			local script = Instance.new('LocalScript', Credits)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Creditsframe.Visible = true
+				script.Parent.Parent.DashBoardframe.Visible = false
+				script.Parent.Parent.Adminframe.Visible = false
+				script.Parent.Parent.Extraframe.Visible = false
+				script.Parent.Parent.Red.Visible = false
+				script.Parent.Parent.Normal.Visible = false
+				script.Parent.Parent.Themeframe.Visible = false
+				script.parent.parent.Blue.Visible = false
+			end)
+		end
+		coroutine.wrap(USGAGLX_fake_script)()
+		local function CNPGA_fake_script() -- Themes.LocalScript 
+			local script = Instance.new('LocalScript', Themes)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Themeframe.Visible = true
+				script.Parent.Parent.DashBoardframe.Visible = false
+				script.Parent.Parent.Adminframe.Visible = false
+				script.Parent.Parent.Extraframe.Visible = false
+				script.Parent.Parent.Creditsframe.Visible = false
+				script.Parent.Parent.Red.Visible = true
+				script.Parent.Parent.Normal.Visible = true
+				script.parent.parent.Blue.Visible = true
+			end)
+		end
+		coroutine.wrap(CNPGA_fake_script)()
+		local function AVDPP_fake_script() -- Red.LocalScript 
+			local script = Instance.new('LocalScript', Red)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Minired.Visible = true
+				script.Parent.Parent.Mini.Visible = false
+				script.Parent.Parent.goodred.Visible = true
+				script.Parent.Parent.Good.Visible = false
+				script.Parent.Parent.Closered.Visible = true
+				script.Parent.Parent.Close.Visible = false
+				script.Parent.Parent.Linered.Visible = true
+				script.Parent.Parent.Line1.Visible = false
+				script.parent.parent.Lineblue.Visible = false
+				script.parent.parent.miniblue.Visible = false
+				script.parent.parent.goodblue.Visible = false
+				script.parent.parent.Closeblue.Visible = false
+			end)
+		end
+		coroutine.wrap(AVDPP_fake_script)()
+		local function WDUVIMZ_fake_script() -- TextLabel_12.LocalScript 
+			local script = Instance.new('LocalScript', TextLabel_12)
+	
+			while wait() do
+				script.Parent.TextColor3 = Color3.new(1,0,0)
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+				end
+			end
+		end
+		coroutine.wrap(WDUVIMZ_fake_script)()
+		local function KDZCC_fake_script() -- Minired.LocalScript 
+			local script = Instance.new('LocalScript', Minired)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.346, 0,0.967, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.346, 0},{0.294, 0}
+		end
+		coroutine.wrap(KDZCC_fake_script)()
+		local function TKTE_fake_script() -- goodred.LocalScript 
+			local script = Instance.new('LocalScript', goodred)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.346, 0,0.294, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.346, 0},{0.294, 0}
+		end
+		coroutine.wrap(TKTE_fake_script)()
+		local function HBCSWFW_fake_script() -- Closered.LocalScript 
+			local script = Instance.new('LocalScript', Closered)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.35, 0, -1, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.064, 0},{0.12, 0}
+			--end size is {0, 524},{0, 317}
+		end
+		coroutine.wrap(HBCSWFW_fake_script)()
+		local function MWSIVMO_fake_script() -- Normal.LocalScript 
+			local script = Instance.new('LocalScript', Normal)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Mini.Visible = true
+				script.Parent.Parent.Minired.Visible = false
+				script.Parent.Parent.Close.Visible = true
+				script.Parent.Parent.Closered.Visible = false
+				script.Parent.Parent.Good.Visible = true
+				script.Parent.Parent.goodred.Visible = false
+				script.Parent.Parent.Linered.Visible = false
+				script.Parent.Parent.Line1.Visible = true
+				script.parent.parent.Lineblue.Visible = false
+				script.parent.parent.miniblue.Visible = false
+				script.parent.parent.Closeblue.Visible = false 
+				script.parent.parent.goodblue.Visible = false
+			end)
+		end
+		coroutine.wrap(MWSIVMO_fake_script)()
+		local function QHXGRWW_fake_script() -- Main.Open 
+			local script = Instance.new('LocalScript', Main)
+	
+			local Plr = game.Players.LocalPlayer
+	
+			Plr:GetMouse().KeyDown:connect(function(b)
+				if b == "b" then
+					script.Parent.Visible = true
+				end
+			end)
+		end
+		coroutine.wrap(QHXGRWW_fake_script)()
+		local function SLEBBY_fake_script() -- Main.close 
+			local script = Instance.new('LocalScript', Main)
+	
+			local Plr = game.Players.LocalPlayer
+	
+			Plr:GetMouse().KeyDown:connect(function(v)
+				if v == "v" then
+					script.Parent.Visible = false
+				end
+			end)
+		end
+		coroutine.wrap(SLEBBY_fake_script)()
+		local function CHCTLR_fake_script() -- Blue.LocalScript 
+			local script = Instance.new('LocalScript', Blue)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.parent.parent.Lineblue.Visible = true 
+				script.parent.parent.miniblue.Visible = true
+				script.parent.parent.Closeblue.Visible = true
+				script.parent.parent.miniblue.Visible = true
+				script.parent.parent.goodblue.Visible = true
+			end)
+		end
+		coroutine.wrap(CHCTLR_fake_script)()
+		local function VBPFPSF_fake_script() -- TextLabel_15.LocalScript 
+			local script = Instance.new('LocalScript', TextLabel_15)
+	
+			while wait() do
+				script.Parent.TextColor3 = Color3.new(1,0,0)
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+				end
+				for i=1,15 do
+					game:GetService("RunService").RenderStepped:wait()
+					script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+				end
+			end
+		end
+		coroutine.wrap(VBPFPSF_fake_script)()
+		local function QMJBO_fake_script() -- Closeblue.LocalScript 
+			local script = Instance.new('LocalScript', Closeblue)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.35, 0, -1, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.064, 0},{0.12, 0}
+			--end size is {0, 524},{0, 317}
+		end
+		coroutine.wrap(QMJBO_fake_script)()
+		local function XBRSY_fake_script() -- miniblue.LocalScript 
+			local script = Instance.new('LocalScript', miniblue)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.346, 0,0.967, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.346, 0},{0.294, 0}
+		end
+		coroutine.wrap(XBRSY_fake_script)()
+		local function DUTSVZ_fake_script() -- goodblue.LocalScript 
+			local script = Instance.new('LocalScript', goodblue)
+	
+			local frame = script.Parent.Parent
+	
+			script.Parent.MouseButton1Down:Connect(function()
+				frame:TweenPosition(UDim2.new(0.346, 0,0.294, 0), 'Out', 'Linear', '0.5')
+			end)
+	
+			--start size is {0.346, 0},{0.294, 0}
+		end
+		coroutine.wrap(DUTSVZ_fake_script)()
+	
+		wait(3)
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Notification";
+			Text = "Thanks for using my admin script dm me for problems Bowser#6969 enjoy!";
+			Icon = "http://www.roblox.com/asset/?id=6787685604";
+			Duration = 9;
+		})
+		print("Loaded Bowser admin thank you!")
+		--visible code()
+		--executors that work on this script as i know is electron krnl fluxes synapse x but may have few commands that wont work because of script functions
+		wait(5)
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Notification";
+			Text = "v to close and b to open";
+			Icon = "http://www.roblox.com/asset/?id=6787685604";
+			Duration = 9;
+		})
+	end)
+end
+coroutine.wrap(QYQWZMH_fake_script)()
+local function DDNFF_fake_script() -- dragonballrage.LocalScript 
+	local script = Instance.new('LocalScript', dragonballrage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/dbrage.lua"))()
+	end)
+end
+coroutine.wrap(DDNFF_fake_script)()
+local function TDLX_fake_script() -- yeild.LocalScript 
+	local script = Instance.new('LocalScript', yeild)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(TDLX_fake_script)()
+local function SVWTU_fake_script() -- fates.LocalScript 
+	local script = Instance.new('LocalScript', fates)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+	end)
+end
+coroutine.wrap(SVWTU_fake_script)()
+local function GRIYM_fake_script() -- solarishub.LocalScript 
+	local script = Instance.new('LocalScript', solarishub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	end)
+end
+coroutine.wrap(GRIYM_fake_script)()
+local function WPGYLMP_fake_script() -- Bruhub.LocalScript 
+	local script = Instance.new('LocalScript', Bruhub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(WPGYLMP_fake_script)()
+local function LQJUK_fake_script() -- owlhub.LocalScript 
+	local script = Instance.new('LocalScript', owlhub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end)
+end
+coroutine.wrap(LQJUK_fake_script)()
+local function BKMSW_fake_script() -- Ciazware.LocalScript 
+	local script = Instance.new('LocalScript', Ciazware)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/The-Streets", true))()
+	end)
+end
+coroutine.wrap(BKMSW_fake_script)()
+local function WUTXP_fake_script() -- domainx.LocalScript 
+	local script = Instance.new('LocalScript', domainx)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://shlex.dev/release/domainx/latest.lua',true))()
+	end)
+end
+coroutine.wrap(WUTXP_fake_script)()
+local function OHYLGAC_fake_script() -- darkhub.LocalScript 
+	local script = Instance.new('LocalScript', darkhub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Notification";
+			Text = "Lucky i had the old loadstring i think darkhub got bought by someone now its called solaris hub but the old loadstring works";
+			Icon = "http://www.roblox.com/asset/?id=6787685604";
+			Duration = 9;
+		})
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(OHYLGAC_fake_script)()
+local function MBGI_fake_script() -- funkyFriday.LocalScript 
+	local script = Instance.new('LocalScript', funkyFriday)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+	end)
+end
+coroutine.wrap(MBGI_fake_script)()
