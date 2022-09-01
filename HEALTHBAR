@@ -1,0 +1,98 @@
+local KeepOnRespawn = true  -- Will stay on respawn if true, set to false if you only want it for one life
+local HPFlashDelay = 0.75   -- Time it takes before healthbar can flash again after losing/gaining health
+local BarXPos = 0.797       -- Position of the healthbar, decrease if the health bar is inside of the menu button
+
+local function Create(Object, Properties)
+	local New = Instance.new(Object)
+	for i,v in pairs(Properties) do
+		New[i] = v
+	end
+	return New
+end
+
+local function AddCorner(GuiObject,Roundness)
+	local Corner = Instance.new("UICorner")
+	Corner.CornerRadius = UDim.new(0,Roundness)
+	Corner.Parent = GuiObject
+end
+
+local function AddGradient(GuiObject,Color1,Color2,Rotation)
+	local Gradient = Instance.new("UIGradient")
+	Gradient.Rotation = Rotation
+	Gradient.Color = ColorSequence.new(Color1, Color2)
+	Gradient.Parent = GuiObject
+end
+
+local Tween = game:GetService("TweenService")
+local StarterGui = game:GetService("StarterGui")
+local Player = game.Players.LocalPlayer
+
+local function Initialize()
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Health, false)
+    local Character = Player.Character
+    local Humanoid = Character:WaitForChild("Humanoid")
+    
+    local Gui = Create("ScreenGui",{Parent=Player.PlayerGui,IgnoreGuiInset=true,Name="HealthBar",DisplayOrder = 1})
+    
+    local Frame = Create("Frame",{Parent=Gui,Position=UDim2.new(BarXPos,0,0.005,0),Size=UDim2.new(0.175,0,0.04,0),BackgroundTransparency=0.9,BackgroundColor3=Color3.new(1,1,1),ZIndex=10})
+    AddCorner(Frame,8)
+    AddGradient(Frame,Color3.fromRGB(71,71,71),Color3.new(0,0,0),90)
+    
+    local Background = Create("Frame",{Parent=Frame,BackgroundColor3=Color3.fromRGB(197,35,38),Position=UDim2.new(0.025,0,0.15,0),Size=UDim2.new(0.95,0,0.7,0),Name="Background",ZIndex=11})
+    AddCorner(Background,5)
+    AddGradient(Background,Color3.fromRGB(204,204,204),Color3.new(1,1,1),180)
+    
+    local Bar = Create("Frame",{Parent=Background,BackgroundColor3=Color3.fromRGB(127,255,98),Position=UDim2.new(0,0,0,0),Size=UDim2.new(0.5,0,1,0),Name="Bar",ZIndex=12})
+    AddCorner(Bar,5)
+    AddGradient(Bar,Color3.fromRGB(241,241,241),Color3.new(1,1,1),15)
+    
+    local OverhealBar = Bar:Clone()
+    OverhealBar.Visible = false
+    OverhealBar.Name = "OverhealBar"
+    OverhealBar.BackgroundColor3 = Color3.fromRGB(80,171,255)
+    OverhealBar.Parent = Background
+    
+    local HealthValue = Create("TextLabel",{Parent=Background,Position=UDim2.new(0,0,0,0),Size=UDim2.new(1,0,1,0),BackgroundTransparency=1,Font=Enum.Font.Highway,Text="50/100",TextColor3=Color3.new(1,1,1),TextStrokeTransparency=0,TextScaled=true,TextWrapped=true,Name="HealthValue",ZIndex=13})
+    
+    local FlashCD = false
+    local PrevHP = Humanoid.Health
+    local function UpdateBar(HP)
+        HealthValue.Text = math.abs(math.ceil((HP*100)-.5)/100).. "/".. Humanoid.MaxHealth
+        Bar.Size = UDim2.new(math.min(HP,Humanoid.MaxHealth) / Humanoid.MaxHealth,0,1,0)
+        if not FlashCD then
+            FlashCD = true
+            task.delay(HPFlashDelay, function()
+                FlashCD = false
+            end)
+            if HP < PrevHP then
+                Bar.BackgroundColor3 = Color3.new(1,0.3,0.3)
+                Tween:Create(Bar,TweenInfo.new(.5,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(127,255,98)}):Play()
+            elseif HP > PrevHP then
+                Bar.BackgroundColor3 = Color3.new(1,1,1)
+                Tween:Create(Bar,TweenInfo.new(.5,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(127,255,98)}):Play()
+            end
+        end
+        if HP > Humanoid.MaxHealth then
+            OverhealBar.Visible = true
+            OverhealBar.Size = UDim2.new(math.min(HP-Humanoid.MaxHealth,Humanoid.MaxHealth) / Humanoid.MaxHealth,0,1,0)
+        else
+            OverhealBar.Visible = false
+        end
+        if HP == 0 then
+            Bar.Visible = false
+        end
+        PrevHP = HP
+    end
+    
+    UpdateBar(Humanoid.Health)
+    Humanoid.HealthChanged:Connect(function(NewHP)
+    	UpdateBar(NewHP)
+    end)
+end
+
+Initialize()
+if KeepOnRespawn then
+    Player.CharacterAdded:Connect(function()
+        Initialize()
+    end)
+end
