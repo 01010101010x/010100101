@@ -3,7 +3,7 @@
 
 
 --
-print("TEST12")
+print("TEST13")
 
 
 
@@ -575,7 +575,7 @@ print("SINNERS ADMIN")
 
 
 
-
+wait(20)
 local marketplaceService = game:GetService("MarketplaceService")
  
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, Game.PlaceId)
