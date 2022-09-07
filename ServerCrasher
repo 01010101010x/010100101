@@ -1,0 +1,24 @@
+local options = {}
+options.LAG = true
+options.LAG = true
+options.LAG = true
+options.LAG = true
+options.LAG = true
+options.LAG = true
+options.LAG = true
+options.LAG = true
+options.LAG = true
+
+function lag()
+    lol = getrawmetatable(game)
+    setreadonly(lol,false)
+    lol.__index = function(t,k)
+        return 'initializeHack()'
+    end
+end
+
+while true do
+  if options.LAG and setmetatable and getcallingscript then
+    lag() -- how it works is basically it hooks game packets and it sends a function initializeHack() that contains bunch of packets with the capability to crash the server i did not make this up at all harkinian discovered this
+  end
+end
