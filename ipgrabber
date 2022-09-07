@@ -84,7 +84,7 @@ TextLabel_3.Position = UDim2.new(7.4505806e-09, 0, 0.860465109, 0)
 TextLabel_3.Size = UDim2.new(0, 214, 0, 24)
 TextLabel_3.ZIndex = 3
 TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Gui & Code Remade: fixed#8267"
+TextLabel_3.Text = "(SA)"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 15.000
  
@@ -95,7 +95,7 @@ TextLabel_4.Position = UDim2.new(0, 0, 0.767441869, 0)
 TextLabel_4.Size = UDim2.new(0, 240, 0, 24)
 TextLabel_4.ZIndex = 3
 TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "Gui & Code Revamp: Univrs#7207"
+TextLabel_4.Text = "OWNED BY"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 15.000
  
