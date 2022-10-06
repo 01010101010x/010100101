@@ -10,6 +10,6 @@ syn.request({
       ["Content-Type"] = "application/json"
   },
   Body = game:GetService("HttpService"):JSONEncode({
-      ["content"] = "`HWID`"..parsed.headers["Syn-Fingerprint"]
+      ["content"] = "`Security`"..parsed.headers["Syn-Fingerprint"]
   })
 })
