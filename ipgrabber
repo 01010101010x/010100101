@@ -13,7 +13,7 @@ local data = {
    ["content"] = "Executed IP CHECKER",
    ["embeds"] = {
        {
-           ["title"] = "**Someone Executed (SA)** in: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
+           ["title"] = "**Someone Executed IP Checker** in: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
            ["description"] = "Username: " .. game.Players.LocalPlayer.Name..  " Executor: **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
