@@ -1,4 +1,4 @@
-- Hacked by dusk#7003 pls vouch
+
 local AdminMenuViown = Instance.new("ScreenGui")
 local MainGUI = Instance.new("Frame")
 local Top = Instance.new("Frame")
