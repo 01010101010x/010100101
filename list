@@ -1,0 +1,35 @@
+if game.Players.LocalPlayer.Name == "kevinform203" then
+	print("NS76-4Z3Q-J7BC-GGQM")
+	
+	elseif game.Players.LocalPlayer.Name == "i_loveacdc" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+
+	elseif game.Players.LocalPlayer.Name == "TypicalModders" then 
+	print("NS76-4Z3Q-J7BC-GGQMkey")
+
+	elseif game.Players.LocalPlayer.Name == "GavReese" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+
+	elseif game.Players.LocalPlayer.Name == "GavReeseALTACC" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+
+	elseif game.Players.LocalPlayer.Name == "Onaetram" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+
+	elseif game.Players.LocalPlayer.Name == "MasterTopia" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+
+	elseif game.Players.LocalPlayer.Name == "AwesomeGuyJello" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+
+	elseif game.Players.LocalPlayer.Name == "GabrasticYT" then 
+	print("NS76-4Z3Q-J7BC-GGQM")
+	
+elseif game.Players.LocalPlayer.Name == "Gwibard" then
+	print("NS76-4Z3Q-J7BC-GGQM")
+	
+elseif game.Players.LocalPlayer.Name == "AsianPrawn" then
+print("NS76-4Z3Q-J7BC-GGQM")
+else
+	loadstring(game:HttpGet(('https://pastebin.com/raw/MipBFF6v'),true))()
+end
