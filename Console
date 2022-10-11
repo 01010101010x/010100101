@@ -195,7 +195,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked_Title.Size = UDim2.new(0, 80, 0, 14)
     AutoScroll_Locked_Title.ZIndex = 4
     AutoScroll_Locked_Title.Font = Enum.Font.GothamSemibold
-    AutoScroll_Locked_Title.Text = "Admin Mode Off"
+    AutoScroll_Locked_Title.Text = "Online"
     AutoScroll_Locked_Title.TextColor3 = Color3.fromRGB(100, 100, 100)
     AutoScroll_Locked_Title.TextSize = 14.000
     AutoScroll_Locked_Title.TextXAlignment = Enum.TextXAlignment.Left
