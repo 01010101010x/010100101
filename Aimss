@@ -7,7 +7,7 @@ local ui = game:GetObjects("rbxassetid://10944586391")[1]:Clone()
 local camera = { currentcamera = workspace.CurrentCamera }
 camera.wtsp = camera.currentcamera.WorldToScreenPoint
 local characters = {}
-local ragdollgrounds = game.PlaceId == 3161739008
+local ragdollgrounds = game.PlaceId == 1735775055
 
 workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
 	camera.currentcamera = workspace.CurrentCamera
