@@ -1,0 +1,8 @@
+getgenv().Config = {
+    Headless = true,
+
+    FakeDisplayName = "FakeDisplayName ",
+    FakeName = "FakeName",
+    FakeId = 1, -- input id
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/DisplayHide"))()
