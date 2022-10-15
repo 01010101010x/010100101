@@ -82,7 +82,7 @@ end
 
 startergui:SetCore(
 	"SendNotification",
-	{ Title = "Thank You", Text = "Created by Paygammy", Duration = 10, Button1 = "OK" }
+	{ Title = "Thank You", Text = "Created by Lenix", Duration = 10, Button1 = "OK" }
 )
 startergui:SetCore(
 	"SendNotification",
