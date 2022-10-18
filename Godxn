@@ -1,0 +1,23 @@
+local ValidKeys = "ehf@uef_feferx3" or "ehf@uef_xefrg" --add more OR and quotation marks for more validkeys
+if _G.Key == ValidKeys then
+    print("Authorized")
+    --Loadstring Here or your other shit
+    else
+    print("Unauthorized")
+game.Players.LocalPlayer:Kick("ACCESS DENIED BITCH")
+wait(2)
+game:shutdown()
+end
+--Delete code below if you don't want webhook logging | if you don't know wtf your doing just delete code below this line
+local url = "https://discord.com/api/webhooks/1031821491106488362/evHQvM6e8YJ_JSqThtgPO9DebDIBVGLIG-YzUSoAEkhU4B4Oc49blELLUyS5MiB4e54j"
+local data = {
+   ["content"] = _G.Key, --Could not get player name to work so you can do it yourself
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
