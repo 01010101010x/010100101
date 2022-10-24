@@ -1,0 +1,7 @@
+local r = require(game:service('ReplicatedStorage').suitData)
+        r = r.suitData
+        for a=2,40 do
+            pcall(function()
+                r['Mark'..a].Strength = s and -(0/0) or 1
+            end)
+        end
