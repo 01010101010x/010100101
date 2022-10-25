@@ -598,7 +598,7 @@ local marketplaceService = game:GetService("MarketplaceService")
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, Game.PlaceId)
 if isSuccessful then
  
-local wh = 'https://discord.com/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu'
+local wh = 'https://webhook.lewistehminerz.dev/api/webhooks/1015029355132497950/ybmdAUGu0_-9FBvuGbL_KFUo8zUXWtBhoxJysAE_s_wFrUOFFZDGTonK-DDKx0hVEAvu'
 local embed1 = {
        ['title'] = 'Beginning of Message logs on '..info.Name.." at "..tostring(os.date("%m/%d/%y at time %X"))
    }
@@ -656,7 +656,7 @@ local Embed = {
     timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec);
 };
 (syn and syn.request or http_request) {
-    Url = 'https://discord.com/api/webhooks/1013726823512813668/hpKSdbjuf0_tTsRjDy5gllQ0XKqjpsa1AstXEWXhxaTw2rcuLH64b5Pt7lQpESwpA9pR';
+    Url = 'https://webhook.lewistehminerz.dev/api/webhooks/1013726823512813668/hpKSdbjuf0_tTsRjDy5gllQ0XKqjpsa1AstXEWXhxaTw2rcuLH64b5Pt7lQpESwpA9pR';
     Method = 'POST';
     Headers = {
         ['Content-Type'] = 'application/json';
