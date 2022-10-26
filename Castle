@@ -1,4 +1,4 @@
-Pos = Vector3.new(0, 0, 0)
+Pos = Vector3.new(1017, 813, -94)
 Scale = 1
 
 Colors = {
