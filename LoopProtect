@@ -1,8 +1,9 @@
-print("Loop In Progress")
+warn("Loop In Progress")
 --Updated By Lenix on 11 | 20 | 2022 .
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LoopProtect"))();
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/ISEEYOUSKIDWITHUR_HTTP_SPY"))();
+
+warn("Loop |2 In Progress")
 
 print("Loop | 2 In Progress")
 --Updated By Lenix on 11 | 20 | 2022 .
