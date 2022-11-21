@@ -1,2 +1,3 @@
-
+print("Loop In Progress")
+--Updated By Lenix on 11 | 20 | 2022 .
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LoopProtect"))();
