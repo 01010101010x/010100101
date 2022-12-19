@@ -7,7 +7,7 @@ pcall(function()
   ['embeds'] = {
     {
        ['title'] = '`` | Normal User Has Executed | ``',
-       ['description'] = '**( S_A IN USE !**',
+       ['description'] = '**( S_A IN USE ! )**',
        ['type'] = "rich",
        ['color'] = tonumber(16753920),
        ['fields'] = {
