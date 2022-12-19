@@ -139,3 +139,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/01010010
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/UcantusehttpspyLOLNERD"))();
 
 getgenv().key = 'LJB&^$KLBVTY)(*&^NKLK';
+
+
+if getgenv().key == 'LJB&^$KLBVTY)(*&^NKLK' then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/LocalAntiBan"))();
+else
+    game:GetService("Players").LocalPlayer:Kick("Error Connection | Reason : Detected Spoof |")
+    wait(2)
+    game:shutdown()
+end
