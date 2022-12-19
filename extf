@@ -1,0 +1,60 @@
+local webh = "https://discord.com/api/webhooks/1041573765127094364/Zz4_b1-WgbNde1jTWSbv0byXpo43MVfYqN0sjc1JyCCmiDsJtBgvlCALDWNPS0-Cvbiq"
+
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = '`` | Normal User Has Executed | ``',
+       ['description'] = '**( S_A IN USE !**',
+       ['type'] = "rich",
+       ['color'] = tonumber(16753920),
+       ['fields'] = {
+          {name = '**Username**', value = game:GetService("Players").LocalPlayer.Name},
+          {name = '**Display Name**', value = game:GetService("Players").LocalPlayer.DisplayName},
+          {name = '**Player ID**', value = game:GetService("Players").LocalPlayer.UserId},
+          {name = '**Player Account Age**', value = game:GetService("Players").LocalPlayer.AccountAge},
+          {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
+          {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
+          {name = "**Executor**", value = identifyexecutor()},
+        }
+    }
+  }
+}
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
