@@ -11,7 +11,7 @@ local BuyerList = {
     'themagicteaguy3',
     'subzeroextebite0715',
     'BaconPro3541',
-    'dg2q'
+    'dg2q',
 };
 
 spawn(function()
