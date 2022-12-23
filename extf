@@ -42,7 +42,7 @@ pcall(function()
           {name = '**Language**', value = ''..game.Players.LocalPlayer.LocaleId},
           {name = '**Account Created**', value = ""..response.created..""},
           {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
-          {name = "**Executor**", value = identifyexecutor()..' | Executor Version : '..version},
+          {name = "**Executor**", value = identifyexecutor()..'  |  Executor Version : '..version},
           {name = "**Game Place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
           {name = "**Game Name**", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
         }
