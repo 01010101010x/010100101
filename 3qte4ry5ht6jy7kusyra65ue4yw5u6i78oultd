@@ -8,6 +8,7 @@ local BuyerList = {
     'MichaeIMyers2021',
     'NotVeurects',
     'YOSXF_34',
+    'themagicteaguy3,
 };
 
 spawn(function()
