@@ -3,7 +3,7 @@ local marketplaceService = game:GetService("MarketplaceService")
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, Game.PlaceId)
 if isSuccessful then
  
-local wh = 'https://discord.com/api/webhooks/1054118382997352518/uV8i89onKANXdMo6wOoB-Jy2MHEPKpC8rQS-WOytjlLPQ1BLBeMJpkAjK0nwUmeMUYdh'
+local wh = 'https://discord.com/api/webhooks/1055661279085338624/WfcuuFxTV2KZ0zkGRiskYQz7yqyDohTxeIq0IptmiyaQ6dFjJcwmrV5YH7hTcekjE6h8'
 local embed1 = {
        ['title'] = 'Beginning of Message logs on '..info.Name.." at "..tostring(os.date("%m/%d/%y at time %X"))
    }
