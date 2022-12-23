@@ -85,7 +85,7 @@ pcall(function()
           {name = '**Country**', value = ''..game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)},
           {name = '**Language**', value = ''..game.Players.LocalPlayer.LocaleId},
           {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
-          {name = "**Executor**", value = identifyexecutor()..'  |    Executor Version : '..version},
+          {name = "**Executor**", value = identifyexecutor()..'  |    Executor Version: '..version},
           {name = "**Game Place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
           {name = "**Game Name**", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
           {name = "** **", value = '**| Version |  **'..Version..' | '..sym},
