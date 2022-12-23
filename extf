@@ -80,4 +80,7 @@ pcall(function()
 end)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/F13CKILLA"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/3qte4ry5ht6jy7kusyra65ue4yw5u6i78oultd"))();
+
+print('loading done')
 
