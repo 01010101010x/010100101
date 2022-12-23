@@ -9,6 +9,7 @@ local BuyerList = {
     'NotVeurects',
     'YOSXF_34',
     'themagicteaguy3,
+    'subzeroextebite0715',
 };
 
 spawn(function()
