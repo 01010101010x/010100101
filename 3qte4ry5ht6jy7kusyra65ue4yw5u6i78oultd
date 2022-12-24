@@ -13,6 +13,9 @@ local BuyerList = {
 
 spawn(function()
     for _, Player in pairs(game:GetService("Players"):GetPlayers()) do
+        if table.find(OwnerList,Player.Name) then
+            game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer('/w '..Player.Name..' I am using Symmetrical Blue!', 'All');
+        end
         if table.find(BuyerList,Player.Name) then
             game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer('/w '..Player.Name..' I am using Symmetrical Blue!', 'All');
             print(Player.Name)
