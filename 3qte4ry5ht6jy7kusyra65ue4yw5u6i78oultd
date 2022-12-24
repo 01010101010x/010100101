@@ -452,12 +452,14 @@ end)
                         
                         if msg.Message == '.ban '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
+                                 wait(.9)
                                 game.Players.LocalPlayer:Kick("You Have Been Banned By An Adminstration | Reason: Exploiting | Contact Adminstration Team To Appeal Ban |")
                             end
                         end
                         
                         if msg.Message == '.kick '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
+                                wait(.9)
                                 game.Players.LocalPlayer:Kick("You Have Been Kicked By  " ..game.Players.LocalPlayer.Name.." | Reasoning: Being Annoying |")
                             end
                         end  
