@@ -458,7 +458,7 @@ end)
                         
                         if msg.Message == '.kick '..game:GetService("Players").LocalPlayer.Name then
                             if msg.FromSpeaker == Player2.Name then
-                                game.Players.LocalPlayer:Kick("You Have Been Kicked By  " ..game.Players.LocalPlayer.Name.." | Reasoning: Being Annoying|")
+                                game.Players.LocalPlayer:Kick("You Have Been Kicked By  " ..game.Players.LocalPlayer.Name.." | Reasoning: Being Annoying |")
                             end
                         end  
         
