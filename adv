@@ -1,0 +1,168 @@
+local Admin = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Module-lua"))()
+local Admin2 = Admin.load(getgenv().themes.dark, "Symmetrical Blue Admin", true) 
+
+    local SnapLoop = false
+    local FlingLoop = false
+    local ConfuseLoop = false
+    local GodLoop = false
+
+Admin2.addCommand({name = "to",desc = "Teleports you to the Player.",callback = function(v,b)
+    local t = Admin2.getplayers(v)
+    for i,v2 in pairs(t) do
+        pcall(function()
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v2.Character.HumanoidRootPart.Position+Vector3.new(0,0,3))
+        end)
+    end
+end})
+Admin2.addCommand({name = "kill",desc = "Kills a Player.",callback = function(v)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+            pcall(function()
+            game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,math.huge)
+            end)
+            end
+end})
+Admin2.addCommand({name = "confuse",desc = "Disables all features.",callback = function(v)
+    local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+            pcall(function()
+            game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,(0/0))
+            end)
+            end
+end})
+Admin2.addCommand({name = "god",desc = "Gives the player godmode",callback = function(v)
+   local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+            pcall(function()
+            game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.RightFoot,-math.huge)
+            end)
+            end
+end})
+Admin2.addCommand({name = "harmless",desc = "Removes Player Repulsorsc",callback = function(v)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                pcall(function()
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,5)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.RightHand,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.RightHand,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.RightHand,1)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,3)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,1)
+                end)
+            end
+end})
+
+Admin2.addCommand({name = "fling",desc = "Flings Player",callback = function(v,b)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                    pcall(function()
+                game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,1000000000000000)
+                game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.LeftHand,(0/0))
+                end)
+            end
+end})
+Admin2.addCommand({name = "rocket",desc = "Slowly Kills while flinging",callback = function(v)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                pcall(function()
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,5)
+                    wait(1)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,5)
+                    wait(1)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,6)
+                    wait(1)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,8)
+                    wait(1)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,10)
+                    wait(1)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,20)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,30)
+                    wait(2)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.UpperTorso,50)
+                end)
+            end
+end})
+
+local SnapLoop = false
+Admin2.addCommand({name = "loopKill",desc = "Loopkills a Player",callback = function(v)
+    local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                    SnapLoop = true
+                    while SnapLoop == true do
+                    wait()
+                    pcall(function()
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,math.huge)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,(0/0))
+                    end)
+                    end
+            end
+end})
+Admin2.addCommand({name = "loopfling",desc = "LoopFlings a Player",callback = function(v)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                    FlingLoop = true
+                    while FlingLoop == true do
+                    wait()
+                    pcall(function()
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,10000000000000000000)
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,(0/0))
+                    end)
+                    end
+            end
+end})
+
+Admin2.addCommand({name = "loopconfuse",desc = "Loop Disables all Features.",callback = function(v)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                    ConfuseLoop = true
+                    while ConfuseLoop == true do
+                    wait()
+                    pcall(function()
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,(0/0))
+                    end)
+                    end
+            end
+end})
+
+Admin2.addCommand({name = "loopgod",desc = "Loop Gives player GodMode.",callback = function(v)
+local t = Admin2.getplayers(v)
+            for i,v2 in pairs(t) do
+                    GodLoop = true
+                    while GodLoop == true do
+                    wait()
+                    pcall(function()
+                    game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.punchHit:FireServer(v2.Character.HumanoidRootPart,-math.huge)
+                    end)
+                    end
+            end
+end})
+
+Admin2.addCommand({name = "Rejoin",desc = "Rejoins-You",callback = function()
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+ 
+local Rejoin = coroutine.create(function()
+    local Success, ErrorMessage = pcall(function()
+        TeleportService:Teleport(game.PlaceId, LocalPlayer)
+    end)
+ 
+    if ErrorMessage and not Success then
+        warn(ErrorMessage)
+    end
+end)
+ 
+coroutine.resume(Rejoin)
+end})
+
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sinnerx3Florencia/Sinnerx3Florencia/main/Notification'),true))()
+Lib.prompt('Symmertrical Blue ®', 'Thank You For Using Symmertrical Blue !')
+
+local NotificationDuration = 7
