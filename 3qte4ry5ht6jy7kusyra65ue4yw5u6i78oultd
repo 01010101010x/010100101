@@ -13,6 +13,7 @@ local BuyerList = {
     'BaconPro3541',
     '27thRainForsest',
     'dg2q',
+    'aerogliser',
 };
 
 spawn(function()
