@@ -29,12 +29,12 @@ esp.Parent = holder
 if filluseteamcolor then
 esp.FillColor = v.TeamColor.Color
 else
-esp.FillColor = fillcolor 
+esp.FillColor = Color3.new(tick() % 5 / 5, 1, 1)
 end
 if outlineuseteamcolor then
 esp.OutlineColor = v.TeamColor.Color
 else
-esp.OutlineColor = outlinecolor    
+esp.OutlineColor = Color3.new(tick() % 5 / 5, 1, 1)
 end
 esp.FillTransparency = filltrans
 esp.OutlineTransparency = outlinetrans
