@@ -27,12 +27,12 @@ if uselocalplayer == false and esp.Name == game.Players.LocalPlayer.Name then
 else
 esp.Parent = holder
 if filluseteamcolor then
-esp.FillColor = v.TeamColor.Color
+esp.FillColor = Color3.new(tick() % 5 / 5, 1, 1)
 else
 esp.FillColor = Color3.new(tick() % 5 / 5, 1, 1)
 end
 if outlineuseteamcolor then
-esp.OutlineColor = v.TeamColor.Color
+esp.OutlineColor = Color3.new(tick() % 5 / 5, 1, 1)
 else
 esp.OutlineColor = Color3.new(tick() % 5 / 5, 1, 1)
 end
