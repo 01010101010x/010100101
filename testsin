@@ -1,0 +1,16 @@
+_G.control = true
+
+_G.Loop = _G.control
+
+repeat 
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+until _G.Loop == false
+
+
+
+while true do 
+wait()
+if _G.Loop == false then 
+       game.Players.LocalPlayer:Kick("Bro the fucking script is gone down")
+    end
+end
