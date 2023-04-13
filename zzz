@@ -1,4 +1,4 @@
-wait(1.2)
+
 local players = ""
 for _,v in next, game.Players:GetPlayers() do
   players = players .."\n".. v.Name
