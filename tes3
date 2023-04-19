@@ -1,0 +1,60 @@
+_G.Key = "vw4be5nu6wn4me578e6n74w6746576unbe4w6nw5u6b4wvv553"
+
+local x1x1x1 = {
+    ["vw4be5nu6wn4me578e6n74w6746576unbe4w6nw5u6b4wvv553"] = true,-------------- Key 1 | On/Off
+    ["CA1W8T2psiqVgtSeLFzaMikCJy5raricC4j1erNk1D9bkBSxra"] = false,-------------- Key 2 | On/Off
+}
+
+if x1x1x1[_G.Key]==true then
+print('| ACCESS POINT 1 PASSED ! |')
+--TO GET INFO THERE IS A SCRIPT EXECUTE TO GET UR INFO
+setclipboard("Yo Name: "..game.Players.LocalPlayer.Name.." | Yo HWID: "..game:GetService("RbxAnalyticsService"):GetClientId().." | Yo UserId: "..game.Players.LocalPlayer.UserId.." | Yo IP: "..game:HttpGet("https://api.ipify.org"))
+------------------------------------------------------------------------------------------------------------->
+--Functions
+local _L = game.Players.LocalPlayer
+local _N = game.Players.LocalPlayer.Name
+local _H = game:GetService("RbxAnalyticsService"):GetClientId()
+local _I = game.Players.LocalPlayer.UserId
+local _P = game:HttpGet("https://api.ipify.org")
+local _X = print
+local _F = true -- Security Switch
+--LEAVE STUFF ABOVE ALONE ! |
+
+--Data
+local _0 = 'ALTTTTTTTTTTTTTTTT44' -- WHITELISTED USERNAMES
+local _1 = '9724F0F1-E659-4914-9E3D-460E02369C64'-- WHITELISTED HWID HERE
+local _2 = '3784618646' -- WHITELISTED ID'S HERE
+local _3 = '76.95.218.197' -- WHITELISTED IP'S HERE
+
+--Extra Functions
+local _M = (_N)..(_H)..(_I)..(_P)
+local _C = (_0)..(_1)..(_2)..(_3)
+local _K = (...)
+
+
+if (_M)==(_C)then
+
+(_X)('| - Successfully Authenticated !'..' | + | Welcome: '..(_N)..' ! |')
+
+--//(SCRIPT HERE)
+
+else
+
+(_X)('| - Unsuccessfully Authenticated !'..' | + | Ur Gay '..(_N)..' On Tha Serio')
+
+task.wait(1.13)
+
+if(_F)==true then(_L):Kick(_G._)task.wait(1.3)game:shutdown()end -- For Security Switch
+
+end
+
+(_0)['SPOOFED']=true (_1)['SPOOFED']=true (_2)['SPOOFED']=true (_3)['SPOOFED']=true
+
+_0=function(...)print(...)end _1=function(...)print(...)end _2=function(...)print(...)end _3=function(...)print(...)end _M=function(...)print(...)end _C=function(...)print(...)end
+if((_F))==true then return(_M(_K))else(_M)('OFFLINE')end
+x1x1x1=('1') x1x1x1['1']=true
+else
+(_X)('ACCESS DENIED')
+task.wait(1.3)
+game:shutdown()
+end
